@@ -16,7 +16,7 @@
     <!-- Step 1: Load Account -->
     <section id="step1" class="step-card">
       <h2 class="step-title"><span class="step-num">1</span> Load your account</h2>
-      <p class="step-desc">Paste your GOOD-format export from Genshin Optimizer, Irminsul, or Inventory Kamera.</p>
+      <p class="step-desc">Paste your GOOD-format export from <a href="https://github.com/konkers/irminsul" target="_blank" rel="noopener">Irminsul</a> or <a href="https://github.com/Andrewthe13th/Inventory_Kamera" target="_blank" rel="noopener">Inventory Kamera</a>.</p>
 
       <div class="input-row">
         <textarea id="goodInput" class="good-textarea" placeholder='{"format":"GOOD","version":2,"characters":[...],"materials":{...}}'></textarea>
@@ -62,10 +62,16 @@
     <!-- Step 3: What to farm -->
     <section id="step3" class="step-card hidden">
       <h2 class="step-title"><span class="step-num">3</span> What to farm</h2>
+      <p class="step-desc">Bosses marked <span class="badge-new">NEW</span> are the most recent — farming them now stocks materials for upcoming characters.</p>
 
       <div class="farm-controls">
         <label class="inline-label">Avg mats / run:
           <input type="number" id="dropsPerRun" class="input-sm" value="2.7" min="0.5" step="0.1">
+        </label>
+        <label class="toggle-label">
+          <input type="checkbox" id="allowConversion" class="toggle-input">
+          <span class="toggle-track" aria-hidden="true"></span>
+          Allow conversion <span class="toggle-hint">(1:1, same boss only)</span>
         </label>
       </div>
 
@@ -79,6 +85,9 @@
     <p>Data from <a href="https://github.com/theBowja/genshin-db" target="_blank" rel="noopener">genshin-db</a>.
        Icons via Project Amber. Not affiliated with HoYoverse.</p>
     <p class="data-version" id="dataVersion"></p>
+    <div class="bmc-wrap">
+      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="kayco" data-color="#FFDD00" data-emoji=""  data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    </div>
   </footer>
 
   <!-- App logic -->

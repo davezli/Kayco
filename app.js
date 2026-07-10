@@ -62,7 +62,9 @@ function parseGOOD(text) {
 let GAME = null;                          // baked data/game.json
 const charState = new Map();              // key -> { included, target, normal, skill, burst, current:{auto,skill,burst} }
 let dropsPerRun = 2.7;
+let allowConversion = false;              // Step-3 toggle; OFF keeps spec behavior
 let parsed = null;                        // last parse result
+let newestBossSet = new Set();            // top-3 bosses by release version (NEW badge)
 
 /* ============================================================
  * Data loading
@@ -71,6 +73,16 @@ async function loadGame() {
   const res = await fetch('data/game.json');
   GAME = await res.json();
   document.getElementById('dataVersion').textContent = 'Baked data: v' + GAME.dataVersion;
+
+  // Mark the 3 most recently released bosses (by version desc; nulls oldest).
+  newestBossSet = new Set(
+    [...GAME.bosses]
+      .sort((a, b) =>
+        (b.version == null ? -Infinity : parseFloat(b.version)) -
+        (a.version == null ? -Infinity : parseFloat(a.version)))
+      .slice(0, 3)
+      .map(b => b.name)
+  );
 }
 
 /* ============================================================
@@ -129,13 +141,15 @@ function compute() {
       required += req; owned += own; deficit += def;
       mats.push({ name: matName, required: req, owned: own, deficit: def, icon: GAME.materials[matName].icon });
     }
-    const runs = deficit > 0 ? Math.ceil(deficit / dropsPerRun) : 0;
+    const pooledDeficit = Math.max(0, required - owned);
+    const bossDeficit = allowConversion ? pooledDeficit : deficit;
+    const runs = bossDeficit > 0 ? Math.ceil(bossDeficit / dropsPerRun) : 0;
     const contribs = [];
     for (const matName of b.materials) {
       for (const c of matContrib[matName]) contribs.push(c);
     }
     contribs.sort((a, b) => b.count - a.count);
-    return { ...b, required, owned, deficit, runs, mats, contribs };
+    return { ...b, required, owned, deficit: bossDeficit, runs, mats, contribs };
   });
 
   // Rank: deficit desc, then required desc
@@ -195,7 +209,8 @@ function renderStep2() {
     header.className = 'boss-group-header';
     header.style.background = regionColor(boss.region);
     header.innerHTML = `<span>${boss.name}</span>` +
-      (isBeta(boss.version) ? `<span class="badge-beta">BETA</span>` : '');
+      (isBeta(boss.version) ? `<span class="badge-beta">BETA</span>` : '') +
+      (isNewBoss(boss) ? `<span class="badge-new">NEW</span>` : '');
     group.appendChild(header);
 
     const list = document.createElement('div');
@@ -322,7 +337,7 @@ function renderStep3() {
 
   summary.innerHTML = `
     <div class="stat-card"><div class="stat-value">${domainsWithDeficit}</div><div class="stat-label">Domains to run</div></div>
-    <div class="stat-card"><div class="stat-value">${totalOwed}</div><div class="stat-label">Materials owed</div></div>
+    <div class="stat-card"><div class="stat-value">${totalOwed}</div><div class="stat-label">Materials needed</div></div>
     <div class="stat-card"><div class="stat-value">${totalRuns}</div><div class="stat-label">Weekly clears</div></div>
     <div class="stat-card"><div class="stat-value">${totalResin}</div><div class="stat-label">Est. resin</div></div>
   `;
@@ -353,7 +368,7 @@ function renderBossCard(boss, rank) {
   header.innerHTML = `
     <span class="rank-badge" style="background:${color}">${rank}</span>
     <div>
-      <div class="boss-card-title">${boss.name} ${isBeta(boss.version) ? '<span class="badge-beta">BETA</span>' : ''}</div>
+      <div class="boss-card-title">${boss.name} ${isBeta(boss.version) ? '<span class="badge-beta">BETA</span>' : ''} ${isNewBoss(boss) ? '<span class="badge-new">NEW</span>' : ''}</div>
       <div class="boss-card-sub">${boss.region} · ${boss.domain}</div>
     </div>`;
 
@@ -361,7 +376,7 @@ function renderBossCard(boss, rank) {
   metrics.className = 'boss-metrics';
   metrics.innerHTML = `
     <div class="metric">Runs: <strong>${boss.runs}</strong></div>
-    <div class="metric">Still owed: <strong>${boss.deficit}</strong></div>
+    <div class="metric">Still needed: <strong>${boss.deficit}</strong></div>
     <div class="metric">Required: ${boss.required} · Owned: ${boss.owned}</div>`;
 
   const chips = document.createElement('div');
@@ -370,7 +385,9 @@ function renderBossCard(boss, rank) {
     if (m.required === 0 && m.owned === 0) continue;
     const chip = document.createElement('div');
     chip.className = 'mat-chip';
-    const needTxt = m.deficit > 0 ? `<span class="need">need ${m.deficit}</span>` : `<span class="satisfied">✓</span>`;
+    const needTxt = allowConversion
+      ? `<span class="convertible" title="Drops from this boss convert 1:1 with each other">↔ convertible</span>`
+      : (m.deficit > 0 ? `<span class="need">need ${m.deficit}</span>` : `<span class="satisfied">✓</span>`);
     chip.innerHTML = `<img src="assets/icons/${m.icon}.png" alt="" onerror="this.style.display='none'"> ${m.name} <span class="owned">${m.owned}/${m.required}</span> ${needTxt}`;
     chips.appendChild(chip);
   }
@@ -413,6 +430,10 @@ function isBeta(version) {
   if (!version) return false;
   const v = parseFloat(version);
   return v > parseFloat(GAME.dataVersion || '0');
+}
+
+function isNewBoss(boss) {
+  return newestBossSet.has(boss.name);
 }
 
 function refreshAll() {
@@ -518,6 +539,11 @@ async function init() {
   document.getElementById('dropsPerRun').addEventListener('input', (e) => {
     const v = parseFloat(e.target.value);
     dropsPerRun = isNaN(v) || v < 0.5 ? 0.5 : v;
+    if (parsed) renderStep3();
+  });
+
+  document.getElementById('allowConversion').addEventListener('change', (e) => {
+    allowConversion = e.target.checked;
     if (parsed) renderStep3();
   });
 
