@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T02:06:37.306Z",
+  "generatedAt": "2026-07-10T04:27:46.963Z",
   "dataVersion": "6.7",
   "perTalentToMax": {
     "7": 1,
@@ -23,7 +23,21 @@
         "skill": "Musecatcher",
         "burst": "Precision Hydronic Cooler"
       },
-      "icon": "UI_AvatarIcon_Aino"
+      "icon": "UI_AvatarIcon_Aino",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Albedo",
@@ -40,7 +54,21 @@
         "skill": "Abiogenesis: Solar Isotoma",
         "burst": "Rite of Progeniture: Tectonic Tide"
       },
-      "icon": "UI_AvatarIcon_Albedo"
+      "icon": "UI_AvatarIcon_Albedo",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Alhaitham",
@@ -57,7 +85,21 @@
         "skill": "Universality: An Elaboration on Form",
         "burst": "Particular Field: Fetters of Phenomena"
       },
-      "icon": "UI_AvatarIcon_Alhatham"
+      "icon": "UI_AvatarIcon_Alhatham",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Aloy",
@@ -74,7 +116,21 @@
         "skill": "Frozen Wilds",
         "burst": "Prophecies of Dawn"
       },
-      "icon": "UI_AvatarIcon_Aloy"
+      "icon": "UI_AvatarIcon_Aloy",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Amber",
@@ -91,7 +147,21 @@
         "skill": "Explosive Puppet",
         "burst": "Fiery Rain"
       },
-      "icon": "UI_AvatarIcon_Ambor"
+      "icon": "UI_AvatarIcon_Ambor",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "AratakiItto",
@@ -108,7 +178,21 @@
         "skill": "Masatsu Zetsugi: Akaushi Burst!",
         "burst": "Royal Descent: Behold, Itto the Evil!"
       },
-      "icon": "UI_AvatarIcon_Itto"
+      "icon": "UI_AvatarIcon_Itto",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Arlecchino",
@@ -125,7 +209,21 @@
         "skill": "All Is Ash",
         "burst": "Balemoon Rising"
       },
-      "icon": "UI_AvatarIcon_Arlecchino"
+      "icon": "UI_AvatarIcon_Arlecchino",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Baizhu",
@@ -142,7 +240,21 @@
         "skill": "Universal Diagnosis",
         "burst": "Holistic Revivification"
       },
-      "icon": "UI_AvatarIcon_Baizhuer"
+      "icon": "UI_AvatarIcon_Baizhuer",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Barbara",
@@ -159,7 +271,21 @@
         "skill": "Let the Show Begin♪",
         "burst": "Shining Miracle♪"
       },
-      "icon": "UI_AvatarIcon_Barbara"
+      "icon": "UI_AvatarIcon_Barbara",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Beidou",
@@ -176,7 +302,21 @@
         "skill": "Tidecaller",
         "burst": "Stormbreaker"
       },
-      "icon": "UI_AvatarIcon_Beidou"
+      "icon": "UI_AvatarIcon_Beidou",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Bennett",
@@ -193,7 +333,21 @@
         "skill": "Passion Overload",
         "burst": "Fantastic Voyage"
       },
-      "icon": "UI_AvatarIcon_Bennett"
+      "icon": "UI_AvatarIcon_Bennett",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 2
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Candace",
@@ -210,7 +364,21 @@
         "skill": "Sacred Rite: Heron's Sanctum",
         "burst": "Sacred Rite: Wagtail's Tide"
       },
-      "icon": "UI_AvatarIcon_Candace"
+      "icon": "UI_AvatarIcon_Candace",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Charlotte",
@@ -227,7 +395,21 @@
         "skill": "Framing: Freezing Point Composition",
         "burst": "Still Photo: Comprehensive Confirmation"
       },
-      "icon": "UI_AvatarIcon_Charlotte"
+      "icon": "UI_AvatarIcon_Charlotte",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Chasca",
@@ -244,7 +426,21 @@
         "skill": "Spirit Reins, Shadow Hunt",
         "burst": "Soul Reaper's Fatal Round"
       },
-      "icon": "UI_AvatarIcon_Chasca"
+      "icon": "UI_AvatarIcon_Chasca",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Chevreuse",
@@ -261,7 +457,21 @@
         "skill": "Short-Range Rapid Interdiction Fire",
         "burst": "Ring of Bursting Grenades"
       },
-      "icon": "UI_AvatarIcon_Chevreuse"
+      "icon": "UI_AvatarIcon_Chevreuse",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Chiori",
@@ -278,7 +488,21 @@
         "skill": "Fluttering Hasode",
         "burst": "Hiyoku: Twin Blades"
       },
-      "icon": "UI_AvatarIcon_Chiori"
+      "icon": "UI_AvatarIcon_Chiori",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Chongyun",
@@ -295,7 +519,21 @@
         "skill": "Spirit Blade: Chonghua's Layered Frost",
         "burst": "Spirit Blade: Cloud-Parting Star"
       },
-      "icon": "UI_AvatarIcon_Chongyun"
+      "icon": "UI_AvatarIcon_Chongyun",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Citlali",
@@ -312,7 +550,21 @@
         "skill": "Dawnfrost Darkstar",
         "burst": "Edict of Entwined Splendor"
       },
-      "icon": "UI_AvatarIcon_Citlali"
+      "icon": "UI_AvatarIcon_Citlali",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Clorinde",
@@ -329,7 +581,21 @@
         "skill": "Hunter's Vigil",
         "burst": "Last Lightfall"
       },
-      "icon": "UI_AvatarIcon_Clorinde"
+      "icon": "UI_AvatarIcon_Clorinde",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Collei",
@@ -346,7 +612,21 @@
         "skill": "Floral Brush",
         "burst": "Trump-Card Kitty"
       },
-      "icon": "UI_AvatarIcon_Collei"
+      "icon": "UI_AvatarIcon_Collei",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Columbina",
@@ -363,7 +643,21 @@
         "skill": "Eternal Tides",
         "burst": "Moonlit Melancholy"
       },
-      "icon": "UI_AvatarIcon_Columbina"
+      "icon": "UI_AvatarIcon_Columbina",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Cyno",
@@ -380,7 +674,21 @@
         "skill": "Secret Rite: Chasmic Soulfarer",
         "burst": "Sacred Rite: Wolf's Swiftness"
       },
-      "icon": "UI_AvatarIcon_Cyno"
+      "icon": "UI_AvatarIcon_Cyno",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Dahlia",
@@ -397,7 +705,21 @@
         "skill": "Immersive Ordinance",
         "burst": "Radiant Psalter"
       },
-      "icon": "UI_AvatarIcon_Dahlia"
+      "icon": "UI_AvatarIcon_Dahlia",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 2
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Dehya",
@@ -414,7 +736,21 @@
         "skill": "Molten Inferno",
         "burst": "Leonine Bite"
       },
-      "icon": "UI_AvatarIcon_Dehya"
+      "icon": "UI_AvatarIcon_Dehya",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Diluc",
@@ -431,7 +767,21 @@
         "skill": "Searing Onslaught",
         "burst": "Dawn"
       },
-      "icon": "UI_AvatarIcon_Diluc"
+      "icon": "UI_AvatarIcon_Diluc",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Diona",
@@ -448,7 +798,21 @@
         "skill": "Icy Paws",
         "burst": "Signature Mix"
       },
-      "icon": "UI_AvatarIcon_Diona"
+      "icon": "UI_AvatarIcon_Diona",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Dori",
@@ -465,7 +829,21 @@
         "skill": "Spirit-Warding Lamp: Troubleshooter Cannon",
         "burst": "Alcazarzaray's Exactitude"
       },
-      "icon": "UI_AvatarIcon_Dori"
+      "icon": "UI_AvatarIcon_Dori",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Durin",
@@ -482,7 +860,21 @@
         "skill": "Binary Form: Convergence and Division",
         "burst": "Principle of Purity: As the Light Shifts"
       },
-      "icon": "UI_AvatarIcon_Durin"
+      "icon": "UI_AvatarIcon_Durin",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Emilie",
@@ -499,7 +891,21 @@
         "skill": "Fragrance Extraction",
         "burst": "Aromatic Explication"
       },
-      "icon": "UI_AvatarIcon_Emilie"
+      "icon": "UI_AvatarIcon_Emilie",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Escoffier",
@@ -516,7 +922,21 @@
         "skill": "Low-Temperature Cooking",
         "burst": "Scoring Cuts"
       },
-      "icon": "UI_AvatarIcon_Escoffier"
+      "icon": "UI_AvatarIcon_Escoffier",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Eula",
@@ -533,7 +953,21 @@
         "skill": "Icetide Vortex",
         "burst": "Glacial Illumination"
       },
-      "icon": "UI_AvatarIcon_Eula"
+      "icon": "UI_AvatarIcon_Eula",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Faruzan",
@@ -550,7 +984,21 @@
         "skill": "Wind Realm of Nasamjnin",
         "burst": "The Wind's Secret Ways"
       },
-      "icon": "UI_AvatarIcon_Faruzan"
+      "icon": "UI_AvatarIcon_Faruzan",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Fischl",
@@ -567,7 +1015,21 @@
         "skill": "Nightrider",
         "burst": "Midnight Phantasmagoria"
       },
-      "icon": "UI_AvatarIcon_Fischl"
+      "icon": "UI_AvatarIcon_Fischl",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Flins",
@@ -584,7 +1046,21 @@
         "skill": "Ancient Rite: Arcane Light",
         "burst": "Ancient Ritual: Cometh the Night"
       },
-      "icon": "UI_AvatarIcon_Flins"
+      "icon": "UI_AvatarIcon_Flins",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Freminet",
@@ -601,7 +1077,21 @@
         "skill": "Pressurized Floe",
         "burst": "Shadowhunter's Ambush"
       },
-      "icon": "UI_AvatarIcon_Freminet"
+      "icon": "UI_AvatarIcon_Freminet",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 2
+        }
+      }
     },
     {
       "key": "Furina",
@@ -618,7 +1108,21 @@
         "skill": "Salon Solitaire",
         "burst": "Let the People Rejoice"
       },
-      "icon": "UI_AvatarIcon_Furina"
+      "icon": "UI_AvatarIcon_Furina",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Gaming",
@@ -635,7 +1139,21 @@
         "skill": "Bestial Ascent",
         "burst": "Suanni's Gilded Dance"
       },
-      "icon": "UI_AvatarIcon_Gaming"
+      "icon": "UI_AvatarIcon_Gaming",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Ganyu",
@@ -652,7 +1170,21 @@
         "skill": "Trail of the Qilin",
         "burst": "Celestial Shower"
       },
-      "icon": "UI_AvatarIcon_Ganyu"
+      "icon": "UI_AvatarIcon_Ganyu",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Gorou",
@@ -669,7 +1201,21 @@
         "skill": "Inuzaka All-Round Defense",
         "burst": "Juuga: Forward Unto Victory"
       },
-      "icon": "UI_AvatarIcon_Gorou"
+      "icon": "UI_AvatarIcon_Gorou",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "HuTao",
@@ -686,7 +1232,21 @@
         "skill": "Guide to Afterlife",
         "burst": "Spirit Soother"
       },
-      "icon": "UI_AvatarIcon_Hutao"
+      "icon": "UI_AvatarIcon_Hutao",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Iansan",
@@ -703,7 +1263,21 @@
         "skill": "Thunderbolt Rush",
         "burst": "The Three Principles of Power"
       },
-      "icon": "UI_AvatarIcon_Iansan"
+      "icon": "UI_AvatarIcon_Iansan",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Ifa",
@@ -720,7 +1294,21 @@
         "skill": "Airborne Disease Prevention",
         "burst": "Compound Sedation Field"
       },
-      "icon": "UI_AvatarIcon_Ifa"
+      "icon": "UI_AvatarIcon_Ifa",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Illuga",
@@ -737,7 +1325,21 @@
         "skill": "Dawnbearing Songbird",
         "burst": "Shadowless Reflection"
       },
-      "icon": "UI_AvatarIcon_Illuga"
+      "icon": "UI_AvatarIcon_Illuga",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Ineffa",
@@ -754,7 +1356,21 @@
         "skill": "Cleaning Mode: Carrier Frequency",
         "burst": "Supreme Instruction: Cyclonic Exterminator"
       },
-      "icon": "UI_AvatarIcon_Ineffa"
+      "icon": "UI_AvatarIcon_Ineffa",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Jahoda",
@@ -771,7 +1387,21 @@
         "skill": "Savvy Strategy: Splitting the Spoils",
         "burst": "Hidden Aces: Seven Tools of the Hunter"
       },
-      "icon": "UI_AvatarIcon_Jahoda"
+      "icon": "UI_AvatarIcon_Jahoda",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Jean",
@@ -788,7 +1418,21 @@
         "skill": "Gale Blade",
         "burst": "Dandelion Breeze"
       },
-      "icon": "UI_AvatarIcon_Qin"
+      "icon": "UI_AvatarIcon_Qin",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Kachina",
@@ -805,7 +1449,21 @@
         "skill": "Go, Go Turbo Twirly!",
         "burst": "Time to Get Serious!"
       },
-      "icon": "UI_AvatarIcon_Kachina"
+      "icon": "UI_AvatarIcon_Kachina",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "KaedeharaKazuha",
@@ -822,7 +1480,21 @@
         "skill": "Chihayaburu",
         "burst": "Kazuha Slash"
       },
-      "icon": "UI_AvatarIcon_Kazuha"
+      "icon": "UI_AvatarIcon_Kazuha",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Kaeya",
@@ -839,7 +1511,21 @@
         "skill": "Frostgnaw",
         "burst": "Glacial Waltz"
       },
-      "icon": "UI_AvatarIcon_Kaeya"
+      "icon": "UI_AvatarIcon_Kaeya",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "KamisatoAyaka",
@@ -856,7 +1542,21 @@
         "skill": "Kamisato Art: Hyouka",
         "burst": "Kamisato Art: Soumetsu"
       },
-      "icon": "UI_AvatarIcon_Ayaka"
+      "icon": "UI_AvatarIcon_Ayaka",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "KamisatoAyato",
@@ -873,7 +1573,21 @@
         "skill": "Kamisato Art: Kyouka",
         "burst": "Kamisato Art: Suiyuu"
       },
-      "icon": "UI_AvatarIcon_Ayato"
+      "icon": "UI_AvatarIcon_Ayato",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Kaveh",
@@ -890,7 +1604,21 @@
         "skill": "Artistic Ingenuity",
         "burst": "Painted Dome"
       },
-      "icon": "UI_AvatarIcon_Kaveh"
+      "icon": "UI_AvatarIcon_Kaveh",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Keqing",
@@ -907,7 +1635,21 @@
         "skill": "Stellar Restoration",
         "burst": "Starward Sword"
       },
-      "icon": "UI_AvatarIcon_Keqing"
+      "icon": "UI_AvatarIcon_Keqing",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Kinich",
@@ -924,7 +1666,21 @@
         "skill": "Canopy Hunter: Riding High",
         "burst": "Hail to the Almighty Dragonlord"
       },
-      "icon": "UI_AvatarIcon_Kinich"
+      "icon": "UI_AvatarIcon_Kinich",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Kirara",
@@ -941,7 +1697,21 @@
         "skill": "Meow-teor Kick",
         "burst": "Secret Art: Surprise Dispatch"
       },
-      "icon": "UI_AvatarIcon_Momoka"
+      "icon": "UI_AvatarIcon_Momoka",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Klee",
@@ -958,7 +1728,21 @@
         "skill": "Jumpy Dumpty",
         "burst": "Sparks 'n' Splash"
       },
-      "icon": "UI_AvatarIcon_Klee"
+      "icon": "UI_AvatarIcon_Klee",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "KujouSara",
@@ -975,7 +1759,21 @@
         "skill": "Tengu Stormcall",
         "burst": "Subjugation: Koukou Sendou"
       },
-      "icon": "UI_AvatarIcon_Sara"
+      "icon": "UI_AvatarIcon_Sara",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "KukiShinobu",
@@ -992,7 +1790,21 @@
         "skill": "Sanctifying Ring",
         "burst": "Gyoei Narukami Kariyama Rite"
       },
-      "icon": "UI_AvatarIcon_Shinobu"
+      "icon": "UI_AvatarIcon_Shinobu",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "LanYan",
@@ -1009,7 +1821,21 @@
         "skill": "Swallow-Wisp Pinion Dance",
         "burst": "Lustrous Moonrise"
       },
-      "icon": "UI_AvatarIcon_Lanyan"
+      "icon": "UI_AvatarIcon_Lanyan",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Lauma",
@@ -1026,7 +1852,21 @@
         "skill": "Runo: Dawnless Rest of Karsikko",
         "burst": "Runo: All Hearts Become the Beating Moon"
       },
-      "icon": "UI_AvatarIcon_Lauma"
+      "icon": "UI_AvatarIcon_Lauma",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Layla",
@@ -1043,7 +1883,21 @@
         "skill": "Nights of Formal Focus",
         "burst": "Dream of the Star-Stream Shaker"
       },
-      "icon": "UI_AvatarIcon_Layla"
+      "icon": "UI_AvatarIcon_Layla",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Linnea",
@@ -1060,7 +1914,21 @@
         "skill": "Countermeasure: Lumi's Battle Cry!",
         "burst": "Memo: Survival Guide in Extreme Conditions"
       },
-      "icon": "UI_AvatarIcon_Linnea"
+      "icon": "UI_AvatarIcon_Linnea",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Lisa",
@@ -1077,7 +1945,21 @@
         "skill": "Violet Arc",
         "burst": "Lightning Rose"
       },
-      "icon": "UI_AvatarIcon_Lisa"
+      "icon": "UI_AvatarIcon_Lisa",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 2
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Lohen",
@@ -1094,7 +1976,21 @@
         "skill": "Unforeseen Strike",
         "burst": "Manifest Judgment"
       },
-      "icon": "UI_AvatarIcon_Lohen"
+      "icon": "UI_AvatarIcon_Lohen",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Lynette",
@@ -1111,7 +2007,21 @@
         "skill": "Enigmatic Feint",
         "burst": "Magic Trick: Astonishing Shift"
       },
-      "icon": "UI_AvatarIcon_Linette"
+      "icon": "UI_AvatarIcon_Linette",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Lyney",
@@ -1128,7 +2038,21 @@
         "skill": "Bewildering Lights",
         "burst": "Wondrous Trick: Miracle Parade"
       },
-      "icon": "UI_AvatarIcon_Liney"
+      "icon": "UI_AvatarIcon_Liney",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Manekin",
@@ -1145,7 +2069,21 @@
         "skill": null,
         "burst": null
       },
-      "icon": "UI_AvatarIcon_MannequinBoy"
+      "icon": "UI_AvatarIcon_MannequinBoy",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Manekina",
@@ -1162,7 +2100,21 @@
         "skill": null,
         "burst": null
       },
-      "icon": "UI_AvatarIcon_MannequinGirl"
+      "icon": "UI_AvatarIcon_MannequinGirl",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Mavuika",
@@ -1179,7 +2131,21 @@
         "skill": "The Named Moment",
         "burst": "Hour of Burning Skies"
       },
-      "icon": "UI_AvatarIcon_Mavuika"
+      "icon": "UI_AvatarIcon_Mavuika",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Mika",
@@ -1196,7 +2162,21 @@
         "skill": "Starfrost Swirl",
         "burst": "Skyfeather Song"
       },
-      "icon": "UI_AvatarIcon_Mika"
+      "icon": "UI_AvatarIcon_Mika",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Mona",
@@ -1213,7 +2193,21 @@
         "skill": "Mirror Reflection of Doom",
         "burst": "Stellaris Phantasm"
       },
-      "icon": "UI_AvatarIcon_Mona"
+      "icon": "UI_AvatarIcon_Mona",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Mualani",
@@ -1230,7 +2224,21 @@
         "skill": "Surfshark Wavebreaker",
         "burst": "Boomsharka-laka"
       },
-      "icon": "UI_AvatarIcon_Mualani"
+      "icon": "UI_AvatarIcon_Mualani",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Nahida",
@@ -1247,7 +2255,21 @@
         "skill": "All Schemes to Know",
         "burst": "Illusory Heart"
       },
-      "icon": "UI_AvatarIcon_Nahida"
+      "icon": "UI_AvatarIcon_Nahida",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Navia",
@@ -1264,7 +2286,21 @@
         "skill": "Ceremonial Crystalshot",
         "burst": "As the Sunlit Sky's Singing Salute"
       },
-      "icon": "UI_AvatarIcon_Navia"
+      "icon": "UI_AvatarIcon_Navia",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Nefer",
@@ -1281,7 +2317,21 @@
         "skill": "Senet Strategy: Dance of a Thousand Nights",
         "burst": "Sacred Vow: True Eye's Phantasm"
       },
-      "icon": "UI_AvatarIcon_Nefer"
+      "icon": "UI_AvatarIcon_Nefer",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Neuvillette",
@@ -1298,7 +2348,21 @@
         "skill": "O Tears, I Shall Repay",
         "burst": "O Tides, I Have Returned"
       },
-      "icon": "UI_AvatarIcon_Neuvillette"
+      "icon": "UI_AvatarIcon_Neuvillette",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Nicole",
@@ -1315,7 +2379,21 @@
         "skill": "Revelation: Uncreated Light",
         "burst": "Revelation: Ladder of Divine Ascent"
       },
-      "icon": "UI_AvatarIcon_Nicole"
+      "icon": "UI_AvatarIcon_Nicole",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Nilou",
@@ -1332,7 +2410,21 @@
         "skill": "Dance of Haftkarsvar",
         "burst": "Dance of Abzendegi: Distant Dreams, Listening Spring"
       },
-      "icon": "UI_AvatarIcon_Nilou"
+      "icon": "UI_AvatarIcon_Nilou",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Ningguang",
@@ -1349,7 +2441,21 @@
         "skill": "Jade Screen",
         "burst": "Starshatter"
       },
-      "icon": "UI_AvatarIcon_Ningguang"
+      "icon": "UI_AvatarIcon_Ningguang",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Noelle",
@@ -1366,7 +2472,21 @@
         "skill": "Breastplate",
         "burst": "Sweeping Time"
       },
-      "icon": "UI_AvatarIcon_Noel"
+      "icon": "UI_AvatarIcon_Noel",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Ororon",
@@ -1383,7 +2503,21 @@
         "skill": "Night's Sling",
         "burst": "Dark Voices Echo"
       },
-      "icon": "UI_AvatarIcon_Olorun"
+      "icon": "UI_AvatarIcon_Olorun",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Prune",
@@ -1400,7 +2534,21 @@
         "skill": "Ring-A-Ding-Ding! Hexhunter Chime",
         "burst": "The Bell Tolls! The Hunt Is On!"
       },
-      "icon": "UI_AvatarIcon_Prune"
+      "icon": "UI_AvatarIcon_Prune",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Qiqi",
@@ -1417,7 +2565,21 @@
         "skill": "Adeptus Art: Herald of Frost",
         "burst": "Adeptus Art: Preserver of Fortune"
       },
-      "icon": "UI_AvatarIcon_Qiqi"
+      "icon": "UI_AvatarIcon_Qiqi",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "RaidenShogun",
@@ -1434,7 +2596,21 @@
         "skill": "Transcendence: Baleful Omen",
         "burst": "Secret Art: Musou Shinsetsu"
       },
-      "icon": "UI_AvatarIcon_Shougun"
+      "icon": "UI_AvatarIcon_Shougun",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Razor",
@@ -1451,7 +2627,21 @@
         "skill": "Claw and Thunder",
         "burst": "Lightning Fang"
       },
-      "icon": "UI_AvatarIcon_Razor"
+      "icon": "UI_AvatarIcon_Razor",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Rosaria",
@@ -1468,7 +2658,21 @@
         "skill": "Ravaging Confession",
         "burst": "Rites of Termination"
       },
-      "icon": "UI_AvatarIcon_Rosaria"
+      "icon": "UI_AvatarIcon_Rosaria",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Sandrone",
@@ -1485,7 +2689,21 @@
         "skill": "Formule Phenomenale: Differential Analysis",
         "burst": "Formule Phenomenale: Q.E.D."
       },
-      "icon": "UI_AvatarIcon_MarionetteNew"
+      "icon": "UI_AvatarIcon_MarionetteNew",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "SangonomiyaKokomi",
@@ -1502,7 +2720,21 @@
         "skill": "Kurage's Oath",
         "burst": "Nereid's Ascension"
       },
-      "icon": "UI_AvatarIcon_Kokomi"
+      "icon": "UI_AvatarIcon_Kokomi",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Sayu",
@@ -1519,7 +2751,21 @@
         "skill": "Yoohoo Art: Fuuin Dash",
         "burst": "Yoohoo Art: Mujina Flurry"
       },
-      "icon": "UI_AvatarIcon_Sayu"
+      "icon": "UI_AvatarIcon_Sayu",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Sethos",
@@ -1536,7 +2782,21 @@
         "skill": "Ancient Rite: The Thundering Sands",
         "burst": "Secret Rite: Twilight Shadowpiercer"
       },
-      "icon": "UI_AvatarIcon_Sethos"
+      "icon": "UI_AvatarIcon_Sethos",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 2
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Shenhe",
@@ -1553,7 +2813,21 @@
         "skill": "Spring Spirit Summoning",
         "burst": "Divine Maiden's Deliverance"
       },
-      "icon": "UI_AvatarIcon_Shenhe"
+      "icon": "UI_AvatarIcon_Shenhe",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "ShikanoinHeizou",
@@ -1570,7 +2844,21 @@
         "skill": "Heartstopper Strike",
         "burst": "Windmuster Kick"
       },
-      "icon": "UI_AvatarIcon_Heizo"
+      "icon": "UI_AvatarIcon_Heizo",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Sigewinne",
@@ -1587,7 +2875,21 @@
         "skill": "Rebound Hydrotherapy",
         "burst": "Super Saturated Syringing"
       },
-      "icon": "UI_AvatarIcon_Sigewinne"
+      "icon": "UI_AvatarIcon_Sigewinne",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Skirk",
@@ -1604,7 +2906,21 @@
         "skill": "Havoc: Warp",
         "burst": "Havoc: Ruin"
       },
-      "icon": "UI_AvatarIcon_SkirkNew"
+      "icon": "UI_AvatarIcon_SkirkNew",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Sucrose",
@@ -1621,7 +2937,21 @@
         "skill": "Astable Anemohypostasis Creation - 6308",
         "burst": "Forbidden Creation - Isomer 75 / Type II"
       },
-      "icon": "UI_AvatarIcon_Sucrose"
+      "icon": "UI_AvatarIcon_Sucrose",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Tartaglia",
@@ -1638,7 +2968,21 @@
         "skill": "Foul Legacy: Raging Tide",
         "burst": "Havoc: Obliteration"
       },
-      "icon": "UI_AvatarIcon_Tartaglia"
+      "icon": "UI_AvatarIcon_Tartaglia",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Thoma",
@@ -1655,7 +2999,21 @@
         "skill": "Blazing Blessing",
         "burst": "Crimson Ooyoroi"
       },
-      "icon": "UI_AvatarIcon_Tohma"
+      "icon": "UI_AvatarIcon_Tohma",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Tighnari",
@@ -1672,7 +3030,21 @@
         "skill": "Vijnana-Phala Mine",
         "burst": "Fashioner's Tanglevine Shaft"
       },
-      "icon": "UI_AvatarIcon_Tighnari"
+      "icon": "UI_AvatarIcon_Tighnari",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Varesa",
@@ -1689,7 +3061,21 @@
         "skill": "Riding the Night-Rainbow",
         "burst": "Guardian Vent!"
       },
-      "icon": "UI_AvatarIcon_Varesa"
+      "icon": "UI_AvatarIcon_Varesa",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Varka",
@@ -1706,7 +3092,21 @@
         "skill": "Windbound Execution",
         "burst": "Northwind Avatar"
       },
-      "icon": "UI_AvatarIcon_Varka"
+      "icon": "UI_AvatarIcon_Varka",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Venti",
@@ -1723,7 +3123,21 @@
         "skill": "Skyward Sonnet",
         "burst": "Wind's Grand Ode"
       },
-      "icon": "UI_AvatarIcon_Venti"
+      "icon": "UI_AvatarIcon_Venti",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Wanderer",
@@ -1740,7 +3154,21 @@
         "skill": "Hanega: Song of the Wind",
         "burst": "Kyougen: Five Ceremonial Plays"
       },
-      "icon": "UI_AvatarIcon_Wanderer"
+      "icon": "UI_AvatarIcon_Wanderer",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Wriothesley",
@@ -1757,7 +3185,21 @@
         "skill": "Icefang Rush",
         "burst": "Darkgold Wolfbite"
       },
-      "icon": "UI_AvatarIcon_Wriothesley"
+      "icon": "UI_AvatarIcon_Wriothesley",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Xiangling",
@@ -1774,7 +3216,21 @@
         "skill": "Guoba Attack",
         "burst": "Pyronado"
       },
-      "icon": "UI_AvatarIcon_Xiangling"
+      "icon": "UI_AvatarIcon_Xiangling",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Xianyun",
@@ -1791,7 +3247,21 @@
         "skill": "White Clouds at Dawn",
         "burst": "Stars Gather at Dusk"
       },
-      "icon": "UI_AvatarIcon_Liuyun"
+      "icon": "UI_AvatarIcon_Liuyun",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Xiao",
@@ -1808,7 +3278,21 @@
         "skill": "Lemniscatic Wind Cycling",
         "burst": "Bane of All Evil"
       },
-      "icon": "UI_AvatarIcon_Xiao"
+      "icon": "UI_AvatarIcon_Xiao",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Xilonen",
@@ -1825,7 +3309,21 @@
         "skill": "Yohual's Scratch",
         "burst": "Ocelotlicue Point!"
       },
-      "icon": "UI_AvatarIcon_Xilonen"
+      "icon": "UI_AvatarIcon_Xilonen",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Xingqiu",
@@ -1842,7 +3340,21 @@
         "skill": "Guhua Sword: Fatal Rainscreen",
         "burst": "Guhua Sword: Raincutter"
       },
-      "icon": "UI_AvatarIcon_Xingqiu"
+      "icon": "UI_AvatarIcon_Xingqiu",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Xinyan",
@@ -1859,7 +3371,21 @@
         "skill": "Sweeping Fervor",
         "burst": "Riff Revolution"
       },
-      "icon": "UI_AvatarIcon_Xinyan"
+      "icon": "UI_AvatarIcon_Xinyan",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 8
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "YaeMiko",
@@ -1876,7 +3402,21 @@
         "skill": "Yakan Evocation: Sesshou Sakura",
         "burst": "Great Secret Art: Tenko Kenshin"
       },
-      "icon": "UI_AvatarIcon_Yae"
+      "icon": "UI_AvatarIcon_Yae",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Yanfei",
@@ -1893,7 +3433,21 @@
         "skill": "Signed Edict",
         "burst": "Done Deal"
       },
-      "icon": "UI_AvatarIcon_Feiyan"
+      "icon": "UI_AvatarIcon_Feiyan",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "Yaoyao",
@@ -1910,7 +3464,21 @@
         "skill": "Raphanus Sky Cluster",
         "burst": "Moonjade Descent"
       },
-      "icon": "UI_AvatarIcon_Yaoyao"
+      "icon": "UI_AvatarIcon_Yaoyao",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Yelan",
@@ -1927,7 +3495,21 @@
         "skill": "Lingering Lifeline",
         "burst": "Depth-Clarion Dice"
       },
-      "icon": "UI_AvatarIcon_Yelan"
+      "icon": "UI_AvatarIcon_Yelan",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 6
+        },
+        "skill": {
+          "enabled": true,
+          "target": 8
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Yoimiya",
@@ -1944,7 +3526,21 @@
         "skill": "Niwabi Fire-Dance",
         "burst": "Ryuukin Saxifrage"
       },
-      "icon": "UI_AvatarIcon_Yoimiya"
+      "icon": "UI_AvatarIcon_Yoimiya",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 10
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 6
+        }
+      }
     },
     {
       "key": "YumemizukiMizuki",
@@ -1961,7 +3557,21 @@
         "skill": "Aisa Utamakura Pilgrimage",
         "burst": "Anraku Secret Spring Therapy"
       },
-      "icon": "UI_AvatarIcon_Mizuki"
+      "icon": "UI_AvatarIcon_Mizuki",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 6
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "YunJin",
@@ -1978,7 +3588,21 @@
         "skill": "Opening Flourish",
         "burst": "Cliffbreaker's Banner"
       },
-      "icon": "UI_AvatarIcon_Yunjin"
+      "icon": "UI_AvatarIcon_Yunjin",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 2
+        },
+        "burst": {
+          "enabled": true,
+          "target": 10
+        }
+      }
     },
     {
       "key": "Zhongli",
@@ -1995,7 +3619,21 @@
         "skill": "Dominus Lapidis",
         "burst": "Planet Befall"
       },
-      "icon": "UI_AvatarIcon_Zhongli"
+      "icon": "UI_AvatarIcon_Zhongli",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     },
     {
       "key": "Zibai",
@@ -2012,7 +3650,21 @@
         "skill": "Heaven and Earth Made Manifest",
         "burst": "Tri-Sphere Eminence"
       },
-      "icon": "UI_AvatarIcon_Zibai"
+      "icon": "UI_AvatarIcon_Zibai",
+      "defaultBuild": {
+        "normal": {
+          "enabled": true,
+          "target": 2
+        },
+        "skill": {
+          "enabled": true,
+          "target": 10
+        },
+        "burst": {
+          "enabled": true,
+          "target": 8
+        }
+      }
     }
   ],
   "materials": {

@@ -112,7 +112,12 @@ function compute() {
     matContrib[matName] = [];
   }
 
-  // Accumulate requirements from selected characters
+  // Accumulate requirements from selected characters (per-talent targets)
+  const SCOPES = [
+    { scope: 'normal', label: 'NA', curKey: 'auto' },
+    { scope: 'skill', label: 'Skill', curKey: 'skill' },
+    { scope: 'burst', label: 'Burst', curKey: 'burst' }
+  ];
   for (const [key, st] of charState) {
     if (!st.included) continue;
     const char = GAME.characters.find(c => c.key === key);
@@ -120,9 +125,13 @@ function compute() {
     const cur = st.current;
     let need = 0;
     const parts = [];
-    if (st.normal) { const c = talentCost(cur.auto || 1, st.target, perTalentToMax); need += c; if (c) parts.push(`NA ${cur.auto || 1}→${st.target}`); }
-    if (st.skill)  { const c = talentCost(cur.skill || 1, st.target, perTalentToMax); need += c; if (c) parts.push(`Skill ${cur.skill || 1}→${st.target}`); }
-    if (st.burst)  { const c = talentCost(cur.burst || 1, st.target, perTalentToMax); need += c; if (c) parts.push(`Burst ${cur.burst || 1}→${st.target}`); }
+    for (const { scope, label, curKey } of SCOPES) {
+      const t = st[scope];
+      if (!t.enabled) continue;
+      const c = talentCost(cur[curKey] || 1, t.target, perTalentToMax);
+      need += c;
+      if (c) parts.push(`${label} ${cur[curKey] || 1}→${t.target}`);
+    }
 
     if (need > 0) {
       matRequired[char.bossMat] += need;
@@ -181,12 +190,20 @@ function buildCharacterState() {
     const char = known.get(ch.key);
     if (!char) continue; // only owned ∩ known
     const cur = ch.talent || {};
+    // Default per-talent target/scope come from the character's baked
+    // defaultBuild (sourced from genshinRater's recommended build); fall back
+    // to Skill+Burst → 10 if absent.
+    const b = char.defaultBuild || {
+      normal: { enabled: false, target: 10 },
+      skill: { enabled: true, target: 10 },
+      burst: { enabled: true, target: 10 }
+    };
     charState.set(ch.key, {
       included: true,
-      target: 10,
-      normal: false,
-      skill: true,
-      burst: true,
+      normal: { ...b.normal },
+      skill: { ...b.skill },
+      burst: { ...b.burst },
+      defaultBuild: b, // for the reset-to-default control
       current: { auto: cur.auto || 1, skill: cur.skill || 1, burst: cur.burst || 1 }
     });
   }
@@ -256,24 +273,25 @@ function renderCharRow(char) {
   const controls = document.createElement('div');
   controls.className = 'char-controls';
 
-  const targetSel = document.createElement('select');
-  targetSel.className = 'target-select';
-  for (let lv = 7; lv <= 10; lv++) {
-    const o = document.createElement('option');
-    o.value = lv; o.textContent = '→ ' + lv;
-    if (lv === st.target) o.selected = true;
-    targetSel.appendChild(o);
-  }
-  targetSel.addEventListener('change', () => { st.target = parseInt(targetSel.value, 10); refreshAll(); });
-
   const pills = document.createElement('div');
   pills.className = 'talent-pills';
   pills.appendChild(makePill('normal', 'NA', char, st));
   pills.appendChild(makePill('skill', 'Skill', char, st));
   pills.appendChild(makePill('burst', 'Burst', char, st));
 
-  controls.appendChild(targetSel);
+  const resetBtn = document.createElement('button');
+  resetBtn.className = 'reset-btn';
+  resetBtn.type = 'button';
+  resetBtn.textContent = '↺';
+  resetBtn.title = 'Reset to recommended build';
+  resetBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    resetCharToDefault(st);
+    refreshAll();
+  });
+
   controls.appendChild(pills);
+  controls.appendChild(resetBtn);
 
   row.appendChild(cb);
   row.appendChild(img);
@@ -290,24 +308,50 @@ function renderCharRow(char) {
   return row;
 }
 
+function resetCharToDefault(st) {
+  if (!st.defaultBuild) return;
+  for (const scope of ['normal', 'skill', 'burst']) {
+    st[scope] = { ...st.defaultBuild[scope] };
+  }
+}
+
 function makePill(scope, label, char, st) {
   const cur = st.current[scope === 'normal' ? 'auto' : scope] || 1;
+  const t = st[scope];
   const pill = document.createElement('div');
   pill.className = 'pill';
-  const meetsTarget = cur >= st.target;
-  if (meetsTarget) {
-    pill.classList.add('done', 'disabled');
-    pill.textContent = `${label} ✓`;
-  } else {
-    if (st[scope]) pill.classList.add('active');
-    pill.textContent = `${label} ${cur}→${st.target}`;
-    pill.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (meetsTarget) return;
-      st[scope] = !st[scope];
-      refreshAll();
-    });
+
+  // Disabled talent: muted, no target selector; click to re-enable.
+  if (!t.enabled) {
+    pill.classList.add('off');
+    pill.textContent = label;
+    pill.title = 'Disabled — click to enable';
+    pill.addEventListener('click', (e) => { e.stopPropagation(); t.enabled = true; refreshAll(); });
+    return pill;
   }
+
+  const done = cur >= t.target;
+  if (done) pill.classList.add('done');
+  else pill.classList.add('active');
+
+  // Per-talent target selector (any level 1-10, always interactive even when
+  // "done" so a finished-but-below-10 talent can still be pushed higher).
+  const sel = document.createElement('select');
+  sel.className = 'pill-target';
+  for (let lv = 1; lv <= 10; lv++) {
+    const o = document.createElement('option');
+    o.value = lv; o.textContent = lv;
+    if (lv === t.target) o.selected = true;
+    sel.appendChild(o);
+  }
+  sel.addEventListener('click', (e) => e.stopPropagation());
+  sel.addEventListener('change', () => { t.target = parseInt(sel.value, 10); refreshAll(); });
+
+  pill.appendChild(document.createTextNode((done ? '✓ ' : '') + `${label} ${cur}→`));
+  pill.appendChild(sel);
+
+  // Clicking the pill body disables the talent.
+  pill.addEventListener('click', (e) => { e.stopPropagation(); t.enabled = false; refreshAll(); });
   return pill;
 }
 
@@ -315,9 +359,9 @@ function computeCharNeed(key) {
   const st = charState.get(key);
   const cur = st.current;
   let need = 0;
-  if (st.normal) need += talentCost(cur.auto || 1, st.target, GAME.perTalentToMax);
-  if (st.skill)  need += talentCost(cur.skill || 1, st.target, GAME.perTalentToMax);
-  if (st.burst)  need += talentCost(cur.burst || 1, st.target, GAME.perTalentToMax);
+  if (st.normal.enabled) need += talentCost(cur.auto || 1, st.normal.target, GAME.perTalentToMax);
+  if (st.skill.enabled)  need += talentCost(cur.skill || 1, st.skill.target, GAME.perTalentToMax);
+  if (st.burst.enabled)  need += talentCost(cur.burst || 1, st.burst.target, GAME.perTalentToMax);
   return need;
 }
 
@@ -343,7 +387,10 @@ function renderStep3() {
   `;
 
   cards.innerHTML = '';
-  const relevant = bosses.filter(b => b.required > 0);
+  // Show every boss with a real requirement, plus any newly-released trounce
+  // domain (NEW badge) so players can see — and invest in — fresh content even
+  // when no owned character yet needs its materials.
+  const relevant = bosses.filter(b => b.required > 0 || isNewBoss(b));
   if (relevant.length === 0) {
     allDone.classList.remove('hidden');
     return;
@@ -381,6 +428,7 @@ function renderBossCard(boss, rank) {
 
   const chips = document.createElement('div');
   chips.className = 'mat-chips';
+  let chipCount = 0;
   for (const m of boss.mats) {
     if (m.required === 0 && m.owned === 0) continue;
     const chip = document.createElement('div');
@@ -390,6 +438,16 @@ function renderBossCard(boss, rank) {
       : (m.deficit > 0 ? `<span class="need">need ${m.deficit}</span>` : `<span class="satisfied">✓</span>`);
     chip.innerHTML = `<img src="assets/icons/${m.icon}.png" alt="" onerror="this.style.display='none'"> ${m.name} <span class="owned">${m.owned}/${m.required}</span> ${needTxt}`;
     chips.appendChild(chip);
+    chipCount++;
+  }
+  // New / satisfied domain with no materials in play yet — surface a hint.
+  if (chipCount === 0 && boss.contribs.length === 0) {
+    const note = document.createElement('div');
+    note.className = 'mat-note';
+    note.textContent = isNewBoss(boss)
+      ? 'New domain — no characters selected for its materials yet.'
+      : 'No materials needed at current selections.';
+    chips.appendChild(note);
   }
 
   const contribs = document.createElement('div');
@@ -549,15 +607,24 @@ async function init() {
 
   document.getElementById('selectAllBtn').addEventListener('click', () => applyToAll(st => st.included = true));
   document.getElementById('deselectAllBtn').addEventListener('click', () => applyToAll(st => st.included = false));
+  document.getElementById('resetAllBtn').addEventListener('click', () => applyToAll(st => resetCharToDefault(st)));
 
   document.getElementById('presetSelect').addEventListener('change', (e) => {
     const v = e.target.value;
-    applyToAll(st => { st.normal = (v === 'all3'); st.skill = true; st.burst = true; });
+    applyToAll(st => {
+      st.normal.enabled = (v === 'all3');
+      st.skill.enabled = true;
+      st.burst.enabled = true;
+    });
   });
 
   document.getElementById('targetAllSelect').addEventListener('change', (e) => {
     const t = parseInt(e.target.value, 10);
-    applyToAll(st => st.target = t);
+    applyToAll(st => {
+      st.normal.target = t;
+      st.skill.target = t;
+      st.burst.target = t;
+    });
   });
 }
 

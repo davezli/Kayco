@@ -20,6 +20,11 @@ try {
 
 const ICONS_DIR = path.join(__dirname, '..', 'assets', 'icons');
 const GAME_JSON_PATH = path.join(__dirname, '..', 'data', 'game.json');
+// Vendored copy of https://gitlab.com/nate12345678/genshinRater/-/raw/main/config.json
+// (committed so the bake is reproducible/offline). Supplies per-character default
+// builds via each char's `default.talentPriority` (recommended target level per
+// talent: 0/2/6 = no boss mats, 8/10 = needs weekly-boss drops).
+const RATER_CONFIG_PATH = path.join(__dirname, '..', 'data', 'genshinRaterConfig.json');
 
 // Curated lookup table for region/domain display names
 const BOSS_METADATA = {
@@ -65,6 +70,45 @@ function nameToGoodKey(name) {
   }
 
   return result;
+}
+
+// Default build used when a character has no genshinRater entry: all three
+// talents on, target 10. Stored per-talent so the app can show/reset each
+// talent independently.
+const FALLBACK_BUILD = {
+  normal: { enabled: true, target: 10 },
+  skill: { enabled: true, target: 10 },
+  burst: { enabled: true, target: 10 }
+};
+
+/**
+ * Derive a per-character, per-talent default build from genshinRater's
+ * `talentPriority`. Every talent is enabled on load (the UI shows curr→target
+ * for all three) and the target is the *actual* recommended level (1-10),
+ * unclamped — a level below 7 just means no weekly-boss materials are needed.
+ * Returns null if no talentPriority.
+ */
+function deriveDefaultBuild(talentPriority) {
+  if (!talentPriority) return null;
+  const mk = (s) => {
+    const lvl = Math.max(1, Math.min(10, Number(talentPriority[s] || 0)));
+    return { enabled: true, target: lvl };
+  };
+  return { normal: mk('auto'), skill: mk('skill'), burst: mk('burst') };
+}
+
+/**
+ * Pick the build to use as a character's default. Characters may have several
+ * named builds (e.g. `default`, `vape`, reaction variants). Prefer the
+ * *recommended* build — its `buildHelp` contains "(R)" — otherwise fall back to
+ * the first build that has a `talentPriority`. Returns the build object or null.
+ */
+function selectRaterBuild(entry) {
+  if (!entry || typeof entry !== 'object') return null;
+  const builds = Object.values(entry).filter((b) => b && b.talentPriority);
+  if (builds.length === 0) return null;
+  const rec = builds.find((b) => typeof b.buildHelp === 'string' && b.buildHelp.includes('(R)'));
+  return rec || builds[0];
 }
 
 /**
@@ -120,6 +164,16 @@ function extract() {
   const gdb = genshinDb;
   const all = require('genshin-db/src/min/data.min.json');
 
+  // Load vendored genshinRater config for per-character default builds.
+  let raterChars = {};
+  try {
+    raterChars = require(RATER_CONFIG_PATH).characters || {};
+    console.log(`Loaded genshinRater config (${Object.keys(raterChars).length} characters)`);
+  } catch (e) {
+    console.warn('genshinRater config not found at', RATER_CONFIG_PATH,
+      '- falling back to Skill+Burst defaults for all characters.');
+  }
+
   console.log('Loading genshin-db...');
 
   // Data structures
@@ -137,6 +191,7 @@ function extract() {
     const char = genshinDb.character(charKey);
     if (!char) continue;
 
+    const goodKey = nameToGoodKey(char.name || charKey);
     // Find boss material from talent costs
     let bossMat = null;
     let boss = null;
@@ -171,7 +226,7 @@ function extract() {
     }
 
     characters.push({
-      key: nameToGoodKey(char.name || charKey),
+      key: goodKey,
       name: char.name || charKey,
       element: elementName,
       rarity: char.rarity,
@@ -181,7 +236,13 @@ function extract() {
       bossMat: bossMat,
       boss: boss,
       talents: talentNames,
-      icon: char.images?.filename_icon || null
+      icon: char.images?.filename_icon || null,
+      defaultBuild: (() => {
+        const entry = raterChars[goodKey];
+        const selected = selectRaterBuild(entry);
+        const built = selected && deriveDefaultBuild(selected.talentPriority);
+        return built || FALLBACK_BUILD;
+      })()
     });
   }
 

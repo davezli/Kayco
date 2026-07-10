@@ -1,0 +1,7833 @@
+{
+	"version": "v4.2",
+	"characters": {
+		"Aino": {
+			"default": {
+				"buildHelp": "(R) Off-Field Burst DPS",
+				"allowedSubs": [
+					"eleMas",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"SilkenMoonsSerenade",
+					"DeepwoodMemories",
+					"Instructor"
+				],
+				"altSets": [
+					"GildedDreams"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"hydro_dmg_",
+					"burst"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"eleMas",
+						"hydro_dmg_"
+					],
+					"sands": [
+						"eleMas",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"MakhairaAquamarine",
+					"FavoniusGreatsword",
+					"ForestRegalia",
+					"FlameForgedInsight",
+					"Rainslasher"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 1,
+				"recommendedCV": 100,
+				"recommendedER": 160
+			}
+		},
+		"Albedo": {
+			"default": {
+				"buildHelp": "(R) Off-Field Skill DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"def_"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"HuskOfOpulentDreams",
+					"CelestialGift"
+				],
+				"altSets": [
+					"TenacityOfTheMillelith",
+					"ArchaicPetra",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"def_",
+					"geo_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"PeakPatrolSong",
+					"CinnabarSpindle",
+					"UrakuMisugiri",
+					"FluteOfEzpitzal",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Alhaitham": {
+			"default": {
+				"buildHelp": "(R) Driver DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams"
+				],
+				"altSets": [
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"dendro_dmg_",
+					"eleMas",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"LightOfFoliarIncision",
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"MistsplitterReforged",
+					"FreedomSworn",
+					"WolfFang",
+					"IronSting",
+					"ToukabouShigure",
+					"XiphosMoonlight"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 125
+			}
+		},
+		"Aloy": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"BlizzardStrayer",
+					"EmblemOfSeveredFate",
+					"GildedDreams",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"WanderersTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"PolarStar",
+					"ElegyForTheEnd",
+					"FavoniusWarbow",
+					"SacrificialBow",
+					"TheStringless"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 140
+			}
+		},
+		"Amber": {
+			"default": {
+				"buildHelp": "(R) Burst Support",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"ElegyForTheEnd",
+					"FavoniusWarbow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 160
+			},
+			"amberCA": {
+				"buildHelp": "(N) Charged Atk DPS",
+				"allowedSubs": [
+					"atk_",
+					"critRate_",
+					"critDMG_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"CrimsonWitchOfFlames"
+				],
+				"altSets": [
+					"WanderersTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"pyro_dmg_",
+					"auto",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PolarStar",
+					"AquaSimulacra",
+					"TheFirstGreatMagic",
+					"ThunderingPulse",
+					"AstralVulturesCrimsonPlumage",
+					"AmosBow",
+					"HuntersPath",
+					"SkywardHarp",
+					"PrototypeCrescent",
+					"ScionOfTheBlazingSun",
+					"Hamayumi"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			}
+		},
+		"AratakiItto": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"HuskOfOpulentDreams"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"auto",
+					"def_",
+					"enerRech_",
+					"geo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"RedhornStonethresher",
+					"SerpentSpine",
+					"BeaconOfTheReedSea",
+					"Whiteblind"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Arlecchino": {
+			"overload": {
+				"buildHelp": "(R) On-Field DPS (Overload)",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"FragmentOfHarmonicWhimsy"
+				],
+				"altSets": [
+					"GladiatorsFinale",
+					"ADayCarvedFromRisingWinds",
+					"CrimsonWitchOfFlames"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"CrimsonMoonsSemblance",
+					"PrimordialJadeWingedSpear",
+					"StaffOfHoma",
+					"Deathmatch",
+					"WhiteTassel",
+					"ProspectorsShovel"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			},
+			"vape": {
+				"buildHelp": "On-Field DPS (Vaporize/Melt)",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"FragmentOfHarmonicWhimsy"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GildedDreams",
+					"CrimsonWitchOfFlames",
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"pyro_dmg_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"CrimsonMoonsSemblance",
+					"PrimordialJadeWingedSpear",
+					"StaffOfTheScarletSands",
+					"StaffOfHoma",
+					"Deathmatch",
+					"BalladOfTheFjords",
+					"WhiteTassel"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Baizhu": {
+			"default": {
+				"buildHelp": "(R) Dendro support",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"heal_",
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"JadefallsSplendor",
+					"PrototypeAmber",
+					"FavoniusCodex",
+					"ThrillingTalesOfDragonSlayers",
+					"SacrificialFragments"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 150
+			}
+		},
+		"Barbara": {
+			"default": {
+				"buildHelp": "(R) General healer",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"heal_",
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"enerRech_",
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"ThrillingTalesOfDragonSlayers",
+					"PrototypeAmber"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			},
+			"bloomDriver": {
+				"buildHelp": "Nilou bloom owner",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandFloatingDreams",
+					"SacrificialFragments",
+					"StarcallersWatch",
+					"SunnyMorningSleepIn",
+					"PrototypeAmber",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Beidou": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"SerpentSpine",
+					"WolfsGravestone",
+					"SkywardPride",
+					"BeaconOfTheReedSea",
+					"Akuoumaru",
+					"LuxuriousSeaLord",
+					"PrototypeArchaic",
+					"UltimateOverlordsMegaMagicSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 2,
+				"recommendedCV": 100,
+				"recommendedER": 170
+			}
+		},
+		"Bennett": {
+			"default": {
+				"buildHelp": "(R) Burst Buffer/Healer",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"OceanHuedClam"
+				],
+				"allowedEffects": [
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"heal_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"AquilaFavonia",
+					"MistsplitterReforged",
+					"SkywardBlade",
+					"TheAlleyFlash",
+					"SapwoodBlade"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 2
+				},
+				"recommendedConstellation": 1,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"Candace": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Buffer",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"NoblesseOblige",
+					"2pcCombo"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"burst",
+					"hp_",
+					"hydro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_",
+						"hp_"
+					],
+					"goblet": [
+						"hydro_dmg_",
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"StaffOfHoma",
+					"StaffOfTheScarletSands",
+					"TheCatch",
+					"Deathmatch",
+					"WavebreakersFin",
+					"FavoniusLance",
+					"BlackTassel"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 100,
+				"recommendedER": 160
+			}
+		},
+		"Charlotte": {
+			"default": {
+				"buildHelp": "(R) General healer",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"TenacityOfTheMillelith",
+					"OceanHuedClam"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"cryo_dmg_",
+					"enerRech_",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_",
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusCodex",
+					"OathswornEye",
+					"PrototypeAmber"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 180
+			}
+		},
+		"Chasca": {
+			"default": {
+				"buildHelp": "(R) Anemo DPS/Swirl",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ObsidianCodex"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"ViridescentVenerer",
+					"WanderersTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"nightsoul_dmg_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"AstralVulturesCrimsonPlumage",
+					"HuntersPath",
+					"AquaSimulacra",
+					"TheFirstGreatMagic",
+					"ScionOfTheBlazingSun",
+					"FlowerWreathedFeathers",
+					"ChainBreaker"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			},
+			"reaction": {
+				"buildHelp": "Reaction Driver",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ViridescentVenerer",
+					"WanderersTroupe"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"ObsidianCodex"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"nightsoul_dmg_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_",
+						"eleMas"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AstralVulturesCrimsonPlumage",
+					"HuntersPath",
+					"AquaSimulacra",
+					"TheFirstGreatMagic",
+					"ScionOfTheBlazingSun",
+					"FlowerWreathedFeathers",
+					"ChainBreaker"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 100
+			}
+		},
+		"Chevreuse": {
+			"default": {
+				"buildHelp": "(R) Buffer/Healer",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"heal_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"SymphonistOfScents",
+					"DialoguesOfTheDesertSages",
+					"BlackTassel",
+					"RightfulReward",
+					"FavoniusLance"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Chiori": {
+			"default": {
+				"buildHelp": "(R) Off-Field Skill DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"def_"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"HuskOfOpulentDreams"
+				],
+				"altSets": [
+					"TenacityOfTheMillelith",
+					"ArchaicPetra"
+				],
+				"allowedEffects": [
+					"atk_",
+					"def_",
+					"geo_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_",
+						"def_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"UrakuMisugiri",
+					"PrimordialJadeCutter",
+					"CinnabarSpindle",
+					"WolfFang",
+					"FluteOfEzpitzal",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Chongyun": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"cryo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"WolfsGravestone",
+					"BeaconOfTheReedSea",
+					"SerpentSpine",
+					"Akuoumaru",
+					"SacrificialGreatsword",
+					"LuxuriousSeaLord",
+					"MailedFlower",
+					"PrototypeArchaic",
+					"TidalShadow"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 130
+			}
+		},
+		"Citlali": {
+			"default": {
+				"buildHelp": "(R) Shielder/Melt Enabler",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"TenacityOfTheMillelith",
+					"Instructor"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"StarcallersWatch",
+					"SacrificialFragments",
+					"AThousandFloatingDreams",
+					"WanderingEvenstar",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Clorinde": {
+			"quicken": {
+				"buildHelp": "On-Field DPS (Quicken)",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"FragmentOfHarmonicWhimsy"
+				],
+				"altSets": [
+					"GladiatorsFinale",
+					"ADayCarvedFromRisingWinds",
+					"EchoesOfAnOffering",
+					"GildedDreams"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"electro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"Absolution",
+					"LightOfFoliarIncision",
+					"HaranGeppakuFutsu",
+					"PrimordialJadeCutter",
+					"IronSting",
+					"FinaleOfTheDeep",
+					"CalamityOfEshu"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			},
+			"overload": {
+				"buildHelp": "(R) On-Field DPS (Overload)",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"FragmentOfHarmonicWhimsy"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"electro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"Absolution",
+					"LightOfFoliarIncision",
+					"HaranGeppakuFutsu",
+					"PrimordialJadeCutter",
+					"FinaleOfTheDeep"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Collei": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Enabler",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"dendro_dmg_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"eleMas",
+						"enerRech_",
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"ElegyForTheEnd",
+					"TheStringless",
+					"FavoniusWarbow",
+					"SnareHook",
+					"RavenBow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 180
+			}
+		},
+		"Columbina": {
+			"default": {
+				"buildHelp": "(R) Skill DPS/Buffer",
+				"allowedSubs": [
+					"hp_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"AubadeOfMorningstarAndMoon",
+					"SilkenMoonsSerenade"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"hp_",
+					"eleMas",
+					"enerRech_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"NocturnesCurtainCall",
+					"NightweaversLookingGlass",
+					"ReliquaryOfTruth",
+					"SacrificialJade",
+					"TheWidsith",
+					"AThousandFloatingDreams",
+					"FruitOfFulfillment",
+					"WaveridingWhirl",
+					"PrototypeAmber"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 180
+			}
+		},
+		"Cyno": {
+			"default": {
+				"buildHelp": "(R) Driver DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"GladiatorsFinale",
+					"ThunderingFury"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"eleMas",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas",
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"StaffOfTheScarletSands",
+					"BalladOfTheFjords",
+					"PrimordialJadeWingedSpear",
+					"KitainCrossSpear",
+					"WhiteTassel",
+					"Deathmatch"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 140
+			}
+		},
+		"Dahlia": {
+			"default": {
+				"buildHelp": "(R) General Shielder",
+				"allowedSubs": [
+					"hp_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"hp_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"KeyOfKhajNisut",
+					"FavoniusSword",
+					"TheDockhandsAssistant",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 2
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"Dehya": {
+			"default": {
+				"buildHelp": "(R) Off-Field Skill DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"hp_"
+				],
+				"allowedSets": [
+					"TenacityOfTheMillelith",
+					"VourukashasGlow",
+					"GoldenTroupe"
+				],
+				"altSets": [
+					"GildedDreams",
+					"CrimsonWitchOfFlames"
+				],
+				"allowedEffects": [
+					"atk_",
+					"hp_",
+					"pyro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_",
+						"hp_"
+					],
+					"goblet": [
+						"pyro_dmg_",
+						"hp_"
+					],
+					"sands": [
+						"hp_",
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"BeaconOfTheReedSea",
+					"WolfsGravestone",
+					"SkywardPride",
+					"SacrificialGreatsword",
+					"EarthShaker"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 100
+			},
+			"dehyaBurgeon": {
+				"buildHelp": "Burgeon trigger",
+				"allowedSubs": [
+					"eleMas",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"BloodtaintedGreatsword",
+					"MailedFlower",
+					"MakhairaAquamarine",
+					"FlameForgedInsight"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 2,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Diluc": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"CrimsonWitchOfFlames",
+					"GildedDreams",
+					"Lavawalker"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"pyro_dmg_",
+					"skill",
+					"plunge"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"BeaconOfTheReedSea",
+					"WolfsGravestone",
+					"SerpentSpine",
+					"MailedFlower",
+					"TidalShadow",
+					"PrototypeArchaic"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			}
+		},
+		"Diona": {
+			"default": {
+				"buildHelp": "(R) Heal/Shielder",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusWarbow",
+					"SacrificialBow",
+					"ElegyForTheEnd",
+					"SequenceOfSolitude",
+					"RecurveBow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 180
+			}
+		},
+		"Dori": {
+			"default": {
+				"buildHelp": "(R) Healer/Electro Enabler",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusGreatsword",
+					"KatsuragikiriNagamasa",
+					"ForestRegalia",
+					"MailedFlower",
+					"MakhairaAquamarine"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"Durin": {
+			"default": {
+				"buildHelp": "(R) Off-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige",
+					"CelestialGift"
+				],
+				"altSets": [
+					"EmblemOfSeveredFate",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"pyro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"AthameArtis",
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"WolfFang",
+					"FinaleOfTheDeep",
+					"LionsRoar"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			},
+			"melt": {
+				"buildHelp": "Melt DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"pyro_dmg_",
+					"enerRech_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AthameArtis",
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"WolfFang",
+					"ToukabouShigure",
+					"IronSting"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			}
+		},
+		"Emilie": {
+			"default": {
+				"buildHelp": "(R) Burn Off-field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"UnfinishedReverie"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"TenacityOfTheMillelith"
+				],
+				"allowedEffects": [
+					"atk_",
+					"dendro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"LumidouceElegy",
+					"CalamityQueller",
+					"SymphonistOfScents",
+					"StaffOfHoma",
+					"Deathmatch",
+					"BalladOfTheFjords",
+					"MissiveWindspear",
+					"ProspectorsShovel"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Escoffier": {
+			"default": {
+				"buildHelp": "(R) Healer/Enabler/Sub-DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"TenacityOfTheMillelith",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"OceanHuedClam",
+					"NoblesseOblige",
+					"SongOfDaysPast"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"skill",
+					"heal_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SymphonistOfScents",
+					"LumidouceElegy",
+					"CalamityQueller",
+					"SacrificersStaff",
+					"StaffOfHoma",
+					"Deathmatch",
+					"MissiveWindspear",
+					"PrototypeStarglitter"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 160
+			}
+		},
+		"Eula": {
+			"default": {
+				"buildHelp": "(R) Physical DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"PaleFlame"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"EmblemOfSeveredFate"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"physical_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"physical_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SongOfBrokenPines",
+					"Akuoumaru",
+					"WolfsGravestone",
+					"SerpentSpine",
+					"TheUnforged",
+					"LuxuriousSeaLord",
+					"UltimateOverlordsMegaMagicSword",
+					"SnowTombedStarsilver",
+					"TidalShadow"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Faruzan": {
+			"default": {
+				"buildHelp": "(R) Anemo buffer/Sub-DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"TenacityOfTheMillelith"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"burst",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_"
+					],
+					"sands": [
+						"enerRech_",
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusWarbow",
+					"ElegyForTheEnd",
+					"SacrificialBow",
+					"SkywardHarp"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 50,
+				"recommendedER": 190
+			}
+		},
+		"Fischl": {
+			"default": {
+				"buildHelp": "(R) Off-Field Skill DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"ADayCarvedFromRisingWinds",
+					"CelestialGift"
+				],
+				"altSets": [
+					"TenacityOfTheMillelith"
+				],
+				"allowedEffects": [
+					"atk_",
+					"electro_dmg_",
+					"skill",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PolarStar",
+					"TheFirstGreatMagic",
+					"HuntersPath",
+					"AquaSimulacra",
+					"SkywardHarp",
+					"AmosBow",
+					"AlleyHunter",
+					"TheStringless",
+					"RangeGauge",
+					"SongOfStillness"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Flins": {
+			"default": {
+				"buildHelp": "(R) Lunar-charged DPS",
+				"allowedSubs": [
+					"eleMas",
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"NightOfTheSkysUnveiling",
+					"GildedDreams"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"atk_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_",
+						"eleMas"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"BloodsoakedRuins",
+					"PrimordialJadeWingedSpear",
+					"MissiveWindspear",
+					"ProspectorsShovel",
+					"BalladOfTheFjords",
+					"Deathmatch"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 110
+			}
+		},
+		"Freminet": {
+			"default": {
+				"buildHelp": "(R) Phys/Cryo DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"BlizzardStrayer",
+					"PaleFlame"
+				],
+				"altSets": [
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"enerRech_",
+					"physical_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"physical_dmg_",
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SkywardPride",
+					"WolfsGravestone",
+					"SongOfBrokenPines",
+					"SerpentSpine",
+					"UltimateOverlordsMegaMagicSword",
+					"SnowTombedStarsilver",
+					"TidalShadow"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 2,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			}
+		},
+		"Furina": {
+			"default": {
+				"buildHelp": "(R) Buffer/Off-field DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"TenacityOfTheMillelith"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"enerRech_",
+					"hp_",
+					"skill",
+					"hydro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_",
+						"hp_"
+					],
+					"sands": [
+						"hp_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"SplendorOfTranquilWaters",
+					"PrimordialJadeCutter",
+					"FesteringDesire",
+					"KeyOfKhajNisut",
+					"FleuveCendreFerryman",
+					"UrakuMisugiri",
+					"FavoniusSword",
+					"SerenitysCall"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 160
+			}
+		},
+		"Gaming": {
+			"default": {
+				"buildHelp": "(R) Plunge DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"CrimsonWitchOfFlames",
+					"MarechausseeHunter"
+				],
+				"altSets": [
+					"LongNightsOath"
+				],
+				"allowedEffects": [
+					"atk_",
+					"pyro_dmg_",
+					"plunge",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandBlazingSuns",
+					"SerpentSpine",
+					"Verdict",
+					"BeaconOfTheReedSea",
+					"RedhornStonethresher",
+					"Rainslasher",
+					"WolfsGravestone",
+					"TidalShadow",
+					"MailedFlower"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			}
+		},
+		"Ganyu": {
+			"default": {
+				"buildHelp": "(R) Charged Atk DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"BlizzardStrayer",
+					"WanderersTroupe"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GildedDreams"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"cryo_dmg_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"PolarStar",
+					"AquaSimulacra",
+					"TheFirstGreatMagic",
+					"ThunderingPulse",
+					"AstralVulturesCrimsonPlumage",
+					"AmosBow",
+					"HuntersPath",
+					"SkywardHarp",
+					"PrototypeCrescent",
+					"ScionOfTheBlazingSun",
+					"Hamayumi"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			},
+			"burstGanyu": {
+				"buildHelp": "Burst DPS/Support",
+				"allowedSubs": [
+					"atk_",
+					"critRate_",
+					"critDMG_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"BlizzardStrayer",
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"burst",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusWarbow",
+					"MouunsMoon",
+					"TheStringless"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			}
+		},
+		"Gorou": {
+			"default": {
+				"buildHelp": "(R) Geo enabler/Buffer",
+				"allowedSubs": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"TheExile",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critRate_",
+						"def_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"enerRech_",
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusWarbow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			},
+			"lunarCrystallize": {
+				"buildHelp": "Lunar crystallize buffer/healer",
+				"allowedSubs": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"SilkenMoonsSerenade",
+					"Instructor",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"def_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"enerRech_",
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusWarbow",
+					"ElegyForTheEnd"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 4,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"HuTao": {
+			"default": {
+				"buildHelp": "(R) Charged Atk DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"hp_"
+				],
+				"allowedSets": [
+					"CrimsonWitchOfFlames",
+					"ShimenawasReminiscence",
+					"MarechausseeHunter"
+				],
+				"altSets": [
+					"GildedDreams"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"eleMas",
+					"hp_",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"hp_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"StaffOfHoma",
+					"StaffOfTheScarletSands",
+					"BalladOfTheFjords",
+					"CrimsonMoonsSemblance",
+					"DragonsBane",
+					"Deathmatch",
+					"LithicSpear",
+					"MissiveWindspear",
+					"WhiteTassel"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Iansan": {
+			"default": {
+				"buildHelp": "(R) Burst Buffer",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"nightsoulEner",
+					"enerRech_",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"SymphonistOfScents",
+					"FavoniusLance",
+					"CalamityQueller",
+					"SkywardSpine",
+					"MouunsMoon",
+					"MissiveWindspear",
+					"PrototypeStarglitter",
+					"TamayurateiNoOhanashi"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 180
+			}
+		},
+		"Ifa": {
+			"default": {
+				"buildHelp": "Default",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"ViridescentVenerer"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"nightsoulEner",
+					"enerRech_",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas",
+						"heal_"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"SunnyMorningSleepIn",
+					"AThousandFloatingDreams",
+					"SacrificialFragments",
+					"ThrillingTalesOfDragonSlayers"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Illuga": {
+			"default": {
+				"buildHelp": "(R) Geo/lunar-crystallize buffer",
+				"allowedSubs": [
+					"enerRech_",
+					"eleMas",
+					"def_"
+				],
+				"allowedSets": [
+					"SilkenMoonsSerenade",
+					"NoblesseOblige",
+					"Instructor"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"def_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusLance",
+					"DragonsBane",
+					"KitainCrossSpear"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Ineffa": {
+			"default": {
+				"buildHelp": "(R) Lunar-charged shielder/DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"atk_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"AubadeOfMorningstarAndMoon",
+					"SilkenMoonsSerenade",
+					"GildedDreams"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"TenacityOfTheMillelith",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"atk_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"FracturedHalo",
+					"CalamityQueller",
+					"SymphonistOfScents",
+					"BloodsoakedRuins",
+					"SacrificersStaff",
+					"BalladOfTheFjords",
+					"MissiveWindspear",
+					"ProspectorsShovel"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			},
+			"dps": {
+				"buildHelp": "Quicken shielder/DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"atk_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"TenacityOfTheMillelith",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GildedDreams",
+					"DeepwoodMemories"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"atk_",
+					"electro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_",
+						"atk_"
+					],
+					"goblet": [
+						"electro_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"FracturedHalo",
+					"CalamityQueller",
+					"SymphonistOfScents",
+					"SacrificersStaff",
+					"BalladOfTheFjords",
+					"Deathmatch",
+					"MissiveWindspear",
+					"ProspectorsShovel",
+					"KitainCrossSpear"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Jahoda": {
+			"default": {
+				"buildHelp": "(R) General healer/enabler",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ViridescentVenerer",
+					"SilkenMoonsSerenade"
+				],
+				"altSets": [
+					"SongOfDaysPast",
+					"OceanHuedClam",
+					"NoblesseOblige",
+					"Instructor"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"ElegyForTheEnd",
+					"FavoniusWarbow",
+					"RainbowSerpentsRainBow",
+					"SnareHook"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 170
+			}
+		},
+		"Jean": {
+			"default": {
+				"buildHelp": "(R) General healer/enabler",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"ViridescentVenerer",
+					"OceanHuedClam"
+				],
+				"altSets": [
+					"SongOfDaysPast"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"burst",
+					"enerRech_",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_",
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_",
+						"anemo_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrimordialJadeCutter",
+					"SkywardBlade",
+					"AmenomaKageuchi",
+					"FavoniusSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 180
+			},
+			"sunfire": {
+				"buildHelp": "(N) Sunfire Swirl",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"atk_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer",
+					"GildedDreams"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"FreedomSworn",
+					"IronSting",
+					"ToukabouShigure",
+					"XiphosMoonlight",
+					"FavoniusSword",
+					"DarkIronSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 2
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 180
+			}
+		},
+		"Kachina": {
+			"default": {
+				"buildHelp": "(R) Off-Field Skill DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"def_"
+				],
+				"allowedSets": [
+					"HuskOfOpulentDreams",
+					"ObsidianCodex",
+					"ScrollOfTheHeroOfCinderCity",
+					"TenacityOfTheMillelith"
+				],
+				"altSets": [
+					"GoldenTroupe",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"def_",
+					"geo_dmg_",
+					"nightsoul_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"FootprintOfTheRainbow",
+					"Deathmatch"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"KaedeharaKazuha": {
+			"default": {
+				"buildHelp": "(R) Swirl buffer/enabler",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"FreedomSworn",
+					"XiphosMoonlight",
+					"IronSting",
+					"ToukabouShigure",
+					"FavoniusSword",
+					"DarkIronSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 190
+			}
+		},
+		"Kaeya": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"BlizzardStrayer",
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"MistsplitterReforged",
+					"LightOfFoliarIncision",
+					"HaranGeppakuFutsu",
+					"PrimordialJadeCutter",
+					"TheAlleyFlash",
+					"KagotsurubeIsshin"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"KamisatoAyaka": {
+			"default": {
+				"buildHelp": "(R) On-Field/Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"BlizzardStrayer"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GildedDreams",
+					"GladiatorsFinale",
+					"EmblemOfSeveredFate"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"burst",
+					"cryo_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"MistsplitterReforged",
+					"HaranGeppakuFutsu",
+					"PrimordialJadeCutter",
+					"LightOfFoliarIncision",
+					"FinaleOfTheDeep",
+					"AmenomaKageuchi"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"KamisatoAyato": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EchoesOfAnOffering",
+					"GladiatorsFinale",
+					"HeartOfDepth",
+					"NymphsDream"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_",
+					"hydro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"HaranGeppakuFutsu",
+					"MistsplitterReforged",
+					"PrimordialJadeCutter",
+					"LightOfFoliarIncision",
+					"SplendorOfTranquilWaters",
+					"TheBlackSword",
+					"KagotsurubeIsshin"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Kaveh": {
+			"default": {
+				"buildHelp": "(RN) Bloom triggerer",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"FlowerOfParadiseLost",
+					"GildedDreams"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"MailedFlower",
+					"BloodtaintedGreatsword"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 170
+			}
+		},
+		"Keqing": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"ThunderingFury"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GladiatorsFinale",
+					"EmblemOfSeveredFate"
+				],
+				"allowedEffects": [
+					"atk_",
+					"eleMas",
+					"electro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"MistsplitterReforged",
+					"LightOfFoliarIncision",
+					"HaranGeppakuFutsu",
+					"PrimordialJadeCutter",
+					"TheBlackSword",
+					"LionsRoar",
+					"KagotsurubeIsshin",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Kinich": {
+			"burn": {
+				"buildHelp": "(R) On-Field DPS (burning)",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"ObsidianCodex",
+					"GildedDreams",
+					"UnfinishedReverie"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"DeepwoodMemories",
+					"GoldenTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"dendro_dmg_",
+					"nightsoul_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"FangOfTheMountainKing",
+					"BeaconOfTheReedSea",
+					"AThousandBlazingSuns",
+					"WolfsGravestone",
+					"SerpentSpine"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			},
+			"quicken": {
+				"buildHelp": "(N) On-Field DPS (Quicken)",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"ObsidianCodex"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"dendro_dmg_",
+					"eleMas",
+					"nightsoul_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"FangOfTheMountainKing",
+					"BeaconOfTheReedSea",
+					"SerpentSpine"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Kirara": {
+			"default": {
+				"buildHelp": "(R) General Shielder",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusSword",
+					"KeyOfKhajNisut",
+					"TheDockhandsAssistant",
+					"SapwoodBlade"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Klee": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"CrimsonWitchOfFlames",
+					"Lavawalker"
+				],
+				"altSets": [
+					"WanderersTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"CashflowSupervision",
+					"TomeOfTheEternalFlow",
+					"LostPrayerToTheSacredWinds",
+					"TheWidsith",
+					"SolarPearl",
+					"SkywardAtlas",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"KujouSara": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Buffer",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"DeepwoodMemories"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"ElegyForTheEnd",
+					"SkywardHarp",
+					"FadingTwilight",
+					"MouunsMoon",
+					"PrototypeCrescent"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 2,
+				"recommendedCV": 50,
+				"recommendedER": 180
+			}
+		},
+		"KukiShinobu": {
+			"hyperbloom": {
+				"buildHelp": "(R) Healer/Hyperbloom trigger",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas",
+						"hp_"
+					],
+					"goblet": [
+						"eleMas",
+						"hp_"
+					],
+					"sands": [
+						"eleMas",
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"XiphosMoonlight",
+					"FreedomSworn",
+					"IronSting",
+					"ToukabouShigure",
+					"DarkIronSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			},
+			"healShinobu": {
+				"buildHelp": "Pure healer",
+				"allowedSubs": [
+					"eleMas",
+					"hp_"
+				],
+				"allowedSets": [
+					"TenacityOfTheMillelith",
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [
+					"GildedDreams"
+				],
+				"allowedEffects": [
+					"hp_",
+					"eleMas",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"heal_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"KeyOfKhajNisut",
+					"TheDockhandsAssistant",
+					"IronSting",
+					"ToukabouShigure",
+					"XiphosMoonlight"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 2,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"LanYan": {
+			"default": {
+				"buildHelp": "(R) General shieldler/enabler",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"CranesEchoingCall",
+					"SkywardAtlas",
+					"OathswornEye",
+					"FavoniusCodex",
+					"Frostbearer"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Lauma": {
+			"default": {
+				"buildHelp": "Off-Field Quickbloom DPS",
+				"allowedSubs": [
+					"eleMas",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"SilkenMoonsSerenade"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"dendro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_",
+						"eleMas"
+					],
+					"goblet": [
+						"dendro_dmg_",
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"NightweaversLookingGlass",
+					"AThousandFloatingDreams",
+					"SacrificialFragments",
+					"WanderingEvenstar",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 150
+			},
+			"bloomer": {
+				"buildHelp": "(R) Bloom/Lunar Bloom Buffer",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"SilkenMoonsSerenade"
+				],
+				"altSets": [
+					"Instructor"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"NightweaversLookingGlass",
+					"AThousandFloatingDreams",
+					"EtherlightSpindlelute",
+					"SacrificialFragments",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 150
+			}
+		},
+		"Layla": {
+			"default": {
+				"buildHelp": "(R) General shieldler/enabler",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"TenacityOfTheMillelith",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"hp_",
+					"enerRech_",
+					"cryo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hp_",
+						"cryo_dmg_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"TheDockhandsAssistant",
+					"KeyOfKhajNisut",
+					"FavoniusSword",
+					"SerenitysCall",
+					"PrimordialJadeCutter",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 120
+			}
+		},
+		"Linnea": {
+			"Lunar": {
+				"buildHelp": "(R) Lunar Crystallize Enabler/Healer",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"def_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"SilkenMoonsSerenade",
+					"AubadeOfMorningstarAndMoon",
+					"HuskOfOpulentDreams"
+				],
+				"altSets": [
+					"GoldenTroupe",
+					"TenacityOfTheMillelith",
+					"NoblesseOblige",
+					"ArchaicPetra",
+					"Instructor"
+				],
+				"allowedEffects": [
+					"def_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"GoldenFrostboundOath",
+					"ElegyForTheEnd",
+					"TheViridescentHunt",
+					"FavoniusWarbow",
+					"SnareHook",
+					"Slingshot"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			},
+			"Geo": {
+				"buildHelp": "Geo DPS/Healer",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"def_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"TenacityOfTheMillelith",
+					"HuskOfOpulentDreams"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"ArchaicPetra"
+				],
+				"allowedEffects": [
+					"def_",
+					"skill",
+					"geo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_",
+						"def_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"GoldenFrostboundOath",
+					"ElegyForTheEnd",
+					"TheViridescentHunt",
+					"FavoniusWarbow",
+					"TheStringless",
+					"Slingshot"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			}
+		},
+		"Lisa": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"KagurasVerity",
+					"TheWidsith",
+					"SacrificialFragments",
+					"SolarPearl",
+					"FlowingPurity",
+					"MappaMare",
+					"ThrillingTalesOfDragonSlayers",
+					"FavoniusCodex"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 2
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 200
+			}
+		},
+		"Lohen": {
+			"default": {
+				"buildHelp": "(R) NA/Skill DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"altSets": [
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"skill",
+					"auto"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"DisasterAndRemorse",
+					"PrimordialJadeWingedSpear",
+					"VortexVanquisher",
+					"CalamityQueller",
+					"Deathmatch",
+					"MissiveWindspear",
+					"WhiteTassel"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			}
+		},
+		"Lynette": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Support",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"NoblesseOblige",
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"burst",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SkywardBlade",
+					"AmenomaKageuchi",
+					"FavoniusSword",
+					"FreedomSworn",
+					"WolfFang",
+					"FinaleOfTheDeep"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 175
+			},
+			"driver": {
+				"buildHelp": "Driver DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"MarechausseeHunter",
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"burst",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"MistsplitterReforged",
+					"HaranGeppakuFutsu",
+					"SkywardBlade",
+					"FreedomSworn",
+					"WolfFang",
+					"FinaleOfTheDeep"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 100,
+				"recommendedER": 160
+			}
+		},
+		"Lyney": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"MarechausseeHunter"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"CrimsonWitchOfFlames"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"TheFirstGreatMagic",
+					"AquaSimulacra",
+					"PolarStar",
+					"ThunderingPulse",
+					"SkywardHarp",
+					"AmosBow",
+					"SongOfStillness",
+					"PrototypeCrescent"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Mavuika": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ObsidianCodex"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"MarechausseeHunter",
+					"GildedDreams",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"nightsoul_dmg_",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandBlazingSuns",
+					"WolfsGravestone",
+					"BeaconOfTheReedSea",
+					"Akuoumaru",
+					"LuxuriousSeaLord",
+					"SerpentSpine",
+					"EarthShaker"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 0
+			},
+			"mavuikaBurgeon": {
+				"buildHelp": "(N) Burgeon trigger",
+				"allowedSubs": [
+					"eleMas"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"BloodtaintedGreatsword",
+					"MailedFlower",
+					"MakhairaAquamarine",
+					"FlameForgedInsight"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 2,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 0
+			},
+			"quickswap": {
+				"buildHelp": "Skill/Burst quickswap",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"ObsidianCodex",
+					"ScrollOfTheHeroOfCinderCity",
+					"TenacityOfTheMillelith"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GoldenTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"nightsoul_dmg_",
+					"pyro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandBlazingSuns",
+					"WolfsGravestone",
+					"BeaconOfTheReedSea",
+					"Akuoumaru",
+					"LuxuriousSeaLord",
+					"SerpentSpine",
+					"EarthShaker"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 0
+			}
+		},
+		"Mika": {
+			"default": {
+				"buildHelp": "(R) Buffer/Healer",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"allowedEffects": [
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"heal_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"SymphonistOfScents",
+					"FavoniusLance",
+					"DialoguesOfTheDesertSages",
+					"RightfulReward"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Mona": {
+			"default": {
+				"buildHelp": "(R) Burst Buffer",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"Instructor",
+					"CelestialGift"
+				],
+				"altSets": [
+					"SilkenMoonsSerenade",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"hydro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusCodex",
+					"ThrillingTalesOfDragonSlayers",
+					"WanderingEvenstar",
+					"AThousandFloatingDreams"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 220
+			},
+			"subdps": {
+				"buildHelp": "Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"ADayCarvedFromRisingWinds",
+					"CelestialGift"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"SilkenMoonsSerenade",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"hydro_dmg_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusCodex",
+					"ThrillingTalesOfDragonSlayers",
+					"LostPrayerToTheSacredWinds",
+					"SkywardAtlas",
+					"TheWidsith"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 240
+			}
+		},
+		"Mualani": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"hp_"
+				],
+				"allowedSets": [
+					"ObsidianCodex"
+				],
+				"altSets": [
+					"MarechausseeHunter"
+				],
+				"allowedEffects": [
+					"auto",
+					"eleMas",
+					"hp_",
+					"hydro_dmg_",
+					"nightsoul_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_",
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"SurfsUp",
+					"LostPrayerToTheSacredWinds",
+					"SacrificialJade",
+					"TheWidsith",
+					"RingOfYaxche"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Nahida": {
+			"default": {
+				"buildHelp": "(R) Off-Field DPS/Enabler/Buffer",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams"
+				],
+				"altSets": [
+					"TenacityOfTheMillelith"
+				],
+				"allowedEffects": [
+					"dendro_dmg_",
+					"eleMas",
+					"enerRech_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas",
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_",
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandFloatingDreams",
+					"SacrificialFragments",
+					"WanderingEvenstar",
+					"KagurasVerity",
+					"SolarPearl",
+					"TheWidsith",
+					"SacrificialJade",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 130
+			}
+		},
+		"Navia": {
+			"default": {
+				"buildHelp": "(R) On-Field/Quickswap DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NighttimeWhispersInTheEchoingWoods"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GoldenTroupe",
+					"GladiatorsFinale",
+					"NightOfTheSkysUnveiling"
+				],
+				"allowedEffects": [
+					"atk_",
+					"geo_dmg_",
+					"skill",
+					"plunge"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"Verdict",
+					"BeaconOfTheReedSea",
+					"SerpentSpine",
+					"WolfsGravestone",
+					"TheUnforged",
+					"SkywardPride",
+					"TidalShadow",
+					"UltimateOverlordsMegaMagicSword",
+					"FruitfulHook"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Nefer": {
+			"default": {
+				"buildHelp": "(R) On-Field Lunar-Bloom DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"NightOfTheSkysUnveiling"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"ReliquaryOfTruth",
+					"NightweaversLookingGlass",
+					"AThousandFloatingDreams",
+					"DawningFrost",
+					"BlackmarrowLantern",
+					"TheWidsith",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Neuvillette": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"MarechausseeHunter"
+				],
+				"altSets": [
+					"WanderersTroupe",
+					"HeartOfDepth"
+				],
+				"allowedEffects": [
+					"auto",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_",
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"TomeOfTheEternalFlow",
+					"SacrificialJade",
+					"CashflowSupervision",
+					"ReliquaryOfTruth",
+					"LostPrayerToTheSacredWinds",
+					"PrototypeAmber",
+					"AshGravenDrinkingHorn"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			}
+		},
+		"Nicole": {
+			"default": {
+				"buildHelp": "(R) ATK buffer",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"CelestialGift",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SevenEdictsOfDustAndLight",
+					"CranesEchoingCall",
+					"SkywardAtlas",
+					"OathswornEye",
+					"FavoniusCodex",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 150
+			}
+		},
+		"Nilou": {
+			"default": {
+				"buildHelp": "(R) Bloom Enabler",
+				"allowedSubs": [
+					"eleMas",
+					"hp_"
+				],
+				"allowedSets": [
+					"2pcCombo",
+					"DeepwoodMemories",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"KeyOfKhajNisut",
+					"TheDockhandsAssistant",
+					"XiphosMoonlight",
+					"FreedomSworn",
+					"PrimordialJadeCutter",
+					"FavoniusSword",
+					"IronSting",
+					"SerenitysCall"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			},
+			"nilouDPS": {
+				"buildHelp": "(N) Main DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"hp_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"2pcCombo",
+					"GoldenTroupe",
+					"VourukashasGlow"
+				],
+				"altSets": [
+					"HeartOfDepth"
+				],
+				"allowedEffects": [
+					"hp_",
+					"hydro_dmg_",
+					"skill",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"SplendorOfTranquilWaters",
+					"PrimordialJadeCutter",
+					"UrakuMisugiri",
+					"WolfFang",
+					"KeyOfKhajNisut",
+					"TheDockhandsAssistant",
+					"FleuveCendreFerryman"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Ningguang": {
+			"default": {
+				"buildHelp": "(R) On-Field/Quickswap DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"ArchaicPetra",
+					"EmblemOfSeveredFate",
+					"NighttimeWhispersInTheEchoingWoods"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"burst",
+					"geo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"MemoryOfDust",
+					"SkywardAtlas",
+					"LostPrayerToTheSacredWinds",
+					"TulaytullahsRemembrance",
+					"CashflowSupervision",
+					"TheWidsith",
+					"SolarPearl",
+					"Frostbearer"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 110
+			}
+		},
+		"Noelle": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS/Healer",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"GladiatorsFinale",
+					"HuskOfOpulentDreams"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"def_",
+					"enerRech_",
+					"geo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"RedhornStonethresher",
+					"Verdict",
+					"SerpentSpine",
+					"BeaconOfTheReedSea",
+					"SkywardPride",
+					"Whiteblind",
+					"TidalShadow"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			}
+		},
+		"Ororon": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"ObsidianCodex",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"electro_dmg_",
+					"enerRech_",
+					"nightsoulEner",
+					"nightsoul_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PolarStar",
+					"ElegyForTheEnd",
+					"AquaSimulacra",
+					"TheViridescentHunt",
+					"FavoniusWarbow",
+					"TheStringless",
+					"AlleyHunter",
+					"RainbowSerpentsRainBow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 160
+			}
+		},
+		"Prune": {
+			"default": {
+				"buildHelp": "(R) Hexerei swirl buffer",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"CelestialGift",
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SevenEdictsOfDustAndLight",
+					"CranesEchoingCall",
+					"SkywardAtlas",
+					"OathswornEye",
+					"FavoniusCodex",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Qiqi": {
+			"default": {
+				"buildHelp": "(R) General healer",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_",
+					"heal_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SkywardBlade",
+					"HaranGeppakuFutsu",
+					"AquilaFavonia",
+					"PrimordialJadeCutter",
+					"FinaleOfTheDeep",
+					"KagotsurubeIsshin",
+					"FavoniusSword",
+					"SapwoodBlade",
+					"AmenomaKageuchi"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 100
+			}
+		},
+		"RaidenShogun": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Enabler",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"EngulfingLightning",
+					"TheCatch",
+					"SkywardSpine",
+					"StaffOfHoma",
+					"StaffOfTheScarletSands",
+					"PrimordialJadeWingedSpear",
+					"Deathmatch",
+					"BalladOfTheFjords"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 200
+			},
+			"shogunHyperbloom": {
+				"buildHelp": "Hyperbloom trigger",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"DragonsBane",
+					"KitainCrossSpear",
+					"Moonpiercer",
+					"BalladOfTheFjords"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Razor": {
+			"default": {
+				"buildHelp": "(R) Hexerei Overload DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"altSets": [
+					"GildedDreams",
+					"PaleFlame",
+					"ThunderingFury",
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"electro_dmg_",
+					"enerRech_",
+					"physical_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_",
+						"pyro_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"BeaconOfTheReedSea",
+					"WolfsGravestone",
+					"SerpentSpine",
+					"SkywardPride",
+					"TidalShadow",
+					"PrototypeArchaic"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			},
+			"phys": {
+				"buildHelp": "Phys/Electro DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"PaleFlame"
+				],
+				"altSets": [
+					"GildedDreams",
+					"ThunderingFury",
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"electro_dmg_",
+					"enerRech_",
+					"physical_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_",
+						"physical_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"BeaconOfTheReedSea",
+					"WolfsGravestone",
+					"SongOfBrokenPines",
+					"SerpentSpine",
+					"SkywardPride",
+					"TidalShadow",
+					"PrototypeArchaic"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Rosaria": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"BlizzardStrayer",
+					"EmblemOfSeveredFate",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"cryo_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"StaffOfTheScarletSands",
+					"StaffOfHoma",
+					"SkywardSpine",
+					"FavoniusLance",
+					"BalladOfTheFjords",
+					"Deathmatch",
+					"WavebreakersFin",
+					"TheCatch"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 2,
+				"recommendedCV": 100,
+				"recommendedER": 170
+			}
+		},
+		"Sandrone": {
+			"default": {
+				"buildHelp": "(R) Stellar Conduct DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"atk_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"DisenchantmentInDeepShadow"
+				],
+				"altSets": [
+					"GildedDreams",
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"ATeaspoonOfTranscendence",
+					"AThousandBlazingSuns",
+					"WolfsGravestone",
+					"MakhairaAquamarine",
+					"SerpentSpine",
+					"TidalShadow"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"SangonomiyaKokomi": {
+			"default": {
+				"buildHelp": "(R) Healer/Hydro enabler",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"TenacityOfTheMillelith",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"heal_"
+					],
+					"goblet": [
+						"hydro_dmg_",
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"EverlastingMoonglow",
+					"PrototypeAmber",
+					"ThrillingTalesOfDragonSlayers"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": -100,
+				"recommendedER": 140
+			},
+			"bloomDriver": {
+				"buildHelp": "Nilou bloom owner",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandFloatingDreams",
+					"SacrificialFragments",
+					"StarcallersWatch",
+					"SunnyMorningSleepIn",
+					"PrototypeAmber",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": -100,
+				"recommendedER": 150
+			}
+		},
+		"Sayu": {
+			"default": {
+				"buildHelp": "(R) General healer",
+				"allowedSubs": [
+					"atk_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SkywardPride",
+					"MakhairaAquamarine",
+					"UltimateOverlordsMegaMagicSword",
+					"MailedFlower",
+					"Rainslasher",
+					"KatsuragikiriNagamasa"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 190
+			}
+		},
+		"Sethos": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"WanderersTroupe"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"eleMas",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"HuntersPath",
+					"Slingshot"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 10,
+					"skill": 2
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Shenhe": {
+			"default": {
+				"buildHelp": "(R) Cryo enabler/buffer",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"CalamityQueller",
+					"EngulfingLightning",
+					"SkywardSpine",
+					"FavoniusLance",
+					"WavebreakersFin",
+					"PrototypeStarglitter"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 180
+			}
+		},
+		"ShikanoinHeizou": {
+			"dps": {
+				"buildHelp": "(R) On-Field/Quickswap DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"SkywardAtlas",
+					"KagurasVerity",
+					"TheWidsith",
+					"SolarPearl",
+					"LostPrayerToTheSacredWinds",
+					"SacrificialFragments",
+					"MappaMare"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 170
+			},
+			"swirl": {
+				"buildHelp": "Swirl Driver",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"AThousandFloatingDreams",
+					"SacrificialFragments",
+					"MappaMare",
+					"FavoniusCodex"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 140
+			}
+		},
+		"Sigewinne": {
+			"default": {
+				"buildHelp": "(R) General healer/enabler",
+				"allowedSubs": [
+					"critRate_",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"OceanHuedClam",
+					"SongOfDaysPast"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"SilvershowerHeartstrings",
+					"SequenceOfSolitude",
+					"RecurveBow",
+					"FavoniusWarbow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Skirk": {
+			"default": {
+				"buildHelp": "(R) Freeze DPS",
+				"allowedSubs": [
+					"atk_",
+					"critRate_",
+					"critDMG_"
+				],
+				"allowedSets": [
+					"FinaleOfTheDeepGalleries",
+					"BlizzardStrayer",
+					"MarechausseeHunter"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"GladiatorsFinale"
+				],
+				"allowedEffects": [
+					"atk_",
+					"cryo_dmg_",
+					"auto",
+					"burst"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_",
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"Azurelight",
+					"HaranGeppakuFutsu",
+					"PrimordialJadeCutter",
+					"TheBlackSword",
+					"CalamityOfEshu",
+					"FinaleOfTheDeep"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 0
+			}
+		},
+		"Sucrose": {
+			"default": {
+				"buildHelp": "(R) Swirl buffer/enabler",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"CelestialGift"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"SunnyMorningSleepIn",
+					"SacrificialFragments",
+					"AThousandFloatingDreams",
+					"StarcallersWatch",
+					"WanderingEvenstar",
+					"MagicGuide",
+					"ThrillingTalesOfDragonSlayers"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Tartaglia": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"HeartOfDepth",
+					"NymphsDream"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"eleMas",
+					"hydro_dmg_",
+					"burst"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PolarStar",
+					"AquaSimulacra",
+					"HuntersPath",
+					"SkywardHarp",
+					"ThunderingPulse",
+					"TheFirstGreatMagic",
+					"AmosBow",
+					"TheViridescentHunt",
+					"PrototypeCrescent"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Thoma": {
+			"default": {
+				"buildHelp": "(R) Shielder/Burgeon Trigger",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"FlowerOfParadiseLost",
+					"GildedDreams"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas",
+						"hp_"
+					],
+					"goblet": [
+						"eleMas",
+						"hp_"
+					],
+					"sands": [
+						"eleMas",
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"KitainCrossSpear",
+					"DragonsBane",
+					"FavoniusLance",
+					"BlackTassel",
+					"DialoguesOfTheDesertSages",
+					"RightfulReward"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 160
+			}
+		},
+		"Tighnari": {
+			"default": {
+				"buildHelp": "(R) On-Field/Quickswap DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"GildedDreams",
+					"WanderersTroupe"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"dendro_dmg_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"HuntersPath",
+					"AquaSimulacra",
+					"PolarStar",
+					"TheFirstGreatMagic",
+					"SongOfStillness",
+					"Slingshot"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Traveler": {
+			"default": {
+				"buildHelp": "(R) Physical DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"GladiatorsFinale"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"physical_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"physical_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrimordialJadeCutter",
+					"AquilaFavonia",
+					"HaranGeppakuFutsu",
+					"PrototypeRancour",
+					"DullBlade"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 0,
+					"skill": 0
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"TravelerAnemo": {
+			"default": {
+				"buildHelp": "(R) Anemo DPS/Swirl",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"anemo_dmg_",
+						"eleMas"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"FreedomSworn",
+					"IronSting",
+					"ToukabouShigure",
+					"FesteringDesire",
+					"FavoniusSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 8
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 50,
+				"recommendedER": 170
+			}
+		},
+		"TravelerCryo": {
+			"default": {
+				"buildHelp": "NA",
+				"allowedSubs": [],
+				"altSets": [],
+				"allowedSets": [],
+				"allowedEffects": [],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"DullBlade"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"TravelerDendro": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Buffer",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"EmblemOfSeveredFate",
+					"GildedDreams"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"dendro_dmg_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"dendro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusSword",
+					"SapwoodBlade",
+					"SacrificialSword",
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"LightOfFoliarIncision"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 100,
+				"recommendedER": 180
+			}
+		},
+		"TravelerElectro": {
+			"default": {
+				"buildHelp": "Burst DPS/Support",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"electro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusSword",
+					"SacrificialSword",
+					"SkywardBlade"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 4
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 50,
+				"recommendedER": 220
+			}
+		},
+		"TravelerGeo": {
+			"default": {
+				"buildHelp": "(R) Quickswap DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"2pcCombo",
+					"HuskOfOpulentDreams",
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"ArchaicPetra",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"geo_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"geo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"AmenomaKageuchi",
+					"FinaleOfTheDeep",
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"SkywardBlade"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 50,
+				"recommendedER": 150
+			}
+		},
+		"TravelerHydro": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"MarechausseeHunter",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"hydro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"MistsplitterReforged",
+					"AmenomaKageuchi",
+					"FinaleOfTheDeep"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 50,
+				"recommendedER": 160
+			}
+		},
+		"TravelerPyro": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ObsidianCodex",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"EmblemOfSeveredFate",
+					"TenacityOfTheMillelith",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_",
+					"nightsoulEner",
+					"nightsoul_dmg_",
+					"pyro_dmg_",
+					"burst"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrimordialJadeCutter",
+					"HaranGeppakuFutsu",
+					"MistsplitterReforged",
+					"UrakuMisugiri",
+					"WolfFang",
+					"SkywardBlade",
+					"FinaleOfTheDeep"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 100,
+				"recommendedER": 180
+			},
+			"travelerPyroBurgeon": {
+				"buildHelp": "Burgeon trigger",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"GildedDreams",
+					"FlowerOfParadiseLost",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"DarkIronSword",
+					"FreedomSworn",
+					"IronSting",
+					"ToukabouShigure",
+					"XiphosMoonlight"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 8
+				},
+				"recommendedConstellation": 6,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Varesa": {
+			"default": {
+				"buildHelp": "(R) Overload Plunge DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"atk_"
+				],
+				"allowedSets": [
+					"ObsidianCodex",
+					"LongNightsOath"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"plunge",
+					"electro_dmg_",
+					"atk_",
+					"nightsoul_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"VividNotions",
+					"CranesEchoingCall",
+					"LostPrayerToTheSacredWinds",
+					"TheWidsith",
+					"SkywardAtlas",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Varka": {
+			"hexerei": {
+				"buildHelp": "(R) Hexerei Anemo DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"ShimenawasReminiscence"
+				],
+				"altSets": [
+					"EchoesOfAnOffering",
+					"ViridescentVenerer"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_",
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"GestOfTheMightyWolf",
+					"AThousandBlazingSuns",
+					"WolfsGravestone",
+					"SerpentSpine",
+					"EarthShaker",
+					"TidalShadow"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Venti": {
+			"hexerei": {
+				"buildHelp": "(R) Hexerei Anemo DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ADayCarvedFromRisingWinds",
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"EchoesOfAnOffering"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_"
+					],
+					"sands": [
+						"eleMas",
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"TheDayBreakChronicles",
+					"Rust",
+					"PolarStar",
+					"ThunderingPulse",
+					"SkywardHarp",
+					"TheViridescentHunt",
+					"ChainBreaker",
+					"SongOfStillness"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 170
+			},
+			"swirl": {
+				"buildHelp": "Anemo DPS/Swirl",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"ElegyForTheEnd",
+					"TheStringless",
+					"WindblumeOde",
+					"RavenBow",
+					"FavoniusWarbow",
+					"SongOfStillness"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"Wanderer": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"2pcCombo",
+					"DesertPavilionChronicle"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"EchoesOfAnOffering"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"auto"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"TulaytullahsRemembrance",
+					"MemoryOfDust",
+					"CashflowSupervision",
+					"SkywardAtlas",
+					"LostPrayerToTheSacredWinds",
+					"TomeOfTheEternalFlow",
+					"TheWidsith",
+					"DodocoTales",
+					"MappaMare"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Wriothesley": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"MarechausseeHunter",
+					"ShimenawasReminiscence"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"WanderersTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"cryo_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"cryo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"CashflowSupervision",
+					"TulaytullahsRemembrance",
+					"TomeOfTheEternalFlow",
+					"KagurasVerity",
+					"LostPrayerToTheSacredWinds",
+					"SkywardAtlas",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Xiangling": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"eleMas",
+					"enerRech_",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"StaffOfTheScarletSands",
+					"EngulfingLightning",
+					"TheCatch",
+					"FavoniusLance",
+					"KitainCrossSpear",
+					"BalladOfTheFjords",
+					"WavebreakersFin",
+					"StaffOfHoma",
+					"TamayurateiNoOhanashi"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 230
+			}
+		},
+		"Xianyun": {
+			"default": {
+				"buildHelp": "(R) Burst healer/Plunge support",
+				"allowedSubs": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"atk_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"CranesEchoingCall",
+					"SkywardAtlas",
+					"FavoniusCodex",
+					"OathswornEye",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"Xiao": {
+			"default": {
+				"buildHelp": "(R) Plunge DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"VermillionHereafter"
+				],
+				"altSets": [
+					"LongNightsOath",
+					"MarechausseeHunter"
+				],
+				"allowedEffects": [
+					"anemo_dmg_",
+					"atk_",
+					"enerRech_",
+					"plunge"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"anemo_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrimordialJadeWingedSpear",
+					"StaffOfHoma",
+					"VortexVanquisher",
+					"LithicSpear",
+					"Deathmatch",
+					"ProspectorsDrill",
+					"MissiveWindspear",
+					"ProspectorsShovel",
+					"WhiteTassel"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 8,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 130
+			}
+		},
+		"Xilonen": {
+			"default": {
+				"buildHelp": "(R) Skill buffer/Healer",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ScrollOfTheHeroOfCinderCity",
+					"Instructor"
+				],
+				"altSets": [
+					"HuskOfOpulentDreams",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"def_",
+					"enerRech_",
+					"geo_dmg_",
+					"nightsoulEner",
+					"nightsoul_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_",
+						"def_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"PeakPatrolSong",
+					"FavoniusSword",
+					"FluteOfEzpitzal",
+					"UrakuMisugiri",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 50,
+				"recommendedER": 100
+			}
+		},
+		"Xingqiu": {
+			"default": {
+				"buildHelp": "(R) Burst DPS/Survial",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"enerRech_",
+					"hydro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrimordialJadeCutter",
+					"MistsplitterReforged",
+					"SkywardBlade",
+					"FavoniusSword",
+					"WolfFang",
+					"FleuveCendreFerryman",
+					"SacrificialSword"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 190
+			}
+		},
+		"Xinyan": {
+			"default": {
+				"buildHelp": "(R) Quickswap DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"2pcCombo",
+					"PaleFlame"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"atk_",
+					"enerRech_",
+					"physical_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"physical_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"RedhornStonethresher",
+					"SerpentSpine",
+					"SkywardPride",
+					"TheUnforged",
+					"SongOfBrokenPines",
+					"WolfsGravestone",
+					"LuxuriousSeaLord",
+					"PrototypeArchaic"
+				],
+				"talentPriority": {
+					"auto": 8,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 170
+			},
+			"shieldXinyan": {
+				"buildHelp": "(N) Full shielder",
+				"allowedSubs": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"TenacityOfTheMillelith",
+					"NoblesseOblige"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"def_",
+					"pyro_dmg_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"def_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"Whiteblind"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"YaeMiko": {
+			"default": {
+				"buildHelp": "Off-Field Skill/Burst DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate",
+					"GildedDreams",
+					"GoldenTroupe",
+					"2pcCombo"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"eleMas",
+					"electro_dmg_",
+					"enerRech_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"electro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"KagurasVerity",
+					"ReliquaryOfTruth",
+					"LostPrayerToTheSacredWinds",
+					"SolarPearl",
+					"SkywardAtlas",
+					"TheWidsith",
+					"OathswornEye",
+					"DawningFrost",
+					"AThousandFloatingDreams",
+					"HakushinRing"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 150
+			},
+			"stellarConduct": {
+				"buildHelp": "(R) Stellar Conduct Off-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"GoldenTroupe",
+					"DisenchantmentInDeepShadow",
+					"GildedDreams"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds"
+				],
+				"allowedEffects": [
+					"atk_",
+					"burst",
+					"eleMas",
+					"electro_dmg_",
+					"skill"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"atk_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"KagurasVerity",
+					"ReliquaryOfTruth",
+					"LostPrayerToTheSacredWinds",
+					"SolarPearl",
+					"SkywardAtlas",
+					"TheWidsith",
+					"DawningFrost",
+					"AThousandFloatingDreams",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 1,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"Yanfei": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"CrimsonWitchOfFlames"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"WanderersTroupe"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"eleMas",
+					"enerRech_",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"LostPrayerToTheSacredWinds",
+					"KagurasVerity",
+					"CashflowSupervision",
+					"TomeOfTheEternalFlow",
+					"TheWidsith",
+					"SacrificialJade",
+					"AThousandFloatingDreams",
+					"FlowingPurity"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 6,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			},
+			"tankfei": {
+				"buildHelp": "(N) C4 Shielder/Tankfei",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"NoblesseOblige"
+				],
+				"altSets": [
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"hp_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"PrototypeAmber",
+					"ThrillingTalesOfDragonSlayers"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 6,
+					"skill": 6
+				},
+				"recommendedConstellation": 4,
+				"recommendedCV": 0,
+				"recommendedER": 180
+			}
+		},
+		"Yaoyao": {
+			"default": {
+				"buildHelp": "(R) Healer/Dendro Enabler",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"DeepwoodMemories",
+					"Instructor"
+				],
+				"altSets": [
+					"TenacityOfTheMillelith",
+					"ScrollOfTheHeroOfCinderCity",
+					"NoblesseOblige",
+					"SilkenMoonsSerenade"
+				],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_",
+					"heal_",
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_",
+						"eleMas"
+					],
+					"goblet": [
+						"hp_",
+						"eleMas"
+					],
+					"sands": [
+						"hp_",
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"DialoguesOfTheDesertSages",
+					"RightfulReward",
+					"FavoniusLance",
+					"KitainCrossSpear",
+					"BlackTassel",
+					"SymphonistOfScents"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Yelan": {
+			"default": {
+				"buildHelp": "(R) Burst DPS",
+				"allowedSubs": [
+					"critDMG_",
+					"critRate_",
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"EmblemOfSeveredFate"
+				],
+				"altSets": [
+					"NoblesseOblige"
+				],
+				"allowedEffects": [
+					"burst",
+					"enerRech_",
+					"hp_",
+					"hydro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"hydro_dmg_"
+					],
+					"sands": [
+						"hp_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"AquaSimulacra",
+					"ElegyForTheEnd",
+					"FavoniusWarbow",
+					"MouunsMoon",
+					"Slingshot",
+					"FadingTwilight",
+					"SequenceOfSolitude",
+					"RecurveBow"
+				],
+				"talentPriority": {
+					"auto": 6,
+					"burst": 10,
+					"skill": 8
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 200
+			}
+		},
+		"Yoimiya": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"atk_",
+					"critDMG_",
+					"critRate_",
+					"eleMas"
+				],
+				"allowedSets": [
+					"ShimenawasReminiscence",
+					"MarechausseeHunter"
+				],
+				"altSets": [
+					"ADayCarvedFromRisingWinds",
+					"RetractingBolide",
+					"EchoesOfAnOffering"
+				],
+				"allowedEffects": [
+					"atk_",
+					"auto",
+					"eleMas",
+					"pyro_dmg_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"pyro_dmg_"
+					],
+					"sands": [
+						"atk_"
+					]
+				},
+				"recommendedWeapons": [
+					"ThunderingPulse",
+					"AquaSimulacra",
+					"PolarStar",
+					"HuntersPath",
+					"Rust",
+					"Slingshot"
+				],
+				"talentPriority": {
+					"auto": 10,
+					"burst": 6,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 100
+			}
+		},
+		"YumemizukiMizuki": {
+			"default": {
+				"buildHelp": "(R) Swirl healer/enabler",
+				"allowedSubs": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"ViridescentVenerer"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"eleMas",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"eleMas"
+					],
+					"goblet": [
+						"eleMas"
+					],
+					"sands": [
+						"eleMas"
+					]
+				},
+				"recommendedWeapons": [
+					"SunnyMorningSleepIn",
+					"SacrificialFragments",
+					"AThousandFloatingDreams",
+					"StarcallersWatch",
+					"WanderingEvenstar",
+					"MagicGuide"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 6
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 140
+			}
+		},
+		"YunJin": {
+			"default": {
+				"buildHelp": "(R) Normal attack buffer",
+				"allowedSubs": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedSets": [
+					"HuskOfOpulentDreams"
+				],
+				"altSets": [
+					"NoblesseOblige",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"allowedEffects": [
+					"def_",
+					"enerRech_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"def_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"def_",
+						"enerRech_"
+					]
+				},
+				"recommendedWeapons": [
+					"FavoniusLance",
+					"FootprintOfTheRainbow",
+					"PrototypeStarglitter"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 10,
+					"skill": 2
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 200
+			}
+		},
+		"Zhongli": {
+			"default": {
+				"buildHelp": "(R) General Shielder",
+				"allowedSubs": [
+					"enerRech_",
+					"hp_"
+				],
+				"allowedSets": [
+					"NoblesseOblige",
+					"TenacityOfTheMillelith",
+					"ScrollOfTheHeroOfCinderCity"
+				],
+				"altSets": [],
+				"allowedEffects": [
+					"hp_"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"hp_"
+					],
+					"goblet": [
+						"hp_"
+					],
+					"sands": [
+						"hp_"
+					]
+				},
+				"recommendedWeapons": [
+					"BlackTassel",
+					"DialoguesOfTheDesertSages",
+					"FavoniusLance"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 0,
+				"recommendedER": 100
+			}
+		},
+		"Zibai": {
+			"default": {
+				"buildHelp": "(R) On-Field DPS",
+				"allowedSubs": [
+					"eleMas",
+					"critDMG_",
+					"critRate_",
+					"def_"
+				],
+				"allowedSets": [
+					"NightOfTheSkysUnveiling"
+				],
+				"altSets": [
+					"HuskOfOpulentDreams"
+				],
+				"allowedEffects": [
+					"def_",
+					"eleMas"
+				],
+				"allowedMainstats": {
+					"circlet": [
+						"critDMG_",
+						"critRate_"
+					],
+					"goblet": [
+						"def_"
+					],
+					"sands": [
+						"def_"
+					]
+				},
+				"recommendedWeapons": [
+					"LightbearingMoonshard",
+					"UrakuMisugiri",
+					"PrimordialJadeCutter",
+					"FluteOfEzpitzal",
+					"HarbingerOfDawn"
+				],
+				"talentPriority": {
+					"auto": 2,
+					"burst": 8,
+					"skill": 10
+				},
+				"recommendedConstellation": 0,
+				"recommendedCV": 100,
+				"recommendedER": 120
+			}
+		}
+	}
+}

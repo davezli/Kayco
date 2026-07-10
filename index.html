@@ -37,17 +37,24 @@
     <!-- Step 2: Who to invest in -->
     <section id="step2" class="step-card hidden">
       <h2 class="step-title"><span class="step-num">2</span> Who to invest in</h2>
-      <p class="step-desc">Pick characters and set target talent levels.</p>
+      <p class="step-desc">Pick characters and set target talent levels. Default targets are sourced from <a href="https://nate12345678.gitlab.io/genshinRater/builds/" target="_blank" rel="noopener">genshinRater</a>'s recommended builds.</p>
 
       <div class="bulk-controls">
         <button class="btn btn-sm" id="selectAllBtn">Select all</button>
         <button class="btn btn-sm" id="deselectAllBtn">Deselect all</button>
+        <button class="btn btn-sm" id="resetAllBtn">Reset all to default</button>
         <select id="presetSelect" class="select-sm">
           <option value="skill+burst">Skill + Burst</option>
           <option value="all3">All 3 talents</option>
         </select>
         <label class="inline-label">Target all →
           <select id="targetAllSelect" class="select-sm">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
