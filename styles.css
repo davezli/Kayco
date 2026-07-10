@@ -361,7 +361,10 @@ body {
   text-align: center;
 }
 .stat-value { font-size: 1.75rem; font-weight: 700; color: var(--accent); }
+.stat-value .stat-icon { width: 28px; height: 28px; vertical-align: -4px; border-radius: 4px; margin-right: 0.25rem; }
 .stat-label { font-size: 0.8rem; color: var(--text-dim); margin-top: 0.25rem; }
+.stat-card.stat-warn { border-color: var(--accent); }
+.stat-card.stat-ok { border-color: var(--success); }
 
 .boss-cards { display: flex; flex-direction: column; gap: 1rem; }
 

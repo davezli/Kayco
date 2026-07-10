@@ -235,6 +235,8 @@ function extract() {
       version: char.version || null,
       bossMat: bossMat,
       boss: boss,
+      // Dummy/development characters (e.g. Manekin) are unchecked by default.
+      included: /manekin/i.test(goodKey) ? false : undefined,
       talents: talentNames,
       icon: char.images?.filename_icon || null,
       defaultBuild: (() => {

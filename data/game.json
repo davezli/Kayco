@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T04:27:46.963Z",
+  "generatedAt": "2026-07-10T04:44:11.573Z",
   "dataVersion": "6.7",
   "perTalentToMax": {
     "7": 1,
@@ -2064,6 +2064,7 @@
       "version": "6.1",
       "bossMat": "Eroded Sunfire",
       "boss": "Lord of Eroded Primal Fire",
+      "included": false,
       "talents": {
         "normal": "Outlander Arts: Vigilant Watch",
         "skill": null,
@@ -2095,6 +2096,7 @@
       "version": "6.1",
       "bossMat": "Eroded Sunfire",
       "boss": "Lord of Eroded Primal Fire",
+      "included": false,
       "talents": {
         "normal": "Outlander Arts: Vigilant Watch",
         "skill": null,

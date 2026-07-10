@@ -141,24 +141,34 @@ function compute() {
 
   // Per-boss aggregation
   const bosses = GAME.bosses.map(b => {
-    let required = 0, owned = 0, deficit = 0;
+    let required = 0, owned = 0, deficit = 0, excess = 0;
     const mats = [];
     for (const matName of b.materials) {
       const req = matRequired[matName] || 0;
       const own = matOwned[matName] || 0;
-      const def = Math.max(0, req - own);
-      required += req; owned += own; deficit += def;
-      mats.push({ name: matName, required: req, owned: own, deficit: def, icon: GAME.materials[matName].icon });
+      required += req; owned += own;
+      deficit += Math.max(0, req - own);
+      excess += Math.max(0, own - req);
+      mats.push({ name: matName, required: req, owned: own, deficit: Math.max(0, req - own), icon: GAME.materials[matName].icon });
     }
-    const pooledDeficit = Math.max(0, required - owned);
-    const bossDeficit = allowConversion ? pooledDeficit : deficit;
+    // With conversion, a boss's materials are interchangeable (1:1) at the cost
+    // of 1 Dream Solvent each. Excess in one material covers deficits in another
+    // of the same boss, so the farmable deficit is the pooled shortfall and the
+    // number of conversions is the reallocated surplus.
+    let bossDeficit, conversions = 0;
+    if (allowConversion) {
+      bossDeficit = Math.max(0, required - owned);
+      conversions = Math.min(excess, deficit);
+    } else {
+      bossDeficit = deficit;
+    }
     const runs = bossDeficit > 0 ? Math.ceil(bossDeficit / dropsPerRun) : 0;
     const contribs = [];
     for (const matName of b.materials) {
       for (const c of matContrib[matName]) contribs.push(c);
     }
     contribs.sort((a, b) => b.count - a.count);
-    return { ...b, required, owned, deficit: bossDeficit, runs, mats, contribs };
+    return { ...b, required, owned, deficit: bossDeficit, conversions, runs, mats, contribs };
   });
 
   // Rank: deficit desc, then required desc
@@ -199,7 +209,7 @@ function buildCharacterState() {
       burst: { enabled: true, target: 10 }
     };
     charState.set(ch.key, {
-      included: true,
+      included: char.included !== false,
       normal: { ...b.normal },
       skill: { ...b.skill },
       burst: { ...b.burst },
@@ -378,12 +388,30 @@ function renderStep3() {
   const totalOwed = bosses.reduce((s, b) => s + b.deficit, 0);
   const totalRuns = bosses.reduce((s, b) => s + b.runs, 0);
   const totalResin = totalRuns * 60;
+  const totalSolvent = allowConversion
+    ? bosses.reduce((s, b) => s + (b.conversions || 0), 0)
+    : 0;
+  // Dream Solvent you already own (from the GOOD export's materials map).
+  const ownedSolvent = allowConversion
+    ? (parsed.materialCounts[nameToGoodKey('Dream Solvent')] || 0)
+    : 0;
+
+  let solventCard = '';
+  if (allowConversion) {
+    const short = Math.max(0, totalSolvent - ownedSolvent);
+    solventCard = `
+    <div class="stat-card ${short > 0 ? 'stat-warn' : 'stat-ok'}">
+      <div class="stat-value"><img class="stat-icon" src="assets/icons/UI_ItemIcon_113021.png" alt="Dream Solvent" onerror="this.style.display='none'"> ${totalSolvent}</div>
+      <div class="stat-label">Dream Solvent · have ${ownedSolvent}${short > 0 ? ` · short ${short}` : ' · enough'}</div>
+    </div>`;
+  }
 
   summary.innerHTML = `
     <div class="stat-card"><div class="stat-value">${domainsWithDeficit}</div><div class="stat-label">Domains to run</div></div>
     <div class="stat-card"><div class="stat-value">${totalOwed}</div><div class="stat-label">Materials needed</div></div>
     <div class="stat-card"><div class="stat-value">${totalRuns}</div><div class="stat-label">Weekly clears</div></div>
     <div class="stat-card"><div class="stat-value">${totalResin}</div><div class="stat-label">Est. resin</div></div>
+    ${solventCard}
   `;
 
   cards.innerHTML = '';
@@ -424,7 +452,10 @@ function renderBossCard(boss, rank) {
   metrics.innerHTML = `
     <div class="metric">Runs: <strong>${boss.runs}</strong></div>
     <div class="metric">Still needed: <strong>${boss.deficit}</strong></div>
-    <div class="metric">Required: ${boss.required} · Owned: ${boss.owned}</div>`;
+    <div class="metric">Required: ${boss.required} · Owned: ${boss.owned}</div>` +
+    (allowConversion && boss.conversions > 0
+      ? `<div class="metric">Dream Solvent: <strong>${boss.conversions}</strong></div>`
+      : '');
 
   const chips = document.createElement('div');
   chips.className = 'mat-chips';
@@ -433,8 +464,10 @@ function renderBossCard(boss, rank) {
     if (m.required === 0 && m.owned === 0) continue;
     const chip = document.createElement('div');
     chip.className = 'mat-chip';
-    const needTxt = allowConversion
-      ? `<span class="convertible" title="Drops from this boss convert 1:1 with each other">↔ convertible</span>`
+    // Only flag conversion when this boss actually has surplus material to
+    // convert (otherwise it's misleading — no Dream Solvent is spent).
+    const needTxt = (allowConversion && boss.conversions > 0)
+      ? `<span class="convertible" title="Surplus from this boss converts 1:1 via Dream Solvent">↔ convertible</span>`
       : (m.deficit > 0 ? `<span class="need">need ${m.deficit}</span>` : `<span class="satisfied">✓</span>`);
     chip.innerHTML = `<img src="assets/icons/${m.icon}.png" alt="" onerror="this.style.display='none'"> ${m.name} <span class="owned">${m.owned}/${m.required}</span> ${needTxt}`;
     chips.appendChild(chip);
@@ -604,6 +637,9 @@ async function init() {
     allowConversion = e.target.checked;
     if (parsed) renderStep3();
   });
+  // Browsers may restore a checked checkbox across a reload while the JS state
+  // resets — sync from the DOM so the Dream Solvent card stays in step.
+  allowConversion = document.getElementById('allowConversion').checked;
 
   document.getElementById('selectAllBtn').addEventListener('click', () => applyToAll(st => st.included = true));
   document.getElementById('deselectAllBtn').addEventListener('click', () => applyToAll(st => st.included = false));
