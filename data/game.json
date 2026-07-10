@@ -4050,17 +4050,6 @@
       "version": null
     },
     {
-      "name": "Shouki no Kami, the Prodigal",
-      "region": "Inazuma",
-      "domain": "Shouki no Kami",
-      "materials": [
-        "Daka's Bell",
-        "Mirror of Mushin",
-        "Puppet Strings"
-      ],
-      "version": "3.2"
-    },
-    {
       "name": "Signora",
       "region": "Inazuma",
       "domain": "Narzissenkreuz",
@@ -4169,6 +4158,17 @@
         "Worldspan Fern"
       ],
       "version": "3.6"
+    },
+    {
+      "name": "Shouki no Kami, the Prodigal",
+      "region": "Sumeru",
+      "domain": "Joururi Workshop",
+      "materials": [
+        "Daka's Bell",
+        "Mirror of Mushin",
+        "Puppet Strings"
+      ],
+      "version": "3.2"
     }
   ]
 }

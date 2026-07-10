@@ -230,11 +230,11 @@ function renderStep2() {
 
     const group = document.createElement('div');
     group.className = 'boss-group';
-    group.style.setProperty('--group-accent', regionColor(boss.region));
+    group.style.setProperty('--group-accent', regionColorDark(boss.region));
 
     const header = document.createElement('div');
     header.className = 'boss-group-header';
-    header.style.background = regionColor(boss.region);
+    header.style.background = regionColorDark(boss.region);
     header.innerHTML = `<span>${boss.name}</span>` +
       (isBeta(boss.version) ? `<span class="badge-beta">BETA</span>` : '') +
       (isNewBoss(boss) ? `<span class="badge-new">NEW</span>` : '');
@@ -435,13 +435,14 @@ function renderBossCard(boss, rank) {
   const card = document.createElement('div');
   card.className = 'boss-card';
   const color = regionColor(boss.region);
+  const rankColor = regionColorDark(boss.region);
   card.style.setProperty('--card-accent', color);
 
   const satisfied = boss.deficit === 0;
   const header = document.createElement('div');
   header.className = 'boss-card-header';
   header.innerHTML = `
-    <span class="rank-badge" style="background:${color}">${rank}</span>
+    <span class="rank-badge" style="background:${rankColor}">${rank}</span>
     <div>
       <div class="boss-card-title">${boss.name} ${isBeta(boss.version) ? '<span class="badge-beta">BETA</span>' : ''} ${isNewBoss(boss) ? '<span class="badge-new">NEW</span>' : ''}</div>
       <div class="boss-card-sub">${boss.region} · ${boss.domain}</div>
@@ -512,9 +513,16 @@ function regionColor(region) {
     Sumeru: 'var(--region-sumeru)',
     Fontaine: 'var(--region-fontaine)',
     Natlan: 'var(--region-natlan)',
-    'Nod-Krai': 'var(--region-nod-krai)'
+    'Nod-Krai': 'var(--region-nod-krai)',
+    Snezhnaya: 'var(--region-snezhnaya)'
   };
   return map[region] || 'var(--region-unknown)';
+}
+
+// Same hue, darkened so white text on top stays readable (used for header /
+// badge backgrounds; the bright --region-* color is kept for accent borders).
+function regionColorDark(region) {
+  return `color-mix(in srgb, ${regionColor(region)}, #000 35%)`;
 }
 
 function isBeta(version) {

@@ -12,13 +12,14 @@
   --error: #f44336;
 
   /* Region accent colors */
-  --region-mondstadt: #7cb342;
-  --region-liyue: #ef5350;
-  --region-inazuma: #ab47bc;
-  --region-sumeru: #26a69a;
-  --region-fontaine: #42a5f5;
-  --region-natlan: #ff7043;
-  --region-nod-krai: #5c6bc0;
+  --region-mondstadt: #7fdeac; /* Mint Green */
+  --region-liyue: #e3cd65;     /* Sand Yellow */
+  --region-inazuma: #b993e4;   /* Electro Purple */
+  --region-sumeru: #b5dd47;    /* Bright Green */
+  --region-fontaine: #54b0f0;  /* Sky Blue */
+  --region-natlan: #e79d6c;    /* Soft Orange */
+  --region-nod-krai: #d2daf1;  /* Lunar Silver */
+  --region-snezhnaya: #88dbdc; /* Ice Blue */
   --region-unknown: #607d8b;
 }
 

@@ -35,7 +35,7 @@ const BOSS_METADATA = {
   'Lord of Eroded Primal Fire': { region: 'Liyue', domain: 'Crimson Witch of Embers' },
   'Signora': { region: 'Inazuma', domain: 'Narzissenkreuz' },
   'Guardian of Eternity': { region: 'Inazuma', domain: 'Musou Shrine' },
-  'Shouki no Kami, the Prodigal': { region: 'Inazuma', domain: 'Shouki no Kami' },
+  'Shouki no Kami, the Prodigal': { region: 'Sumeru', domain: 'Joururi Workshop' },
   'Guardian of Apep\'s Oasis': { region: 'Sumeru', domain: 'Temple of Silence' },
   'All-Devouring Narwhal': { region: 'Fontaine', domain: 'Laments of the Fallen' },
   'The Knave': { region: 'Fontaine', domain: 'Knave\'s Laporte' },
