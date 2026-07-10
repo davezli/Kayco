@@ -17,7 +17,10 @@ function nameToGoodKey(name) {
     if (/[A-Za-z0-9]/.test(ch)) {
       result += capitalizeNext ? ch.toUpperCase() : ch.toLowerCase();
       capitalizeNext = false;
-    } else {
+    } else if (/\s/.test(ch)) {
+      // Only whitespace sets the capitalize flag; apostrophes/hyphens/
+      // punctuation are dropped without affecting capitalization
+      // (e.g. "Dvalin's Plume" -> "DvalinsPlume")
       capitalizeNext = true;
     }
   }

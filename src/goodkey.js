@@ -24,10 +24,12 @@ function nameToGoodKey(name) {
       } else {
         result += ch.toLowerCase();
       }
-    } else {
-      // Any non-alnum (space, apostrophe, hyphen) sets capitalize-next flag
+    } else if (/\s/.test(ch)) {
+      // Only whitespace sets the capitalize-next flag
       capitalizeNext = true;
     }
+    // Apostrophes, hyphens, other punctuation are dropped WITHOUT
+    // affecting capitalization (e.g. "Dvalin's Plume" -> "DvalinsPlume")
   }
 
   return result;

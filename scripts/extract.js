@@ -56,8 +56,10 @@ function nameToGoodKey(name) {
         result += char.toLowerCase();
       }
       capitalizeNext = false;
-    } else {
-      // Space or other punctuation - set flag for next alnum
+    } else if (/\s/.test(char)) {
+      // Only whitespace sets the capitalize-next flag; apostrophes, hyphens,
+      // and other punctuation are dropped WITHOUT affecting capitalization
+      // (e.g. "Dvalin's Plume" -> "DvalinsPlume")
       capitalizeNext = true;
     }
   }
@@ -243,9 +245,18 @@ function extract() {
   }
 
   // Build game.json
+  // dataVersion = the live game version this baked data corresponds to.
+  // Derive it from genshin-db (its package description advertises the game
+  // version it covers) so the isBeta() check is correct. Hardcoding here is
+  // what falsely flagged released bosses (e.g. The Doctor 6.3, Il Dottore 6.6)
+  // as BETA when dataVersion lagged behind the data.
+  const genshinDbPkg = require('genshin-db/package.json');
+  const dataVersionMatch = (genshinDbPkg.description || '').match(/v?(\d+\.\d+)/);
+  const dataVersion = dataVersionMatch ? dataVersionMatch[1] : '0.0';
+
   const gameData = {
     generatedAt: new Date().toISOString(),
-    dataVersion: '6.0', // Will need updating for new game versions
+    dataVersion,
     perTalentToMax: { '7': 1, '8': 1, '9': 2, '10': 2 },
     characters: characters,
     materials: sortedMaterials,
