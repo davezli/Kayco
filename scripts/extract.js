@@ -1,0 +1,344 @@
+#!/usr/bin/env node
+/**
+ * Build-time data pipeline for Trounce Domain Recommender
+ * Bakes data/game.json and vendors icons from genshin-db
+ *
+ * Run manually by maintainers, NOT in CI or browser
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// Try to load genshin-db
+let genshinDb;
+try {
+  genshinDb = require('genshin-db');
+} catch (e) {
+  console.error('genshin-db not found. Install with: npm install genshin-db');
+  process.exit(1);
+}
+
+const ICONS_DIR = path.join(__dirname, '..', 'assets', 'icons');
+const GAME_JSON_PATH = path.join(__dirname, '..', 'data', 'game.json');
+
+// Curated lookup table for region/domain display names
+const BOSS_METADATA = {
+  'Stormterror': { region: 'Mondstadt', domain: 'Confront Stormterror' },
+  'Wolf of the North': { region: 'Mondstadt', domain: 'Wolf of the North Challenge' },
+  'Childe': { region: 'Liyue', domain: 'Enter the Golden House' },
+  'Azhdaha': { region: 'Liyue', domain: 'Beneath the Dragon-Queller' },
+  'Lord of Eroded Primal Fire': { region: 'Liyue', domain: 'Crimson Witch of Embers' },
+  'Signora': { region: 'Inazuma', domain: 'Narzissenkreuz' },
+  'Guardian of Eternity': { region: 'Inazuma', domain: 'Musou Shrine' },
+  'Shouki no Kami, the Prodigal': { region: 'Inazuma', domain: 'Shouki no Kami' },
+  'Guardian of Apep\'s Oasis': { region: 'Sumeru', domain: 'Temple of Silence' },
+  'All-Devouring Narwhal': { region: 'Fontaine', domain: 'Laments of the Fallen' },
+  'The Knave': { region: 'Fontaine', domain: 'Knave\'s Laporte' },
+  'Il Dottore': { region: 'Natlan', domain: 'Lava Dragon Statue' },
+  'The Doctor': { region: 'Natlan', domain: 'Lava Dragon Statue' },
+  'The Game Before the Gate': { region: 'Natlan', domain: 'Simulanka' },
+};
+
+/**
+ * Convert a display name to GOOD key format
+ * Required to match Irminsul / Genshin Optimizer exactly
+ */
+function nameToGoodKey(name) {
+  let result = '';
+  let capitalizeNext = true;
+
+  for (let i = 0; i < name.length; i++) {
+    const char = name[i];
+    if (/[A-Za-z0-9]/.test(char)) {
+      if (capitalizeNext) {
+        result += char.toUpperCase();
+      } else {
+        result += char.toLowerCase();
+      }
+      capitalizeNext = false;
+    } else {
+      // Space or other punctuation - set flag for next alnum
+      capitalizeNext = true;
+    }
+  }
+
+  return result;
+}
+
+/**
+ * Find the boss material for a character by looking at talent lvl7 costs
+ * Returns the material name (e.g., "Shard of a Foul Legacy")
+ */
+function findBossMaterialForCharacter(charKey) {
+  // Try to get talent data for this character
+  const talent = genshinDb.talent(charKey);
+  if (!talent || !talent.costs || !talent.costs.lvl7) return null;
+
+  // Look for a 5-star AVATAR_MATERIAL in lvl7 costs
+  // Boss materials have IDs in 113000-113999 range
+  for (const cost of talent.costs.lvl7) {
+    const materialId = cost.id;
+    // Boss materials are 5-star avatar materials with IDs 113000-113999
+    if (materialId >= 113000 && materialId <= 113999) {
+      // Get material data to verify it's an AVATAR_MATERIAL
+      const matData = genshinDb.material(cost.name);
+      if (matData && matData.category === 'AVATAR_MATERIAL') {
+        return cost.name;
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Derive boss name from material sources
+ * Use whether the source contains " Challenge Reward" to identify boss materials
+ */
+function deriveBossFromMaterial(material) {
+  if (!material || !material.sources || material.sources.length === 0) return null;
+
+  for (const source of material.sources) {
+    // Strip "Lv. 70+ " prefix and " Challenge Reward…" suffix
+    // Boss materials are those with source text like "Lv. 70+ Childe Challenge Reward"
+    // Note: We're verifying against the actual item name of the material
+    let bossName = source.replace(/^Lv\. 70\+ /, '').replace(/ Challenge Reward.*$/, '');
+    if (bossName && bossName !== source && bossName !== material.name) {
+      return bossName;
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Main extraction function
+ */
+function extract() {
+  const gdb = genshinDb;
+  const all = require('genshin-db/src/min/data.min.json');
+
+  console.log('Loading genshin-db...');
+
+  // Data structures
+  const characters = [];
+  const materials = {};
+  const bosses = {};
+  const bossMaterials = new Set();
+
+  // Get all character names from index
+  const allChars = Object.values(all.index.English.characters.names);
+  console.log(`Found ${allChars.length} characters`);
+
+  for (const charKey of allChars) {
+    // Get character data
+    const char = genshinDb.character(charKey);
+    if (!char) continue;
+
+    // Find boss material from talent costs
+    let bossMat = null;
+    let boss = null;
+
+    // Try to get boss material from character's talents
+    bossMat = findBossMaterialForCharacter(charKey);
+    if (bossMat) {
+      boss = deriveBossFromMaterial(genshinDb.material(bossMat));
+    }
+
+    if (!bossMat || !boss) continue;
+
+    bossMaterials.add(bossMat);
+
+    // Get weapon type name
+    const weaponType = char.weaponType || char.weaponText;
+    const weaponName = weaponType ? weaponType.replace('WEAPON_', '').toLowerCase().replace(/\b\w/g, c => c.toUpperCase()) : null;
+
+    // Format element name
+    const elementRaw = char.elementType || char.elementText || null;
+    const elementName = elementRaw ? elementRaw.replace('ELEMENT_', '').toLowerCase().replace(/\b\w/g, c => c.toUpperCase()) : null;
+
+    // Get talent names
+    let talentNames = { normal: null, skill: null, burst: null };
+    const talent = genshinDb.talent(charKey);
+    if (talent) {
+      talentNames = {
+        normal: talent.combat1?.name || null,
+        skill: talent.combat2?.name || null,
+        burst: talent.combat3?.name || null
+      };
+    }
+
+    characters.push({
+      key: nameToGoodKey(char.name || charKey),
+      name: char.name || charKey,
+      element: elementName,
+      rarity: char.rarity,
+      weapon: weaponName,
+      region: char.region || null,
+      version: char.version || null,
+      bossMat: bossMat,
+      boss: boss,
+      talents: talentNames,
+      icon: char.images?.filename_icon || null
+    });
+  }
+
+  // Sort characters by name
+  characters.sort((a, b) => a.name.localeCompare(b.name));
+
+  // Get materials - filter for 5-star AVATAR_MATERIAL with no dropDomainId
+  // Use the index to get all material filenames
+  const allMaterials = Object.values(all.index.English.materials.names);
+
+  for (const matKey of allMaterials) {
+    const item = genshinDb.material(matKey);
+    if (!item || !item.rarity || item.rarity !== 5) continue;
+    if (item.category !== 'AVATAR_MATERIAL') continue;
+
+    // Boss materials have IDs 113000-113999
+    if (item.id < 113000 || item.id > 113999) continue;
+
+    // Check if it has no dropDomainId or not from a domain
+    const boss = deriveBossFromMaterial(item);
+
+    materials[item.name] = {
+      name: item.name,
+      rarity: item.rarity,
+      icon: item.images?.filename_icon || item.name.replace(/\s+/g, ''),
+      boss: boss,
+      description: (item.description || '').split('\n')[0] || '',
+      version: item.version || null
+    };
+
+    if (boss) {
+      if (!bosses[boss]) {
+        bosses[boss] = {
+          name: boss,
+          region: BOSS_METADATA[boss]?.region || 'Unknown',
+          domain: BOSS_METADATA[boss]?.domain || 'Unknown',
+          materials: [],
+          version: item.version || null
+        };
+      }
+      bosses[boss].materials.push(item.name);
+    }
+  }
+
+  // Sort materials by name
+  const sortedMaterials = {};
+  Object.keys(materials).sort().forEach(name => {
+    sortedMaterials[name] = materials[name];
+  });
+
+  // Convert bosses to array and sort by region then name
+  const bossesList = Object.values(bosses).sort((a, b) => {
+    const regionCompare = (a.region || '').localeCompare(b.region || '');
+    if (regionCompare !== 0) return regionCompare;
+    return (a.name || '').localeCompare(b.name || '');
+  });
+
+  // Sort materials within each boss
+  for (const boss of bossesList) {
+    boss.materials.sort();
+  }
+
+  // Build game.json
+  const gameData = {
+    generatedAt: new Date().toISOString(),
+    dataVersion: '6.0', // Will need updating for new game versions
+    perTalentToMax: { '7': 1, '8': 1, '9': 2, '10': 2 },
+    characters: characters,
+    materials: sortedMaterials,
+    bosses: bossesList
+  };
+
+  // Ensure data directory exists
+  const dataDir = path.dirname(GAME_JSON_PATH);
+  if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+  }
+
+  // Write game.json
+  fs.writeFileSync(GAME_JSON_PATH, JSON.stringify(gameData, null, 2));
+  console.log(`Wrote ${GAME_JSON_PATH}`);
+  console.log(`  Characters: ${characters.length}`);
+  console.log(`  Materials: ${Object.keys(sortedMaterials).length}`);
+  console.log(`  Bosses: ${bossesList.length}`);
+
+  // Vendor icons
+  vendorIcons(gameData);
+}
+
+/**
+ * Vendor icons from remote host
+ */
+function vendorIcons(gameData) {
+  if (!fs.existsSync(ICONS_DIR)) {
+    fs.mkdirSync(ICONS_DIR, { recursive: true });
+  }
+
+  const iconHost = 'https://gi.yatta.moe/assets/UI/';
+  const { createHash } = require('crypto');
+
+  let fetched = 0;
+  let cached = 0;
+  let failed = 0;
+
+  // Collect all icon basenames
+  const icons = new Set();
+
+  for (const char of gameData.characters) {
+    if (char.icon) icons.add(char.icon);
+  }
+
+  for (const mat of Object.values(gameData.materials)) {
+    if (mat.icon) icons.add(mat.icon);
+  }
+
+  console.log(`\nVendoring ${icons.size} icons...`);
+
+  // Download icons using synchronous HTTP
+  const https = require('https');
+
+  for (const icon of icons) {
+    const iconPath = path.join(ICONS_DIR, `${icon}.png`);
+
+    if (fs.existsSync(iconPath)) {
+      cached++;
+      continue;
+    }
+
+    try {
+      const url = `${iconHost}${icon}.png`;
+      const file = fs.createWriteStream(iconPath);
+
+      https.get(url, (res) => {
+        if (res.statusCode === 200) {
+          res.pipe(file);
+          file.on('finish', () => {
+            file.close();
+            fetched++;
+            console.log(`  Fetched: ${icon}.png`);
+          });
+        } else {
+          file.close();
+          fs.unlinkSync(iconPath);
+          failed++;
+          console.log(`  Failed (${res.statusCode}): ${icon}.png`);
+        }
+      }).on('error', (err) => {
+        if (fs.existsSync(iconPath)) fs.unlinkSync(iconPath);
+        failed++;
+        console.log(`  Error: ${icon}.png - ${err.message}`);
+      });
+    } catch (e) {
+      failed++;
+      console.log(`  Error: ${icon}.png - ${e.message}`);
+    }
+  }
+
+  console.log(`\nIcon vendored: ${fetched} fetched, ${cached} cached, ${failed} failed`);
+}
+
+// Run extraction
+extract();

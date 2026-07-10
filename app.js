@@ -1,0 +1,538 @@
+/**
+ * Trounce Domain Recommender — main client app
+ * Single-page, client-only. Loads data/game.json, parses a GOOD export,
+ * and ranks weekly bosses to farm.
+ */
+
+'use strict';
+
+/* ============================================================
+ * GOOD key derivation (must match Irminsul / GO exactly)
+ * ============================================================ */
+function nameToGoodKey(name) {
+  let result = '';
+  let capitalizeNext = true;
+  for (let i = 0; i < name.length; i++) {
+    const ch = name[i];
+    if (/[A-Za-z0-9]/.test(ch)) {
+      result += capitalizeNext ? ch.toUpperCase() : ch.toLowerCase();
+      capitalizeNext = false;
+    } else {
+      capitalizeNext = true;
+    }
+  }
+  return result;
+}
+
+/* ============================================================
+ * GOOD parser
+ * ============================================================ */
+function parseGOOD(text) {
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch (e) {
+    throw new Error('Invalid JSON: ' + e.message);
+  }
+  if (!data || data.format !== 'GOOD') {
+    throw new Error('Not a GOOD export (missing or wrong "format" field)');
+  }
+  const characters = (data.characters || []).map(ch => ({
+    key: ch.key,
+    level: ch.level,
+    constellation: ch.constellation,
+    ascension: ch.ascension,
+    talent: ch.talent || {}
+  }));
+  const materialCounts = {};
+  if (data.materials) {
+    for (const [k, v] of Object.entries(data.materials)) {
+      materialCounts[k] = v;
+    }
+  }
+  return { characters, materialCounts, hasMaterials: !!data.materials };
+}
+
+/* ============================================================
+ * State
+ * ============================================================ */
+let GAME = null;                          // baked data/game.json
+const charState = new Map();              // key -> { included, target, normal, skill, burst, current:{auto,skill,burst} }
+let dropsPerRun = 2.7;
+let parsed = null;                        // last parse result
+
+/* ============================================================
+ * Data loading
+ * ============================================================ */
+async function loadGame() {
+  const res = await fetch('data/game.json');
+  GAME = await res.json();
+  document.getElementById('dataVersion').textContent = 'Baked data: v' + GAME.dataVersion;
+}
+
+/* ============================================================
+ * Core computation
+ * ============================================================ */
+
+// Cost to raise one talent from cur -> target (0 if cur>=target or target<7)
+function talentCost(cur, target, perTalentToMax) {
+  if (target < 7 || cur >= target) return 0;
+  let sum = 0;
+  for (let lvl = Math.max(cur + 1, 7); lvl <= target; lvl++) {
+    sum += perTalentToMax[lvl] || 0;
+  }
+  return sum;
+}
+
+// Compute required / owned / deficit per material, then aggregate per boss.
+function compute() {
+  const { perTalentToMax } = GAME;
+  const matRequired = {};   // materialName -> required
+  const matOwned = {};      // materialName -> owned
+  const matContrib = {};    // materialName -> [{charKey,name,count,detail}]
+
+  for (const [matName, mat] of Object.entries(GAME.materials)) {
+    matOwned[matName] = parsed.materialCounts[nameToGoodKey(matName)] || 0;
+    matRequired[matName] = 0;
+    matContrib[matName] = [];
+  }
+
+  // Accumulate requirements from selected characters
+  for (const [key, st] of charState) {
+    if (!st.included) continue;
+    const char = GAME.characters.find(c => c.key === key);
+    if (!char) continue;
+    const cur = st.current;
+    let need = 0;
+    const parts = [];
+    if (st.normal) { const c = talentCost(cur.auto || 1, st.target, perTalentToMax); need += c; if (c) parts.push(`NA ${cur.auto || 1}→${st.target}`); }
+    if (st.skill)  { const c = talentCost(cur.skill || 1, st.target, perTalentToMax); need += c; if (c) parts.push(`Skill ${cur.skill || 1}→${st.target}`); }
+    if (st.burst)  { const c = talentCost(cur.burst || 1, st.target, perTalentToMax); need += c; if (c) parts.push(`Burst ${cur.burst || 1}→${st.target}`); }
+
+    if (need > 0) {
+      matRequired[char.bossMat] += need;
+      matContrib[char.bossMat].push({ charKey: key, name: char.name, count: need, detail: parts.join(', ') });
+    }
+  }
+
+  // Per-boss aggregation
+  const bosses = GAME.bosses.map(b => {
+    let required = 0, owned = 0, deficit = 0;
+    const mats = [];
+    for (const matName of b.materials) {
+      const req = matRequired[matName] || 0;
+      const own = matOwned[matName] || 0;
+      const def = Math.max(0, req - own);
+      required += req; owned += own; deficit += def;
+      mats.push({ name: matName, required: req, owned: own, deficit: def, icon: GAME.materials[matName].icon });
+    }
+    const runs = deficit > 0 ? Math.ceil(deficit / dropsPerRun) : 0;
+    const contribs = [];
+    for (const matName of b.materials) {
+      for (const c of matContrib[matName]) contribs.push(c);
+    }
+    contribs.sort((a, b) => b.count - a.count);
+    return { ...b, required, owned, deficit, runs, mats, contribs };
+  });
+
+  // Rank: deficit desc, then required desc
+  bosses.sort((a, b) => {
+    if (b.deficit !== a.deficit) return b.deficit - a.deficit;
+    return b.required - a.required;
+  });
+
+  return bosses;
+}
+
+/* ============================================================
+ * UI: status
+ * ============================================================ */
+function setStatus(msg, type) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = 'status-bar show ' + (type || '');
+}
+
+/* ============================================================
+ * UI: Step 2 — character selection
+ * ============================================================ */
+function buildCharacterState() {
+  charState.clear();
+  const known = new Map(GAME.characters.map(c => [c.key, c]));
+
+  for (const ch of parsed.characters) {
+    const char = known.get(ch.key);
+    if (!char) continue; // only owned ∩ known
+    const cur = ch.talent || {};
+    charState.set(ch.key, {
+      included: true,
+      target: 10,
+      normal: false,
+      skill: true,
+      burst: true,
+      current: { auto: cur.auto || 1, skill: cur.skill || 1, burst: cur.burst || 1 }
+    });
+  }
+}
+
+function renderStep2() {
+  const container = document.getElementById('characterGroups');
+  container.innerHTML = '';
+
+  // Group characters by boss (preserve GAME.bosses order)
+  for (const boss of GAME.bosses) {
+    const chars = GAME.characters.filter(c => c.boss === boss.name && charState.has(c.key));
+    if (chars.length === 0) continue;
+
+    const group = document.createElement('div');
+    group.className = 'boss-group';
+    group.style.setProperty('--group-accent', regionColor(boss.region));
+
+    const header = document.createElement('div');
+    header.className = 'boss-group-header';
+    header.style.background = regionColor(boss.region);
+    header.innerHTML = `<span>${boss.name}</span>` +
+      (isBeta(boss.version) ? `<span class="badge-beta">BETA</span>` : '');
+    group.appendChild(header);
+
+    const list = document.createElement('div');
+    list.className = 'character-list';
+
+    for (const char of chars) {
+      list.appendChild(renderCharRow(char));
+    }
+    group.appendChild(list);
+    container.appendChild(group);
+  }
+}
+
+function renderCharRow(char) {
+  const st = charState.get(char.key);
+  const row = document.createElement('div');
+  row.className = 'char-row' + (st.included ? '' : ' off');
+
+  const cb = document.createElement('input');
+  cb.type = 'checkbox';
+  cb.className = 'char-check';
+  cb.checked = st.included;
+  cb.addEventListener('change', () => { st.included = cb.checked; refreshAll(); });
+
+  const img = document.createElement('img');
+  img.className = 'char-portrait';
+  img.src = `assets/icons/${char.icon}.png`;
+  img.alt = char.name;
+  img.onerror = () => img.classList.add('error');
+
+  const name = document.createElement('span');
+  name.className = 'char-name';
+  name.textContent = char.name;
+
+  const meta = document.createElement('div');
+  meta.className = 'char-meta';
+  const need = computeCharNeed(char.key);
+  const badgeClass = !st.included ? 'off' : (need === 0 ? 'done' : 'need');
+  const badgeText = !st.included ? 'off' : (need === 0 ? 'done' : `needs ${need}`);
+  meta.innerHTML = `<span class="char-badge ${badgeClass}">${badgeText}</span>` +
+    `<span>${char.element}</span><span>${char.weapon}</span>`;
+
+  const controls = document.createElement('div');
+  controls.className = 'char-controls';
+
+  const targetSel = document.createElement('select');
+  targetSel.className = 'target-select';
+  for (let lv = 7; lv <= 10; lv++) {
+    const o = document.createElement('option');
+    o.value = lv; o.textContent = '→ ' + lv;
+    if (lv === st.target) o.selected = true;
+    targetSel.appendChild(o);
+  }
+  targetSel.addEventListener('change', () => { st.target = parseInt(targetSel.value, 10); refreshAll(); });
+
+  const pills = document.createElement('div');
+  pills.className = 'talent-pills';
+  pills.appendChild(makePill('normal', 'NA', char, st));
+  pills.appendChild(makePill('skill', 'Skill', char, st));
+  pills.appendChild(makePill('burst', 'Burst', char, st));
+
+  controls.appendChild(targetSel);
+  controls.appendChild(pills);
+
+  row.appendChild(cb);
+  row.appendChild(img);
+  row.appendChild(name);
+  row.appendChild(meta);
+  row.appendChild(controls);
+
+  // clicking the name toggles include
+  name.addEventListener('click', () => { st.included = !st.included; cb.checked = st.included; refreshAll(); });
+  row.addEventListener('click', (e) => {
+    if (e.target === row || e.target === meta) { st.included = !st.included; cb.checked = st.included; refreshAll(); }
+  });
+
+  return row;
+}
+
+function makePill(scope, label, char, st) {
+  const cur = st.current[scope === 'normal' ? 'auto' : scope] || 1;
+  const pill = document.createElement('div');
+  pill.className = 'pill';
+  const meetsTarget = cur >= st.target;
+  if (meetsTarget) {
+    pill.classList.add('done', 'disabled');
+    pill.textContent = `${label} ✓`;
+  } else {
+    if (st[scope]) pill.classList.add('active');
+    pill.textContent = `${label} ${cur}→${st.target}`;
+    pill.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (meetsTarget) return;
+      st[scope] = !st[scope];
+      refreshAll();
+    });
+  }
+  return pill;
+}
+
+function computeCharNeed(key) {
+  const st = charState.get(key);
+  const cur = st.current;
+  let need = 0;
+  if (st.normal) need += talentCost(cur.auto || 1, st.target, GAME.perTalentToMax);
+  if (st.skill)  need += talentCost(cur.skill || 1, st.target, GAME.perTalentToMax);
+  if (st.burst)  need += talentCost(cur.burst || 1, st.target, GAME.perTalentToMax);
+  return need;
+}
+
+/* ============================================================
+ * UI: Step 3 — farm results
+ * ============================================================ */
+function renderStep3() {
+  const bosses = compute();
+  const summary = document.getElementById('summary');
+  const cards = document.getElementById('bossCards');
+  const allDone = document.getElementById('allDone');
+
+  const domainsWithDeficit = bosses.filter(b => b.deficit > 0).length;
+  const totalOwed = bosses.reduce((s, b) => s + b.deficit, 0);
+  const totalRuns = bosses.reduce((s, b) => s + b.runs, 0);
+  const totalResin = totalRuns * 60;
+
+  summary.innerHTML = `
+    <div class="stat-card"><div class="stat-value">${domainsWithDeficit}</div><div class="stat-label">Domains to run</div></div>
+    <div class="stat-card"><div class="stat-value">${totalOwed}</div><div class="stat-label">Materials owed</div></div>
+    <div class="stat-card"><div class="stat-value">${totalRuns}</div><div class="stat-label">Weekly clears</div></div>
+    <div class="stat-card"><div class="stat-value">${totalResin}</div><div class="stat-label">Est. resin</div></div>
+  `;
+
+  cards.innerHTML = '';
+  const relevant = bosses.filter(b => b.required > 0);
+  if (relevant.length === 0) {
+    allDone.classList.remove('hidden');
+    return;
+  }
+  allDone.classList.add('hidden');
+
+  let rank = 1;
+  for (const b of relevant) {
+    cards.appendChild(renderBossCard(b, rank++));
+  }
+}
+
+function renderBossCard(boss, rank) {
+  const card = document.createElement('div');
+  card.className = 'boss-card';
+  const color = regionColor(boss.region);
+  card.style.setProperty('--card-accent', color);
+
+  const satisfied = boss.deficit === 0;
+  const header = document.createElement('div');
+  header.className = 'boss-card-header';
+  header.innerHTML = `
+    <span class="rank-badge" style="background:${color}">${rank}</span>
+    <div>
+      <div class="boss-card-title">${boss.name} ${isBeta(boss.version) ? '<span class="badge-beta">BETA</span>' : ''}</div>
+      <div class="boss-card-sub">${boss.region} · ${boss.domain}</div>
+    </div>`;
+
+  const metrics = document.createElement('div');
+  metrics.className = 'boss-metrics';
+  metrics.innerHTML = `
+    <div class="metric">Runs: <strong>${boss.runs}</strong></div>
+    <div class="metric">Still owed: <strong>${boss.deficit}</strong></div>
+    <div class="metric">Required: ${boss.required} · Owned: ${boss.owned}</div>`;
+
+  const chips = document.createElement('div');
+  chips.className = 'mat-chips';
+  for (const m of boss.mats) {
+    if (m.required === 0 && m.owned === 0) continue;
+    const chip = document.createElement('div');
+    chip.className = 'mat-chip';
+    const needTxt = m.deficit > 0 ? `<span class="need">need ${m.deficit}</span>` : `<span class="satisfied">✓</span>`;
+    chip.innerHTML = `<img src="assets/icons/${m.icon}.png" alt="" onerror="this.style.display='none'"> ${m.name} <span class="owned">${m.owned}/${m.required}</span> ${needTxt}`;
+    chips.appendChild(chip);
+  }
+
+  const contribs = document.createElement('div');
+  contribs.className = 'contrib-chips';
+  for (const c of boss.contribs) {
+    const char = GAME.characters.find(x => x.key === c.charKey);
+    const chip = document.createElement('div');
+    chip.className = 'contrib-chip';
+    chip.innerHTML = `<img src="assets/icons/${char.icon}.png" alt="" onerror="this.style.display='none'"> ${c.name} <span class="count">×${c.count}</span>`;
+    chip.title = c.detail;
+    contribs.appendChild(chip);
+  }
+
+  card.appendChild(header);
+  card.appendChild(metrics);
+  card.appendChild(chips);
+  card.appendChild(contribs);
+  return card;
+}
+
+/* ============================================================
+ * Helpers
+ * ============================================================ */
+function regionColor(region) {
+  const map = {
+    Mondstadt: 'var(--region-mondstadt)',
+    Liyue: 'var(--region-liyue)',
+    Inazuma: 'var(--region-inazuma)',
+    Sumeru: 'var(--region-sumeru)',
+    Fontaine: 'var(--region-fontaine)',
+    Natlan: 'var(--region-natlan)',
+    'Nod-Krai': 'var(--region-nod-krai)'
+  };
+  return map[region] || 'var(--region-unknown)';
+}
+
+function isBeta(version) {
+  if (!version) return false;
+  const v = parseFloat(version);
+  return v > parseFloat(GAME.dataVersion || '0');
+}
+
+function refreshAll() {
+  renderStep2();
+  renderStep3();
+}
+
+/* ============================================================
+ * Event handlers
+ * ============================================================ */
+function onAnalyze() {
+  const text = document.getElementById('goodInput').value.trim();
+  if (!text) { setStatus('Paste a GOOD export first.', 'error'); return; }
+  try {
+    parsed = parseGOOD(text);
+  } catch (e) {
+    setStatus('❌ ' + e.message, 'error');
+    return;
+  }
+  afterParse();
+}
+
+function afterParse() {
+  const knownKeys = new Set(GAME.characters.map(c => c.key));
+  const ownedKnown = parsed.characters.filter(c => knownKeys.has(c.key)).length;
+  const matKeys = Object.keys(parsed.materialCounts);
+  let msg = `✅ Read ${parsed.characters.length} characters and inventory for ${matKeys.length} boss materials.`;
+  let type = 'success';
+  if (!parsed.hasMaterials) {
+    msg = `⚠️ Read ${parsed.characters.length} characters, but NO materials field — inventory treated as 0.`;
+    type = 'warning';
+  }
+  setStatus(`✅ ${msg} (${ownedKnown} owned ∩ known)`, type);
+
+  buildCharacterState();
+  document.getElementById('step2').classList.remove('hidden');
+  document.getElementById('step3').classList.remove('hidden');
+  refreshAll();
+}
+
+function onFile(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    document.getElementById('goodInput').value = reader.result;
+    onAnalyze();
+  };
+  reader.readAsText(file);
+}
+
+/* Random 30 sample generator (non-beta chars only) */
+function randomGood() {
+  const beta = new Set(GAME.bosses.filter(b => isBeta(b.version)).map(b => b.name));
+  const candidates = GAME.characters.filter(c => !beta.has(c.boss));
+  const pool = candidates.length >= 30 ? candidates : GAME.characters;
+  const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, 30);
+
+  const characters = shuffled.map(c => {
+    const r = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+    return {
+      key: c.key,
+      level: r(20, 90),
+      constellation: r(0, 6),
+      ascension: r(0, 6),
+      talent: { auto: r(1, 10), skill: r(1, 10), burst: r(1, 10) }
+    };
+  });
+
+  const materials = {};
+  for (const name of Object.keys(GAME.materials)) {
+    const roll = Math.random();
+    if (roll > 0.3) materials[nameToGoodKey(name)] = Math.floor(Math.random() * 15);
+  }
+
+  return { format: 'GOOD', version: 2, characters, materials };
+}
+
+function onRandom() {
+  if (!GAME) return;
+  const sample = randomGood();
+  document.getElementById('goodInput').value = JSON.stringify(sample, null, 2);
+  parsed = parseGOOD(JSON.stringify(sample));
+  afterParse();
+}
+
+/* Bulk controls */
+function applyToAll(fn) {
+  for (const st of charState.values()) fn(st);
+  refreshAll();
+}
+
+/* ============================================================
+ * Init
+ * ============================================================ */
+async function init() {
+  await loadGame();
+
+  document.getElementById('analyzeBtn').addEventListener('click', onAnalyze);
+  document.getElementById('fileInput').addEventListener('change', onFile);
+  document.getElementById('randomBtn').addEventListener('click', onRandom);
+
+  document.getElementById('dropsPerRun').addEventListener('input', (e) => {
+    const v = parseFloat(e.target.value);
+    dropsPerRun = isNaN(v) || v < 0.5 ? 0.5 : v;
+    if (parsed) renderStep3();
+  });
+
+  document.getElementById('selectAllBtn').addEventListener('click', () => applyToAll(st => st.included = true));
+  document.getElementById('deselectAllBtn').addEventListener('click', () => applyToAll(st => st.included = false));
+
+  document.getElementById('presetSelect').addEventListener('change', (e) => {
+    const v = e.target.value;
+    applyToAll(st => { st.normal = (v === 'all3'); st.skill = true; st.burst = true; });
+  });
+
+  document.getElementById('targetAllSelect').addEventListener('change', (e) => {
+    const t = parseInt(e.target.value, 10);
+    applyToAll(st => st.target = t);
+  });
+}
+
+init().catch(err => {
+  console.error(err);
+  setStatus('Failed to load game data: ' + err.message, 'error');
+});

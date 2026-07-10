@@ -1,0 +1,2520 @@
+{
+  "generatedAt": "2026-07-10T01:26:13.421Z",
+  "dataVersion": "6.0",
+  "perTalentToMax": {
+    "7": 1,
+    "8": 1,
+    "9": 2,
+    "10": 2
+  },
+  "characters": [
+    {
+      "key": "Aino",
+      "name": "Aino",
+      "element": "Hydro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Nod-Krai",
+      "version": "6.0",
+      "bossMat": "Silken Feather",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Bish-Bash-Bosh Repair",
+        "skill": "Musecatcher",
+        "burst": "Precision Hydronic Cooler"
+      },
+      "icon": "UI_AvatarIcon_Aino"
+    },
+    {
+      "key": "Albedo",
+      "name": "Albedo",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Mondstadt",
+      "version": "1.2",
+      "bossMat": "Tusk of Monoceros Caeli",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Favonius Bladework - Weiss",
+        "skill": "Abiogenesis: Solar Isotoma",
+        "burst": "Rite of Progeniture: Tectonic Tide"
+      },
+      "icon": "UI_AvatarIcon_Albedo"
+    },
+    {
+      "key": "Alhaitham",
+      "name": "Alhaitham",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Sumeru",
+      "version": "3.4",
+      "bossMat": "Mirror of Mushin",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Abductive Reasoning",
+        "skill": "Universality: An Elaboration on Form",
+        "burst": "Particular Field: Fetters of Phenomena"
+      },
+      "icon": "UI_AvatarIcon_Alhatham"
+    },
+    {
+      "key": "Aloy",
+      "name": "Aloy",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": null,
+      "version": "2.1",
+      "bossMat": "Molten Moment",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Rapid Fire",
+        "skill": "Frozen Wilds",
+        "burst": "Prophecies of Dawn"
+      },
+      "icon": "UI_AvatarIcon_Aloy"
+    },
+    {
+      "key": "Amber",
+      "name": "Amber",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Sigh",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Sharpshooter",
+        "skill": "Explosive Puppet",
+        "burst": "Fiery Rain"
+      },
+      "icon": "UI_AvatarIcon_Ambor"
+    },
+    {
+      "key": "AratakiItto",
+      "name": "Arataki Itto",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Inazuma",
+      "version": "2.3",
+      "bossMat": "Ashen Heart",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Fight Club Legend",
+        "skill": "Masatsu Zetsugi: Akaushi Burst!",
+        "burst": "Royal Descent: Behold, Itto the Evil!"
+      },
+      "icon": "UI_AvatarIcon_Itto"
+    },
+    {
+      "key": "Arlecchino",
+      "name": "Arlecchino",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Snezhnaya",
+      "version": "4.6",
+      "bossMat": "Fading Candle",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Invitation to a Beheading",
+        "skill": "All Is Ash",
+        "burst": "Balemoon Rising"
+      },
+      "icon": "UI_AvatarIcon_Arlecchino"
+    },
+    {
+      "key": "Baizhu",
+      "name": "Baizhu",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Liyue",
+      "version": "3.6",
+      "bossMat": "Worldspan Fern",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "The Classics of Acupuncture",
+        "skill": "Universal Diagnosis",
+        "burst": "Holistic Revivification"
+      },
+      "icon": "UI_AvatarIcon_Baizhuer"
+    },
+    {
+      "key": "Barbara",
+      "name": "Barbara",
+      "element": "Hydro",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Ring of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Whisper of Water",
+        "skill": "Let the Show Begin♪",
+        "burst": "Shining Miracle♪"
+      },
+      "icon": "UI_AvatarIcon_Barbara"
+    },
+    {
+      "key": "Beidou",
+      "name": "Beidou",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Dvalin's Sigh",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Oceanborne",
+        "skill": "Tidecaller",
+        "burst": "Stormbreaker"
+      },
+      "icon": "UI_AvatarIcon_Beidou"
+    },
+    {
+      "key": "Bennett",
+      "name": "Bennett",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Plume",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Strike of Fortune",
+        "skill": "Passion Overload",
+        "burst": "Fantastic Voyage"
+      },
+      "icon": "UI_AvatarIcon_Bennett"
+    },
+    {
+      "key": "Candace",
+      "name": "Candace",
+      "element": "Hydro",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Sumeru",
+      "version": "3.1",
+      "bossMat": "Tears of the Calamitous God",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Gleaming Spear - Guardian Stance",
+        "skill": "Sacred Rite: Heron's Sanctum",
+        "burst": "Sacred Rite: Wagtail's Tide"
+      },
+      "icon": "UI_AvatarIcon_Candace"
+    },
+    {
+      "key": "Charlotte",
+      "name": "Charlotte",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Fontaine",
+      "version": "4.2",
+      "bossMat": "Lightless Silk String",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Cool-Color Capture",
+        "skill": "Framing: Freezing Point Composition",
+        "burst": "Still Photo: Comprehensive Confirmation"
+      },
+      "icon": "UI_AvatarIcon_Charlotte"
+    },
+    {
+      "key": "Chasca",
+      "name": "Chasca",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Natlan",
+      "version": "5.2",
+      "bossMat": "Silken Feather",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Phantom Feather Flurry",
+        "skill": "Spirit Reins, Shadow Hunt",
+        "burst": "Soul Reaper's Fatal Round"
+      },
+      "icon": "UI_AvatarIcon_Chasca"
+    },
+    {
+      "key": "Chevreuse",
+      "name": "Chevreuse",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Fontaine",
+      "version": "4.3",
+      "bossMat": "Lightless Eye of the Maelstrom",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Line Bayonet Thrust EX",
+        "skill": "Short-Range Rapid Interdiction Fire",
+        "burst": "Ring of Bursting Grenades"
+      },
+      "icon": "UI_AvatarIcon_Chevreuse"
+    },
+    {
+      "key": "Chiori",
+      "name": "Chiori",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Inazuma",
+      "version": "4.5",
+      "bossMat": "Lightless Silk String",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Weaving Blade",
+        "skill": "Fluttering Hasode",
+        "burst": "Hiyoku: Twin Blades"
+      },
+      "icon": "UI_AvatarIcon_Chiori"
+    },
+    {
+      "key": "Chongyun",
+      "name": "Chongyun",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Dvalin's Sigh",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Demonbane",
+        "skill": "Spirit Blade: Chonghua's Layered Frost",
+        "burst": "Spirit Blade: Cloud-Parting Star"
+      },
+      "icon": "UI_AvatarIcon_Chongyun"
+    },
+    {
+      "key": "Citlali",
+      "name": "Citlali",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Natlan",
+      "version": "5.3",
+      "bossMat": "Denial and Judgment",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Shadow-Stealing Spirit Vessel",
+        "skill": "Dawnfrost Darkstar",
+        "burst": "Edict of Entwined Splendor"
+      },
+      "icon": "UI_AvatarIcon_Citlali"
+    },
+    {
+      "key": "Clorinde",
+      "name": "Clorinde",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Fontaine",
+      "version": "4.7",
+      "bossMat": "Everamber",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Oath of Hunting Shadows",
+        "skill": "Hunter's Vigil",
+        "burst": "Last Lightfall"
+      },
+      "icon": "UI_AvatarIcon_Clorinde"
+    },
+    {
+      "key": "Collei",
+      "name": "Collei",
+      "element": "Dendro",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Sumeru",
+      "version": "3.0",
+      "bossMat": "Tears of the Calamitous God",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Supplicant's Bowmanship",
+        "skill": "Floral Brush",
+        "burst": "Trump-Card Kitty"
+      },
+      "icon": "UI_AvatarIcon_Collei"
+    },
+    {
+      "key": "Columbina",
+      "name": "Columbina",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Nod-Krai",
+      "version": "6.3",
+      "bossMat": "Mask of the Virtuous Doctor",
+      "boss": "The Doctor",
+      "talents": {
+        "normal": "Moondew Cascade",
+        "skill": "Eternal Tides",
+        "burst": "Moonlit Melancholy"
+      },
+      "icon": "UI_AvatarIcon_Columbina"
+    },
+    {
+      "key": "Cyno",
+      "name": "Cyno",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Sumeru",
+      "version": "3.1",
+      "bossMat": "Mudra of the Malefic General",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Invoker's Spear",
+        "skill": "Secret Rite: Chasmic Soulfarer",
+        "burst": "Sacred Rite: Wolf's Swiftness"
+      },
+      "icon": "UI_AvatarIcon_Cyno"
+    },
+    {
+      "key": "Dahlia",
+      "name": "Dahlia",
+      "element": "Hydro",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Mondstadt",
+      "version": "5.7",
+      "bossMat": "Eroded Scale-Feather",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Favonius Bladework - Ritual",
+        "skill": "Immersive Ordinance",
+        "burst": "Radiant Psalter"
+      },
+      "icon": "UI_AvatarIcon_Dahlia"
+    },
+    {
+      "key": "Dehya",
+      "name": "Dehya",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Sumeru",
+      "version": "3.5",
+      "bossMat": "Puppet Strings",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Sandstorm Assault",
+        "skill": "Molten Inferno",
+        "burst": "Leonine Bite"
+      },
+      "icon": "UI_AvatarIcon_Dehya"
+    },
+    {
+      "key": "Diluc",
+      "name": "Diluc",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Plume",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Tempered Sword",
+        "skill": "Searing Onslaught",
+        "burst": "Dawn"
+      },
+      "icon": "UI_AvatarIcon_Diluc"
+    },
+    {
+      "key": "Diona",
+      "name": "Diona",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Mondstadt",
+      "version": "1.1",
+      "bossMat": "Shard of a Foul Legacy",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Kätzlein Style",
+        "skill": "Icy Paws",
+        "burst": "Signature Mix"
+      },
+      "icon": "UI_AvatarIcon_Diona"
+    },
+    {
+      "key": "Dori",
+      "name": "Dori",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Sumeru",
+      "version": "3.0",
+      "bossMat": "Bloodjade Branch",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Marvelous Sword-Dance (Modified)",
+        "skill": "Spirit-Warding Lamp: Troubleshooter Cannon",
+        "burst": "Alcazarzaray's Exactitude"
+      },
+      "icon": "UI_AvatarIcon_Dori"
+    },
+    {
+      "key": "Durin",
+      "name": "Durin",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Mondstadt",
+      "version": "6.2",
+      "bossMat": "Eroded Sunfire",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Radiant Wingslash",
+        "skill": "Binary Form: Convergence and Division",
+        "burst": "Principle of Purity: As the Light Shifts"
+      },
+      "icon": "UI_AvatarIcon_Durin"
+    },
+    {
+      "key": "Emilie",
+      "name": "Emilie",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Fontaine",
+      "version": "4.8",
+      "bossMat": "Silken Feather",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Shadow-Hunting Spear (Custom)",
+        "skill": "Fragrance Extraction",
+        "burst": "Aromatic Explication"
+      },
+      "icon": "UI_AvatarIcon_Emilie"
+    },
+    {
+      "key": "Escoffier",
+      "name": "Escoffier",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Fontaine",
+      "version": "5.6",
+      "bossMat": "Eroded Horn",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Kitchen Skills",
+        "skill": "Low-Temperature Cooking",
+        "burst": "Scoring Cuts"
+      },
+      "icon": "UI_AvatarIcon_Escoffier"
+    },
+    {
+      "key": "Eula",
+      "name": "Eula",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Mondstadt",
+      "version": "1.5",
+      "bossMat": "Dragon Lord's Crown",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Favonius Bladework - Edel",
+        "skill": "Icetide Vortex",
+        "burst": "Glacial Illumination"
+      },
+      "icon": "UI_AvatarIcon_Eula"
+    },
+    {
+      "key": "Faruzan",
+      "name": "Faruzan",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Sumeru",
+      "version": "3.3",
+      "bossMat": "Puppet Strings",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Parthian Shot",
+        "skill": "Wind Realm of Nasamjnin",
+        "burst": "The Wind's Secret Ways"
+      },
+      "icon": "UI_AvatarIcon_Faruzan"
+    },
+    {
+      "key": "Fischl",
+      "name": "Fischl",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Spirit Locket of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Bolts of Downfall",
+        "skill": "Nightrider",
+        "burst": "Midnight Phantasmagoria"
+      },
+      "icon": "UI_AvatarIcon_Fischl"
+    },
+    {
+      "key": "Flins",
+      "name": "Flins",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Nod-Krai",
+      "version": "6.0",
+      "bossMat": "Ascended Sample: Queen",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Pocztowy Demonspear",
+        "skill": "Ancient Rite: Arcane Light",
+        "burst": "Ancient Ritual: Cometh the Night"
+      },
+      "icon": "UI_AvatarIcon_Flins"
+    },
+    {
+      "key": "Freminet",
+      "name": "Freminet",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Fontaine",
+      "version": "4.0",
+      "bossMat": "Worldspan Fern",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Flowing Eddies",
+        "skill": "Pressurized Floe",
+        "burst": "Shadowhunter's Ambush"
+      },
+      "icon": "UI_AvatarIcon_Freminet"
+    },
+    {
+      "key": "Furina",
+      "name": "Furina",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Fontaine",
+      "version": "4.2",
+      "bossMat": "Lightless Mass",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Soloist's Solicitation",
+        "skill": "Salon Solitaire",
+        "burst": "Let the People Rejoice"
+      },
+      "icon": "UI_AvatarIcon_Furina"
+    },
+    {
+      "key": "Gaming",
+      "name": "Gaming",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Liyue",
+      "version": "4.4",
+      "bossMat": "Lightless Mass",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Stellar Rend",
+        "skill": "Bestial Ascent",
+        "burst": "Suanni's Gilded Dance"
+      },
+      "icon": "UI_AvatarIcon_Gaming"
+    },
+    {
+      "key": "Ganyu",
+      "name": "Ganyu",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Liyue",
+      "version": "1.2",
+      "bossMat": "Shadow of the Warrior",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Liutian Archery",
+        "skill": "Trail of the Qilin",
+        "burst": "Celestial Shower"
+      },
+      "icon": "UI_AvatarIcon_Ganyu"
+    },
+    {
+      "key": "Gorou",
+      "name": "Gorou",
+      "element": "Geo",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Inazuma",
+      "version": "2.3",
+      "bossMat": "Molten Moment",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Ripping Fang Fletching",
+        "skill": "Inuzaka All-Round Defense",
+        "burst": "Juuga: Forward Unto Victory"
+      },
+      "icon": "UI_AvatarIcon_Gorou"
+    },
+    {
+      "key": "HuTao",
+      "name": "Hu Tao",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "1.3",
+      "bossMat": "Shard of a Foul Legacy",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Secret Spear of Wangsheng",
+        "skill": "Guide to Afterlife",
+        "burst": "Spirit Soother"
+      },
+      "icon": "UI_AvatarIcon_Hutao"
+    },
+    {
+      "key": "Iansan",
+      "name": "Iansan",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Natlan",
+      "version": "5.5",
+      "bossMat": "Denial and Judgment",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Weighted Spike",
+        "skill": "Thunderbolt Rush",
+        "burst": "The Three Principles of Power"
+      },
+      "icon": "UI_AvatarIcon_Iansan"
+    },
+    {
+      "key": "Ifa",
+      "name": "Ifa",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Natlan",
+      "version": "5.6",
+      "bossMat": "Ascended Sample: Rook",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Rite of Dispelling Winds",
+        "skill": "Airborne Disease Prevention",
+        "burst": "Compound Sedation Field"
+      },
+      "icon": "UI_AvatarIcon_Ifa"
+    },
+    {
+      "key": "Illuga",
+      "name": "Illuga",
+      "element": "Geo",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Nod-Krai",
+      "version": "6.3",
+      "bossMat": "Eroded Horn",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Oathkeeper's Spear",
+        "skill": "Dawnbearing Songbird",
+        "burst": "Shadowless Reflection"
+      },
+      "icon": "UI_AvatarIcon_Illuga"
+    },
+    {
+      "key": "Ineffa",
+      "name": "Ineffa",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Nod-Krai",
+      "version": "5.8",
+      "bossMat": "Eroded Sunfire",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Cyclonic Duster",
+        "skill": "Cleaning Mode: Carrier Frequency",
+        "burst": "Supreme Instruction: Cyclonic Exterminator"
+      },
+      "icon": "UI_AvatarIcon_Ineffa"
+    },
+    {
+      "key": "Jahoda",
+      "name": "Jahoda",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Nod-Krai",
+      "version": "6.2",
+      "bossMat": "Ascended Sample: Knight",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Strike While the Arrow's Hot",
+        "skill": "Savvy Strategy: Splitting the Spoils",
+        "burst": "Hidden Aces: Seven Tools of the Hunter"
+      },
+      "icon": "UI_AvatarIcon_Jahoda"
+    },
+    {
+      "key": "Jean",
+      "name": "Jean",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Plume",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Favonius Bladework",
+        "skill": "Gale Blade",
+        "burst": "Dandelion Breeze"
+      },
+      "icon": "UI_AvatarIcon_Qin"
+    },
+    {
+      "key": "Kachina",
+      "name": "Kachina",
+      "element": "Geo",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Natlan",
+      "version": "5.0",
+      "bossMat": "Fading Candle",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Cragbiter",
+        "skill": "Go, Go Turbo Twirly!",
+        "burst": "Time to Get Serious!"
+      },
+      "icon": "UI_AvatarIcon_Kachina"
+    },
+    {
+      "key": "KaedeharaKazuha",
+      "name": "Kaedehara Kazuha",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Inazuma",
+      "version": "1.6",
+      "bossMat": "Gilded Scale",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Garyuu Bladework",
+        "skill": "Chihayaburu",
+        "burst": "Kazuha Slash"
+      },
+      "icon": "UI_AvatarIcon_Kazuha"
+    },
+    {
+      "key": "Kaeya",
+      "name": "Kaeya",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Spirit Locket of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Ceremonial Bladework",
+        "skill": "Frostgnaw",
+        "burst": "Glacial Waltz"
+      },
+      "icon": "UI_AvatarIcon_Kaeya"
+    },
+    {
+      "key": "KamisatoAyaka",
+      "name": "Kamisato Ayaka",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Inazuma",
+      "version": "2.0",
+      "bossMat": "Bloodjade Branch",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Kamisato Art: Kabuki",
+        "skill": "Kamisato Art: Hyouka",
+        "burst": "Kamisato Art: Soumetsu"
+      },
+      "icon": "UI_AvatarIcon_Ayaka"
+    },
+    {
+      "key": "KamisatoAyato",
+      "name": "Kamisato Ayato",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Inazuma",
+      "version": "2.6",
+      "bossMat": "Mudra of the Malefic General",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Kamisato Art: Marobashi",
+        "skill": "Kamisato Art: Kyouka",
+        "burst": "Kamisato Art: Suiyuu"
+      },
+      "icon": "UI_AvatarIcon_Ayato"
+    },
+    {
+      "key": "Kaveh",
+      "name": "Kaveh",
+      "element": "Dendro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Sumeru",
+      "version": "3.6",
+      "bossMat": "Primordial Greenbloom",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Schematic Setup",
+        "skill": "Artistic Ingenuity",
+        "burst": "Painted Dome"
+      },
+      "icon": "UI_AvatarIcon_Kaveh"
+    },
+    {
+      "key": "Keqing",
+      "name": "Keqing",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Ring of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Yunlai Swordsmanship",
+        "skill": "Stellar Restoration",
+        "burst": "Starward Sword"
+      },
+      "icon": "UI_AvatarIcon_Keqing"
+    },
+    {
+      "key": "Kinich",
+      "name": "Kinich",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Natlan",
+      "version": "5.0",
+      "bossMat": "Denial and Judgment",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Nightsun Style",
+        "skill": "Canopy Hunter: Riding High",
+        "burst": "Hail to the Almighty Dragonlord"
+      },
+      "icon": "UI_AvatarIcon_Kinich"
+    },
+    {
+      "key": "Kirara",
+      "name": "Kirara",
+      "element": "Dendro",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Inazuma",
+      "version": "3.7",
+      "bossMat": "Everamber",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Boxcutter",
+        "skill": "Meow-teor Kick",
+        "burst": "Secret Art: Surprise Dispatch"
+      },
+      "icon": "UI_AvatarIcon_Momoka"
+    },
+    {
+      "key": "Klee",
+      "name": "Klee",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Ring of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Kaboom!",
+        "skill": "Jumpy Dumpty",
+        "burst": "Sparks 'n' Splash"
+      },
+      "icon": "UI_AvatarIcon_Klee"
+    },
+    {
+      "key": "KujouSara",
+      "name": "Kujou Sara",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Inazuma",
+      "version": "2.1",
+      "bossMat": "Ashen Heart",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Tengu Bowmanship",
+        "skill": "Tengu Stormcall",
+        "burst": "Subjugation: Koukou Sendou"
+      },
+      "icon": "UI_AvatarIcon_Sara"
+    },
+    {
+      "key": "KukiShinobu",
+      "name": "Kuki Shinobu",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Inazuma",
+      "version": "2.7",
+      "bossMat": "Tears of the Calamitous God",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Shinobu's Shadowsword",
+        "skill": "Sanctifying Ring",
+        "burst": "Gyoei Narukami Kariyama Rite"
+      },
+      "icon": "UI_AvatarIcon_Shinobu"
+    },
+    {
+      "key": "LanYan",
+      "name": "Lan Yan",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Liyue",
+      "version": "5.3",
+      "bossMat": "Eroded Sunfire",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Black Pheasant Strides on Water",
+        "skill": "Swallow-Wisp Pinion Dance",
+        "burst": "Lustrous Moonrise"
+      },
+      "icon": "UI_AvatarIcon_Lanyan"
+    },
+    {
+      "key": "Lauma",
+      "name": "Lauma",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Nod-Krai",
+      "version": "6.0",
+      "bossMat": "Eroded Scale-Feather",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Peregrination of Linnunrata",
+        "skill": "Runo: Dawnless Rest of Karsikko",
+        "burst": "Runo: All Hearts Become the Beating Moon"
+      },
+      "icon": "UI_AvatarIcon_Lauma"
+    },
+    {
+      "key": "Layla",
+      "name": "Layla",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Sumeru",
+      "version": "3.2",
+      "bossMat": "Mirror of Mushin",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Sword of the Radiant Path",
+        "skill": "Nights of Formal Focus",
+        "burst": "Dream of the Star-Stream Shaker"
+      },
+      "icon": "UI_AvatarIcon_Layla"
+    },
+    {
+      "key": "Linnea",
+      "name": "Linnea",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Nod-Krai",
+      "version": "6.5",
+      "bossMat": "Elixir of the Heretic",
+      "boss": "The Doctor",
+      "talents": {
+        "normal": "Capture Protocol",
+        "skill": "Countermeasure: Lumi's Battle Cry!",
+        "burst": "Memo: Survival Guide in Extreme Conditions"
+      },
+      "icon": "UI_AvatarIcon_Linnea"
+    },
+    {
+      "key": "Lisa",
+      "name": "Lisa",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Claw",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Lightning Touch",
+        "skill": "Violet Arc",
+        "burst": "Lightning Rose"
+      },
+      "icon": "UI_AvatarIcon_Lisa"
+    },
+    {
+      "key": "Lohen",
+      "name": "Lohen",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Mondstadt",
+      "version": "6.6",
+      "bossMat": "Ascended Sample: Knight",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Spear of Favonius — Broken Oath",
+        "skill": "Unforeseen Strike",
+        "burst": "Manifest Judgment"
+      },
+      "icon": "UI_AvatarIcon_Lohen"
+    },
+    {
+      "key": "Lynette",
+      "name": "Lynette",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Fontaine",
+      "version": "4.0",
+      "bossMat": "Everamber",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Rapid Ritesword",
+        "skill": "Enigmatic Feint",
+        "burst": "Magic Trick: Astonishing Shift"
+      },
+      "icon": "UI_AvatarIcon_Linette"
+    },
+    {
+      "key": "Lyney",
+      "name": "Lyney",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Fontaine",
+      "version": "4.0",
+      "bossMat": "Primordial Greenbloom",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Card Force Translocation",
+        "skill": "Bewildering Lights",
+        "burst": "Wondrous Trick: Miracle Parade"
+      },
+      "icon": "UI_AvatarIcon_Liney"
+    },
+    {
+      "key": "Manekin",
+      "name": "Manekin",
+      "element": "None",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": null,
+      "version": "6.1",
+      "bossMat": "Eroded Sunfire",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Outlander Arts: Vigilant Watch",
+        "skill": null,
+        "burst": null
+      },
+      "icon": "UI_AvatarIcon_MannequinBoy"
+    },
+    {
+      "key": "Manekina",
+      "name": "Manekina",
+      "element": "None",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": null,
+      "version": "6.1",
+      "bossMat": "Eroded Sunfire",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Outlander Arts: Vigilant Watch",
+        "skill": null,
+        "burst": null
+      },
+      "icon": "UI_AvatarIcon_MannequinGirl"
+    },
+    {
+      "key": "Mavuika",
+      "name": "Mavuika",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Natlan",
+      "version": "5.3",
+      "bossMat": "Eroded Horn",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "Flames Weave Life",
+        "skill": "The Named Moment",
+        "burst": "Hour of Burning Skies"
+      },
+      "icon": "UI_AvatarIcon_Mavuika"
+    },
+    {
+      "key": "Mika",
+      "name": "Mika",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Mondstadt",
+      "version": "3.5",
+      "bossMat": "Mirror of Mushin",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Spear of Favonius - Arrow's Passage",
+        "skill": "Starfrost Swirl",
+        "burst": "Skyfeather Song"
+      },
+      "icon": "UI_AvatarIcon_Mika"
+    },
+    {
+      "key": "Mona",
+      "name": "Mona",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Ring of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Ripple of Fate",
+        "skill": "Mirror Reflection of Doom",
+        "burst": "Stellaris Phantasm"
+      },
+      "icon": "UI_AvatarIcon_Mona"
+    },
+    {
+      "key": "Mualani",
+      "name": "Mualani",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Natlan",
+      "version": "5.0",
+      "bossMat": "Lightless Mass",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Cooling Treatment",
+        "skill": "Surfshark Wavebreaker",
+        "burst": "Boomsharka-laka"
+      },
+      "icon": "UI_AvatarIcon_Mualani"
+    },
+    {
+      "key": "Nahida",
+      "name": "Nahida",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Sumeru",
+      "version": "3.2",
+      "bossMat": "Puppet Strings",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Akara",
+        "skill": "All Schemes to Know",
+        "burst": "Illusory Heart"
+      },
+      "icon": "UI_AvatarIcon_Nahida"
+    },
+    {
+      "key": "Navia",
+      "name": "Navia",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Fontaine",
+      "version": "4.3",
+      "bossMat": "Lightless Silk String",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Blunt Refusal",
+        "skill": "Ceremonial Crystalshot",
+        "burst": "As the Sunlit Sky's Singing Salute"
+      },
+      "icon": "UI_AvatarIcon_Navia"
+    },
+    {
+      "key": "Nefer",
+      "name": "Nefer",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Nod-Krai",
+      "version": "6.1",
+      "bossMat": "Ascended Sample: Rook",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Striking Serpent",
+        "skill": "Senet Strategy: Dance of a Thousand Nights",
+        "burst": "Sacred Vow: True Eye's Phantasm"
+      },
+      "icon": "UI_AvatarIcon_Nefer"
+    },
+    {
+      "key": "Neuvillette",
+      "name": "Neuvillette",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Fontaine",
+      "version": "4.1",
+      "bossMat": "Everamber",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "As Water Seeks Equilibrium",
+        "skill": "O Tears, I Shall Repay",
+        "burst": "O Tides, I Have Returned"
+      },
+      "icon": "UI_AvatarIcon_Neuvillette"
+    },
+    {
+      "key": "Nicole",
+      "name": "Nicole",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": null,
+      "version": "6.6",
+      "bossMat": "Counterfeit Resin",
+      "boss": "Il Dottore",
+      "talents": {
+        "normal": "Allegoria",
+        "skill": "Revelation: Uncreated Light",
+        "burst": "Revelation: Ladder of Divine Ascent"
+      },
+      "icon": "UI_AvatarIcon_Nicole"
+    },
+    {
+      "key": "Nilou",
+      "name": "Nilou",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Sumeru",
+      "version": "3.1",
+      "bossMat": "Tears of the Calamitous God",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Dance of Samser",
+        "skill": "Dance of Haftkarsvar",
+        "burst": "Dance of Abzendegi: Distant Dreams, Listening Spring"
+      },
+      "icon": "UI_AvatarIcon_Nilou"
+    },
+    {
+      "key": "Ningguang",
+      "name": "Ningguang",
+      "element": "Geo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Spirit Locket of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Sparkling Scatter",
+        "skill": "Jade Screen",
+        "burst": "Starshatter"
+      },
+      "icon": "UI_AvatarIcon_Ningguang"
+    },
+    {
+      "key": "Noelle",
+      "name": "Noelle",
+      "element": "Geo",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Claw",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Favonius Bladework - Maid",
+        "skill": "Breastplate",
+        "burst": "Sweeping Time"
+      },
+      "icon": "UI_AvatarIcon_Noel"
+    },
+    {
+      "key": "Ororon",
+      "name": "Ororon",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Natlan",
+      "version": "5.2",
+      "bossMat": "Lightless Silk String",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Spiritvessel Snapshot",
+        "skill": "Night's Sling",
+        "burst": "Dark Voices Echo"
+      },
+      "icon": "UI_AvatarIcon_Olorun"
+    },
+    {
+      "key": "Prune",
+      "name": "Prune",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Mondstadt",
+      "version": "6.6",
+      "bossMat": "Mask of the Virtuous Doctor",
+      "boss": "The Doctor",
+      "talents": {
+        "normal": "Badaboom! Hexbuster Hammer",
+        "skill": "Ring-A-Ding-Ding! Hexhunter Chime",
+        "burst": "The Bell Tolls! The Hunt Is On!"
+      },
+      "icon": "UI_AvatarIcon_Prune"
+    },
+    {
+      "key": "Qiqi",
+      "name": "Qiqi",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Tail of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Ancient Sword Art",
+        "skill": "Adeptus Art: Herald of Frost",
+        "burst": "Adeptus Art: Preserver of Fortune"
+      },
+      "icon": "UI_AvatarIcon_Qiqi"
+    },
+    {
+      "key": "RaidenShogun",
+      "name": "Raiden Shogun",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Inazuma",
+      "version": "2.1",
+      "bossMat": "Molten Moment",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Origin",
+        "skill": "Transcendence: Baleful Omen",
+        "burst": "Secret Art: Musou Shinsetsu"
+      },
+      "icon": "UI_AvatarIcon_Shougun"
+    },
+    {
+      "key": "Razor",
+      "name": "Razor",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Dvalin's Claw",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Steel Fang",
+        "skill": "Claw and Thunder",
+        "burst": "Lightning Fang"
+      },
+      "icon": "UI_AvatarIcon_Razor"
+    },
+    {
+      "key": "Rosaria",
+      "name": "Rosaria",
+      "element": "Cryo",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Mondstadt",
+      "version": "1.4",
+      "bossMat": "Shadow of the Warrior",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Spear of the Church",
+        "skill": "Ravaging Confession",
+        "burst": "Rites of Termination"
+      },
+      "icon": "UI_AvatarIcon_Rosaria"
+    },
+    {
+      "key": "Sandrone",
+      "name": "Sandrone",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": null,
+      "version": "6.7",
+      "bossMat": "Madman's Restraint",
+      "boss": "The Doctor",
+      "talents": {
+        "normal": "Formule Phenomenale: Self-Evident Proposition",
+        "skill": "Formule Phenomenale: Differential Analysis",
+        "burst": "Formule Phenomenale: Q.E.D."
+      },
+      "icon": "UI_AvatarIcon_MarionetteNew"
+    },
+    {
+      "key": "SangonomiyaKokomi",
+      "name": "Sangonomiya Kokomi",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Inazuma",
+      "version": "2.1",
+      "bossMat": "Hellfire Butterfly",
+      "boss": "Signora",
+      "talents": {
+        "normal": "The Shape of Water",
+        "skill": "Kurage's Oath",
+        "burst": "Nereid's Ascension"
+      },
+      "icon": "UI_AvatarIcon_Kokomi"
+    },
+    {
+      "key": "Sayu",
+      "name": "Sayu",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Inazuma",
+      "version": "2.0",
+      "bossMat": "Gilded Scale",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Shuumatsuban Ninja Blade",
+        "skill": "Yoohoo Art: Fuuin Dash",
+        "burst": "Yoohoo Art: Mujina Flurry"
+      },
+      "icon": "UI_AvatarIcon_Sayu"
+    },
+    {
+      "key": "Sethos",
+      "name": "Sethos",
+      "element": "Electro",
+      "rarity": 4,
+      "weapon": "Bow",
+      "region": "Sumeru",
+      "version": "4.7",
+      "bossMat": "Daka's Bell",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Royal Reed Archery",
+        "skill": "Ancient Rite: The Thundering Sands",
+        "burst": "Secret Rite: Twilight Shadowpiercer"
+      },
+      "icon": "UI_AvatarIcon_Sethos"
+    },
+    {
+      "key": "Shenhe",
+      "name": "Shenhe",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "2.4",
+      "bossMat": "Hellfire Butterfly",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Dawnstar Piercer",
+        "skill": "Spring Spirit Summoning",
+        "burst": "Divine Maiden's Deliverance"
+      },
+      "icon": "UI_AvatarIcon_Shenhe"
+    },
+    {
+      "key": "ShikanoinHeizou",
+      "name": "Shikanoin Heizou",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Inazuma",
+      "version": "2.8",
+      "bossMat": "The Meaning of Aeons",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Fudou Style Martial Arts",
+        "skill": "Heartstopper Strike",
+        "burst": "Windmuster Kick"
+      },
+      "icon": "UI_AvatarIcon_Heizo"
+    },
+    {
+      "key": "Sigewinne",
+      "name": "Sigewinne",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Fontaine",
+      "version": "4.7",
+      "bossMat": "Lightless Eye of the Maelstrom",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Targeted Treatment",
+        "skill": "Rebound Hydrotherapy",
+        "burst": "Super Saturated Syringing"
+      },
+      "icon": "UI_AvatarIcon_Sigewinne"
+    },
+    {
+      "key": "Skirk",
+      "name": "Skirk",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": null,
+      "version": "5.7",
+      "bossMat": "Ascended Sample: Knight",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Havoc: Sunder",
+        "skill": "Havoc: Warp",
+        "burst": "Havoc: Ruin"
+      },
+      "icon": "UI_AvatarIcon_SkirkNew"
+    },
+    {
+      "key": "Sucrose",
+      "name": "Sucrose",
+      "element": "Anemo",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Spirit Locket of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Wind Spirit Creation",
+        "skill": "Astable Anemohypostasis Creation - 6308",
+        "burst": "Forbidden Creation - Isomer 75 / Type II"
+      },
+      "icon": "UI_AvatarIcon_Sucrose"
+    },
+    {
+      "key": "Tartaglia",
+      "name": "Tartaglia",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Snezhnaya",
+      "version": "1.1",
+      "bossMat": "Shard of a Foul Legacy",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Cutting Torrent",
+        "skill": "Foul Legacy: Raging Tide",
+        "burst": "Havoc: Obliteration"
+      },
+      "icon": "UI_AvatarIcon_Tartaglia"
+    },
+    {
+      "key": "Thoma",
+      "name": "Thoma",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Inazuma",
+      "version": "2.2",
+      "bossMat": "Hellfire Butterfly",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Swiftshatter Spear",
+        "skill": "Blazing Blessing",
+        "burst": "Crimson Ooyoroi"
+      },
+      "icon": "UI_AvatarIcon_Tohma"
+    },
+    {
+      "key": "Tighnari",
+      "name": "Tighnari",
+      "element": "Dendro",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Sumeru",
+      "version": "3.0",
+      "bossMat": "The Meaning of Aeons",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Khanda Barrier-Buster",
+        "skill": "Vijnana-Phala Mine",
+        "burst": "Fashioner's Tanglevine Shaft"
+      },
+      "icon": "UI_AvatarIcon_Tighnari"
+    },
+    {
+      "key": "Varesa",
+      "name": "Varesa",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Natlan",
+      "version": "5.5",
+      "bossMat": "Eroded Scale-Feather",
+      "boss": "Lord of Eroded Primal Fire",
+      "talents": {
+        "normal": "By the Horns",
+        "skill": "Riding the Night-Rainbow",
+        "burst": "Guardian Vent!"
+      },
+      "icon": "UI_AvatarIcon_Varesa"
+    },
+    {
+      "key": "Varka",
+      "name": "Varka",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Claymore",
+      "region": "Mondstadt",
+      "version": "6.4",
+      "bossMat": "Ascended Sample: Rook",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Favonius Bladework: Dancing Radiance",
+        "skill": "Windbound Execution",
+        "burst": "Northwind Avatar"
+      },
+      "icon": "UI_AvatarIcon_Varka"
+    },
+    {
+      "key": "Venti",
+      "name": "Venti",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Mondstadt",
+      "version": "1.0",
+      "bossMat": "Tail of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Divine Marksmanship",
+        "skill": "Skyward Sonnet",
+        "burst": "Wind's Grand Ode"
+      },
+      "icon": "UI_AvatarIcon_Venti"
+    },
+    {
+      "key": "Wanderer",
+      "name": "Wanderer",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Sumeru",
+      "version": "3.3",
+      "bossMat": "Daka's Bell",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Yuuban Meigen",
+        "skill": "Hanega: Song of the Wind",
+        "burst": "Kyougen: Five Ceremonial Plays"
+      },
+      "icon": "UI_AvatarIcon_Wanderer"
+    },
+    {
+      "key": "Wriothesley",
+      "name": "Wriothesley",
+      "element": "Cryo",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Fontaine",
+      "version": "4.1",
+      "bossMat": "Primordial Greenbloom",
+      "boss": "Guardian of Apep's Oasis",
+      "talents": {
+        "normal": "Forceful Fists of Frost",
+        "skill": "Icefang Rush",
+        "burst": "Darkgold Wolfbite"
+      },
+      "icon": "UI_AvatarIcon_Wriothesley"
+    },
+    {
+      "key": "Xiangling",
+      "name": "Xiangling",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Dvalin's Claw",
+      "boss": "Stormterror",
+      "talents": {
+        "normal": "Dough-Fu",
+        "skill": "Guoba Attack",
+        "burst": "Pyronado"
+      },
+      "icon": "UI_AvatarIcon_Xiangling"
+    },
+    {
+      "key": "Xianyun",
+      "name": "Xianyun",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Liyue",
+      "version": "4.4",
+      "bossMat": "Lightless Eye of the Maelstrom",
+      "boss": "All-Devouring Narwhal",
+      "talents": {
+        "normal": "Word of Wind and Flower",
+        "skill": "White Clouds at Dawn",
+        "burst": "Stars Gather at Dusk"
+      },
+      "icon": "UI_AvatarIcon_Liuyun"
+    },
+    {
+      "key": "Xiao",
+      "name": "Xiao",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "1.3",
+      "bossMat": "Shadow of the Warrior",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Whirlwind Thrust",
+        "skill": "Lemniscatic Wind Cycling",
+        "burst": "Bane of All Evil"
+      },
+      "icon": "UI_AvatarIcon_Xiao"
+    },
+    {
+      "key": "Xilonen",
+      "name": "Xilonen",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": "Natlan",
+      "version": "5.1",
+      "bossMat": "Mirror of Mushin",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Ehecatl's Roar",
+        "skill": "Yohual's Scratch",
+        "burst": "Ocelotlicue Point!"
+      },
+      "icon": "UI_AvatarIcon_Xilonen"
+    },
+    {
+      "key": "Xingqiu",
+      "name": "Xingqiu",
+      "element": "Hydro",
+      "rarity": 4,
+      "weapon": "Sword_one_hand",
+      "region": "Liyue",
+      "version": "1.0",
+      "bossMat": "Tail of Boreas",
+      "boss": "Wolf of the North",
+      "talents": {
+        "normal": "Guhua Style",
+        "skill": "Guhua Sword: Fatal Rainscreen",
+        "burst": "Guhua Sword: Raincutter"
+      },
+      "icon": "UI_AvatarIcon_Xingqiu"
+    },
+    {
+      "key": "Xinyan",
+      "name": "Xinyan",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Claymore",
+      "region": "Liyue",
+      "version": "1.1",
+      "bossMat": "Tusk of Monoceros Caeli",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Dance on Fire",
+        "skill": "Sweeping Fervor",
+        "burst": "Riff Revolution"
+      },
+      "icon": "UI_AvatarIcon_Xinyan"
+    },
+    {
+      "key": "YaeMiko",
+      "name": "Yae Miko",
+      "element": "Electro",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Inazuma",
+      "version": "2.5",
+      "bossMat": "The Meaning of Aeons",
+      "boss": "Guardian of Eternity",
+      "talents": {
+        "normal": "Spiritfox Sin-Eater",
+        "skill": "Yakan Evocation: Sesshou Sakura",
+        "burst": "Great Secret Art: Tenko Kenshin"
+      },
+      "icon": "UI_AvatarIcon_Yae"
+    },
+    {
+      "key": "Yanfei",
+      "name": "Yanfei",
+      "element": "Pyro",
+      "rarity": 4,
+      "weapon": "Catalyst",
+      "region": "Liyue",
+      "version": "1.5",
+      "bossMat": "Bloodjade Branch",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Seal of Approval",
+        "skill": "Signed Edict",
+        "burst": "Done Deal"
+      },
+      "icon": "UI_AvatarIcon_Feiyan"
+    },
+    {
+      "key": "Yaoyao",
+      "name": "Yaoyao",
+      "element": "Dendro",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "3.4",
+      "bossMat": "Daka's Bell",
+      "boss": "Shouki no Kami, the Prodigal",
+      "talents": {
+        "normal": "Toss 'N' Turn Spear",
+        "skill": "Raphanus Sky Cluster",
+        "burst": "Moonjade Descent"
+      },
+      "icon": "UI_AvatarIcon_Yaoyao"
+    },
+    {
+      "key": "Yelan",
+      "name": "Yelan",
+      "element": "Hydro",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Liyue",
+      "version": "2.7",
+      "bossMat": "Gilded Scale",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Stealthy Bowshot",
+        "skill": "Lingering Lifeline",
+        "burst": "Depth-Clarion Dice"
+      },
+      "icon": "UI_AvatarIcon_Yelan"
+    },
+    {
+      "key": "Yoimiya",
+      "name": "Yoimiya",
+      "element": "Pyro",
+      "rarity": 5,
+      "weapon": "Bow",
+      "region": "Inazuma",
+      "version": "2.0",
+      "bossMat": "Dragon Lord's Crown",
+      "boss": "Azhdaha",
+      "talents": {
+        "normal": "Firework Flare-Up",
+        "skill": "Niwabi Fire-Dance",
+        "burst": "Ryuukin Saxifrage"
+      },
+      "icon": "UI_AvatarIcon_Yoimiya"
+    },
+    {
+      "key": "YumemizukiMizuki",
+      "name": "Yumemizuki Mizuki",
+      "element": "Anemo",
+      "rarity": 5,
+      "weapon": "Catalyst",
+      "region": "Inazuma",
+      "version": "5.4",
+      "bossMat": "Fading Candle",
+      "boss": "The Knave",
+      "talents": {
+        "normal": "Pure Heart, Pure Dreams",
+        "skill": "Aisa Utamakura Pilgrimage",
+        "burst": "Anraku Secret Spring Therapy"
+      },
+      "icon": "UI_AvatarIcon_Mizuki"
+    },
+    {
+      "key": "YunJin",
+      "name": "Yun Jin",
+      "element": "Geo",
+      "rarity": 4,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "2.4",
+      "bossMat": "Ashen Heart",
+      "boss": "Signora",
+      "talents": {
+        "normal": "Cloud-Grazing Strike",
+        "skill": "Opening Flourish",
+        "burst": "Cliffbreaker's Banner"
+      },
+      "icon": "UI_AvatarIcon_Yunjin"
+    },
+    {
+      "key": "Zhongli",
+      "name": "Zhongli",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Pole",
+      "region": "Liyue",
+      "version": "1.1",
+      "bossMat": "Tusk of Monoceros Caeli",
+      "boss": "Childe",
+      "talents": {
+        "normal": "Rain of Stone",
+        "skill": "Dominus Lapidis",
+        "burst": "Planet Befall"
+      },
+      "icon": "UI_AvatarIcon_Zhongli"
+    },
+    {
+      "key": "Zibai",
+      "name": "Zibai",
+      "element": "Geo",
+      "rarity": 5,
+      "weapon": "Sword_one_hand",
+      "region": null,
+      "version": "6.3",
+      "bossMat": "Ascended Sample: Queen",
+      "boss": "The Game Before the Gate",
+      "talents": {
+        "normal": "Golden Blade's Petaled Touch",
+        "skill": "Heaven and Earth Made Manifest",
+        "burst": "Tri-Sphere Eminence"
+      },
+      "icon": "UI_AvatarIcon_Zibai"
+    }
+  ],
+  "materials": {
+    "Ascended Sample: Knight": {
+      "name": "Ascended Sample: Knight",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113073",
+      "boss": "The Game Before the Gate",
+      "description": "A rare sample resulting from the alchemical activation of a substance.",
+      "version": "5.6"
+    },
+    "Ascended Sample: Queen": {
+      "name": "Ascended Sample: Queen",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113075",
+      "boss": "The Game Before the Gate",
+      "description": "A rare sample resulting from the alchemical activation of a substance.",
+      "version": "5.6"
+    },
+    "Ascended Sample: Rook": {
+      "name": "Ascended Sample: Rook",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113074",
+      "boss": "The Game Before the Gate",
+      "description": "A rare sample resulting from the alchemical activation of a substance.",
+      "version": "5.6"
+    },
+    "Ashen Heart": {
+      "name": "Ashen Heart",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113027",
+      "boss": "Signora",
+      "description": "A deformed fragment that contains powerful emotions. You obtained this from defeating Signora, who unleashed her original power.",
+      "version": null
+    },
+    "Bloodjade Branch": {
+      "name": "Bloodjade Branch",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113018",
+      "boss": "Azhdaha",
+      "description": "Nurtured by the might of the dragon king, these bone branches glitter with strange, unique colors.",
+      "version": null
+    },
+    "Counterfeit Resin": {
+      "name": "Counterfeit Resin",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113087",
+      "boss": "Il Dottore",
+      "description": "A resin recovered from the shattered depths of the Ley Lines after the defeat of the heretic hidden within Irminsul.",
+      "version": "6.6"
+    },
+    "Daka's Bell": {
+      "name": "Daka's Bell",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113043",
+      "boss": "Shouki no Kami, the Prodigal",
+      "description": "This ball joint, used to connect mechanical limbs together, is shaped almost like a bell. Though it may seem dainty, it can be used to carry an unimaginably large amount of energy.",
+      "version": "3.2"
+    },
+    "Denial and Judgment": {
+      "name": "Denial and Judgment",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113062",
+      "boss": "The Knave",
+      "description": "An earring that you picked up in the ruins after completing the duel against The Knave.",
+      "version": "4.6"
+    },
+    "Dragon Lord's Crown": {
+      "name": "Dragon Lord's Crown",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113017",
+      "boss": "Azhdaha",
+      "description": "Horns created from hardened jade crystallized over a thousand years are the natural crown of the dragon king.",
+      "version": null
+    },
+    "Dvalin's Claw": {
+      "name": "Dvalin's Claw",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113004",
+      "boss": "Stormterror",
+      "description": "A claw from the Dragon of the East.",
+      "version": null
+    },
+    "Dvalin's Plume": {
+      "name": "Dvalin's Plume",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113003",
+      "boss": "Stormterror",
+      "description": "A feather from the tail of the Dragon of the East.",
+      "version": null
+    },
+    "Dvalin's Sigh": {
+      "name": "Dvalin's Sigh",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113005",
+      "boss": "Stormterror",
+      "description": "A bit of power taken from the whirlwinds evoked by the Dragon of the East.",
+      "version": null
+    },
+    "Elixir of the Heretic": {
+      "name": "Elixir of the Heretic",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113083",
+      "boss": "The Doctor",
+      "description": "A vial found in the heretical testing grounds after defeating the false god that usurped the moon.",
+      "version": "6.3"
+    },
+    "Eroded Horn": {
+      "name": "Eroded Horn",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113068",
+      "boss": "Lord of Eroded Primal Fire",
+      "description": "The Lord of Eroded Primal Fire's blazing horn, cut off in the heat of battle.",
+      "version": "5.3"
+    },
+    "Eroded Scale-Feather": {
+      "name": "Eroded Scale-Feather",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113070",
+      "boss": "Lord of Eroded Primal Fire",
+      "description": "A pitch-black scale that fell to the ground after the battle against the Lord of Eroded Primal Fire.",
+      "version": "5.3"
+    },
+    "Eroded Sunfire": {
+      "name": "Eroded Sunfire",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113069",
+      "boss": "Lord of Eroded Primal Fire",
+      "description": "Though the battle with the Lord of Eroded Primal Fire has ended, this ring-shaped flame yet burns.",
+      "version": "5.3"
+    },
+    "Everamber": {
+      "name": "Everamber",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113048",
+      "boss": "Guardian of Apep's Oasis",
+      "description": "A piece of amber taken from the oasis within Apep. Inside the amber, a small, long-extinct insect remains frozen in time.",
+      "version": "3.6"
+    },
+    "Fading Candle": {
+      "name": "Fading Candle",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113060",
+      "boss": "The Knave",
+      "description": "A candle that you picked up in the ruins after completing the duel against The Knave.",
+      "version": "4.6"
+    },
+    "Gilded Scale": {
+      "name": "Gilded Scale",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113019",
+      "boss": "Azhdaha",
+      "description": "Scaled armor that grows naturally over mystical stone, tough and silent, and filled with the strength of the dragon king.",
+      "version": null
+    },
+    "Hellfire Butterfly": {
+      "name": "Hellfire Butterfly",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113026",
+      "boss": "Signora",
+      "description": "A warped shard that houses great might. You obtained this from defeating Signora, who unleashed her original power.",
+      "version": null
+    },
+    "Lightless Eye of the Maelstrom": {
+      "name": "Lightless Eye of the Maelstrom",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113055",
+      "boss": "All-Devouring Narwhal",
+      "description": "A strange \"substance\" obtained from fighting against the All-Devouring Narwhal. Its actual weight far exceeds what would be expected given its size.",
+      "version": "4.2"
+    },
+    "Lightless Mass": {
+      "name": "Lightless Mass",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113056",
+      "boss": "All-Devouring Narwhal",
+      "description": "A fragment produced from the intense battle against the All-Devouring Narwhal.",
+      "version": "4.2"
+    },
+    "Lightless Silk String": {
+      "name": "Lightless Silk String",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113054",
+      "boss": "All-Devouring Narwhal",
+      "description": "A slender strand that somehow ended up entangled on your weapon while fighting the All-Devouring Narwhal.",
+      "version": "4.2"
+    },
+    "Madman's Restraint": {
+      "name": "Madman's Restraint",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113082",
+      "boss": "The Doctor",
+      "description": "A band found in the heretical testing grounds after defeating the false god that usurped the moon.",
+      "version": "6.3"
+    },
+    "Mask of the Virtuous Doctor": {
+      "name": "Mask of the Virtuous Doctor",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113081",
+      "boss": "The Doctor",
+      "description": "A mask found in the heretical testing grounds after defeating the false god that usurped the moon.",
+      "version": "6.3"
+    },
+    "Mirror of Mushin": {
+      "name": "Mirror of Mushin",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113042",
+      "boss": "Shouki no Kami, the Prodigal",
+      "description": "The mirror that was set in Shouki no Kami's chest to separate him from the outside world. The mitsudomoe symbol is emblazoned on it as a deliberate show of status and might.",
+      "version": "3.2"
+    },
+    "Molten Moment": {
+      "name": "Molten Moment",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113025",
+      "boss": "Signora",
+      "description": "A certain deformed fragment containing great might. You obtained this from defeating La Signora, who unleashed her original power.",
+      "version": null
+    },
+    "Mudra of the Malefic General": {
+      "name": "Mudra of the Malefic General",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113032",
+      "boss": "Guardian of Eternity",
+      "description": "A puppet joint obtained from the Plane of Euthymia. The gesture here symbolizes the concept that \"one sees and one does.\"",
+      "version": null
+    },
+    "Primordial Greenbloom": {
+      "name": "Primordial Greenbloom",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113047",
+      "boss": "Guardian of Apep's Oasis",
+      "description": "A primordial flower procured from the oasis within Apep.",
+      "version": "3.6"
+    },
+    "Profaned Sprout": {
+      "name": "Profaned Sprout",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113089",
+      "boss": "Il Dottore",
+      "description": "A sprig recovered from the shattered depths of the Ley Lines after the defeat of the heretic hidden within Irminsul.",
+      "version": "6.6"
+    },
+    "Puppet Strings": {
+      "name": "Puppet Strings",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113041",
+      "boss": "Shouki no Kami, the Prodigal",
+      "description": "Tubes that were inserted into the mechanical puppet's back. The colors that flow within them are sometimes dull, and at others, vibrant. The contrast is so great as to be fearful.",
+      "version": "3.2"
+    },
+    "Ring of Boreas": {
+      "name": "Ring of Boreas",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113007",
+      "boss": "Wolf of the North",
+      "description": "A bit of crystallized ice from the Great Wolf King of the North.",
+      "version": null
+    },
+    "Shadow of the Warrior": {
+      "name": "Shadow of the Warrior",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113015",
+      "boss": "Childe",
+      "description": "A fragment of power that you obtained from defeating Childe, who had unleashed the might of his Delusion.",
+      "version": null
+    },
+    "Shard of a Foul Legacy": {
+      "name": "Shard of a Foul Legacy",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113014",
+      "boss": "Childe",
+      "description": "The shard of a weapon that you obtained from defeating Childe, who had unleashed the might of his Delusion.",
+      "version": null
+    },
+    "Silken Feather": {
+      "name": "Silken Feather",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113061",
+      "boss": "The Knave",
+      "description": "A crystal that you picked up in the ruins after completing the duel against The Knave.",
+      "version": "4.6"
+    },
+    "Spirit Locket of Boreas": {
+      "name": "Spirit Locket of Boreas",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113008",
+      "boss": "Wolf of the North",
+      "description": "A bit of the Great Wolf King of the North's power drawn from its soul.",
+      "version": null
+    },
+    "Tail of Boreas": {
+      "name": "Tail of Boreas",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113006",
+      "boss": "Wolf of the North",
+      "description": "A handful of tail scales from the Great Wolf King of the North.",
+      "version": null
+    },
+    "Tears of the Calamitous God": {
+      "name": "Tears of the Calamitous God",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113033",
+      "boss": "Guardian of Eternity",
+      "description": "A puppet joint obtained from the Plane of Euthymia. The gesture here is in the shape of the baleful Eye of Stormy Judgment.",
+      "version": null
+    },
+    "The Cornerstone of Stars and Flames": {
+      "name": "The Cornerstone of Stars and Flames",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113063",
+      "boss": null,
+      "description": "\"Heroes ignite the sacred flame, illuminating the world, yet eventually they shall rest, nestled among the stars.\"",
+      "version": "5.0"
+    },
+    "The Meaning of Aeons": {
+      "name": "The Meaning of Aeons",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113034",
+      "boss": "Guardian of Eternity",
+      "description": "A small piece of headgear obtained once the dust settled in the Plane of Euthymia.",
+      "version": null
+    },
+    "Tusk of Monoceros Caeli": {
+      "name": "Tusk of Monoceros Caeli",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113013",
+      "boss": "Childe",
+      "description": "The horn of a whale that you obtained from defeating Childe, who had unleashed the might of his Delusion.",
+      "version": null
+    },
+    "Twisted Withered Branch": {
+      "name": "Twisted Withered Branch",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113088",
+      "boss": "Il Dottore",
+      "description": "A withered branch recovered from the shattered depths of the Ley Lines after the defeat of the heretic hidden within Irminsul.",
+      "version": "6.6"
+    },
+    "Worldspan Fern": {
+      "name": "Worldspan Fern",
+      "rarity": 5,
+      "icon": "UI_ItemIcon_113046",
+      "boss": "Guardian of Apep's Oasis",
+      "description": "A fern taken from the oasis within Apep's body.",
+      "version": "3.6"
+    }
+  },
+  "bosses": [
+    {
+      "name": "All-Devouring Narwhal",
+      "region": "Fontaine",
+      "domain": "Laments of the Fallen",
+      "materials": [
+        "Lightless Eye of the Maelstrom",
+        "Lightless Mass",
+        "Lightless Silk String"
+      ],
+      "version": "4.2"
+    },
+    {
+      "name": "The Knave",
+      "region": "Fontaine",
+      "domain": "Knave's Laporte",
+      "materials": [
+        "Denial and Judgment",
+        "Fading Candle",
+        "Silken Feather"
+      ],
+      "version": "4.6"
+    },
+    {
+      "name": "Guardian of Eternity",
+      "region": "Inazuma",
+      "domain": "Musou Shrine",
+      "materials": [
+        "Mudra of the Malefic General",
+        "Tears of the Calamitous God",
+        "The Meaning of Aeons"
+      ],
+      "version": null
+    },
+    {
+      "name": "Shouki no Kami, the Prodigal",
+      "region": "Inazuma",
+      "domain": "Shouki no Kami",
+      "materials": [
+        "Daka's Bell",
+        "Mirror of Mushin",
+        "Puppet Strings"
+      ],
+      "version": "3.2"
+    },
+    {
+      "name": "Signora",
+      "region": "Inazuma",
+      "domain": "Narzissenkreuz",
+      "materials": [
+        "Ashen Heart",
+        "Hellfire Butterfly",
+        "Molten Moment"
+      ],
+      "version": null
+    },
+    {
+      "name": "Azhdaha",
+      "region": "Liyue",
+      "domain": "Beneath the Dragon-Queller",
+      "materials": [
+        "Bloodjade Branch",
+        "Dragon Lord's Crown",
+        "Gilded Scale"
+      ],
+      "version": null
+    },
+    {
+      "name": "Childe",
+      "region": "Liyue",
+      "domain": "Enter the Golden House",
+      "materials": [
+        "Shadow of the Warrior",
+        "Shard of a Foul Legacy",
+        "Tusk of Monoceros Caeli"
+      ],
+      "version": null
+    },
+    {
+      "name": "Lord of Eroded Primal Fire",
+      "region": "Liyue",
+      "domain": "Crimson Witch of Embers",
+      "materials": [
+        "Eroded Horn",
+        "Eroded Scale-Feather",
+        "Eroded Sunfire"
+      ],
+      "version": "5.3"
+    },
+    {
+      "name": "Stormterror",
+      "region": "Mondstadt",
+      "domain": "Confront Stormterror",
+      "materials": [
+        "Dvalin's Claw",
+        "Dvalin's Plume",
+        "Dvalin's Sigh"
+      ],
+      "version": null
+    },
+    {
+      "name": "Wolf of the North",
+      "region": "Mondstadt",
+      "domain": "Wolf of the North Challenge",
+      "materials": [
+        "Ring of Boreas",
+        "Spirit Locket of Boreas",
+        "Tail of Boreas"
+      ],
+      "version": null
+    },
+    {
+      "name": "Il Dottore",
+      "region": "Natlan",
+      "domain": "Lava Dragon Statue",
+      "materials": [
+        "Counterfeit Resin",
+        "Profaned Sprout",
+        "Twisted Withered Branch"
+      ],
+      "version": "6.6"
+    },
+    {
+      "name": "The Doctor",
+      "region": "Natlan",
+      "domain": "Lava Dragon Statue",
+      "materials": [
+        "Elixir of the Heretic",
+        "Madman's Restraint",
+        "Mask of the Virtuous Doctor"
+      ],
+      "version": "6.3"
+    },
+    {
+      "name": "The Game Before the Gate",
+      "region": "Natlan",
+      "domain": "Simulanka",
+      "materials": [
+        "Ascended Sample: Knight",
+        "Ascended Sample: Queen",
+        "Ascended Sample: Rook"
+      ],
+      "version": "5.6"
+    },
+    {
+      "name": "Guardian of Apep's Oasis",
+      "region": "Sumeru",
+      "domain": "Temple of Silence",
+      "materials": [
+        "Everamber",
+        "Primordial Greenbloom",
+        "Worldspan Fern"
+      ],
+      "version": "3.6"
+    }
+  ]
+}
