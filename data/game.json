@@ -4116,28 +4116,6 @@
       "version": null
     },
     {
-      "name": "Il Dottore",
-      "region": "Natlan",
-      "domain": "Lava Dragon Statue",
-      "materials": [
-        "Counterfeit Resin",
-        "Profaned Sprout",
-        "Twisted Withered Branch"
-      ],
-      "version": "6.6"
-    },
-    {
-      "name": "The Doctor",
-      "region": "Natlan",
-      "domain": "Lava Dragon Statue",
-      "materials": [
-        "Elixir of the Heretic",
-        "Madman's Restraint",
-        "Mask of the Virtuous Doctor"
-      ],
-      "version": "6.3"
-    },
-    {
       "name": "The Game Before the Gate",
       "region": "Natlan",
       "domain": "Simulanka",
@@ -4149,6 +4127,17 @@
       "version": "5.6"
     },
     {
+      "name": "The Doctor",
+      "region": "Nod-Krai",
+      "domain": "False Moon Institute",
+      "materials": [
+        "Elixir of the Heretic",
+        "Madman's Restraint",
+        "Mask of the Virtuous Doctor"
+      ],
+      "version": "6.3"
+    },
+    {
       "name": "Guardian of Apep's Oasis",
       "region": "Sumeru",
       "domain": "Temple of Silence",
@@ -4158,6 +4147,17 @@
         "Worldspan Fern"
       ],
       "version": "3.6"
+    },
+    {
+      "name": "Il Dottore",
+      "region": "Sumeru",
+      "domain": "Binding Field of Universal Nirvana",
+      "materials": [
+        "Counterfeit Resin",
+        "Profaned Sprout",
+        "Twisted Withered Branch"
+      ],
+      "version": "6.6"
     },
     {
       "name": "Shouki no Kami, the Prodigal",

@@ -39,8 +39,8 @@ const BOSS_METADATA = {
   'Guardian of Apep\'s Oasis': { region: 'Sumeru', domain: 'Temple of Silence' },
   'All-Devouring Narwhal': { region: 'Fontaine', domain: 'Laments of the Fallen' },
   'The Knave': { region: 'Fontaine', domain: 'Knave\'s Laporte' },
-  'Il Dottore': { region: 'Natlan', domain: 'Lava Dragon Statue' },
-  'The Doctor': { region: 'Natlan', domain: 'Lava Dragon Statue' },
+  'Il Dottore': { region: 'Sumeru', domain: 'Binding Field of Universal Nirvana' },
+  'The Doctor': { region: 'Nod-Krai', domain: 'False Moon Institute' },
   'The Game Before the Gate': { region: 'Natlan', domain: 'Simulanka' },
 };
 
@@ -155,6 +155,33 @@ function deriveBossFromMaterial(material) {
   }
 
   return null;
+}
+
+/**
+ * Build-time guardrails for boss metadata. Throws to abort the bake (non-zero
+ * exit) when data is incomplete or internally inconsistent, so mistakes can't
+ * ship silently. Invariants:
+ *   - Every boss must have a curated region + domain (an entry in BOSS_METADATA);
+ *     'Unknown' means a newly-added boss we forgot to handle.
+ *   - Trounce domains are 1:1 with bosses, so no two bosses may share a domain.
+ */
+function validateBosses(bosses) {
+  const byDomain = new Map();
+  for (const boss of bosses) {
+    if (boss.region === 'Unknown') {
+      throw new Error(`Bake aborted: boss "${boss.name}" has no curated region in BOSS_METADATA.`);
+    }
+    if (boss.domain === 'Unknown') {
+      throw new Error(`Bake aborted: boss "${boss.name}" has no curated domain in BOSS_METADATA.`);
+    }
+    if (byDomain.has(boss.domain)) {
+      throw new Error(
+        `Bake aborted: trounce domain "${boss.domain}" is shared by ` +
+        `"${byDomain.get(boss.domain)}" and "${boss.name}" — domains must be 1:1 with bosses.`
+      );
+    }
+    byDomain.set(boss.domain, boss.name);
+  }
 }
 
 /**
@@ -306,6 +333,10 @@ function extract() {
   for (const boss of bossesList) {
     boss.materials.sort();
   }
+
+  // Guardrails: fail the bake (non-zero exit) on incomplete/inconsistent boss
+  // metadata so bad data can't ship silently.
+  validateBosses(bossesList);
 
   // Build game.json
   // dataVersion = the live game version this baked data corresponds to.

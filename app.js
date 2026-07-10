@@ -65,6 +65,7 @@ let dropsPerRun = 2.7;
 let allowConversion = false;              // Step-3 toggle; OFF keeps spec behavior
 let parsed = null;                        // last parse result
 let newestBossSet = new Set();            // top-3 bosses by release version (NEW badge)
+let inputIsRandom = false;                // true when current data came from Random 30 (not persisted)
 
 /* ============================================================
  * Data loading
@@ -535,15 +536,83 @@ function isNewBoss(boss) {
   return newestBossSet.has(boss.name);
 }
 
+/* ============================================================
+ * Session persistence (localStorage — stays in-browser)
+ * ============================================================ */
+const STORAGE_KEY = 'trounce-recommender-v1';
+
+// Persist the GOOD export + talent selections + tool toggles so the user's
+// session survives a reload. Never called for Random-30 data (ephemeral).
+function saveSession() {
+  if (!parsed || inputIsRandom) return;
+  try {
+    const selections = {};
+    for (const [key, st] of charState) {
+      selections[key] = {
+        included: st.included,
+        normal: { enabled: st.normal.enabled, target: st.normal.target },
+        skill: { enabled: st.skill.enabled, target: st.skill.target },
+        burst: { enabled: st.burst.enabled, target: st.burst.target }
+      };
+    }
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      input: document.getElementById('goodInput').value,
+      selections,
+      dropsPerRun,
+      allowConversion
+    }));
+  } catch (e) { /* storage unavailable (private mode / quota) — ignore */ }
+}
+
+function restoreSession() {
+  let raw;
+  try { raw = localStorage.getItem(STORAGE_KEY); } catch (e) { return; }
+  if (!raw) return;
+  let data;
+  try { data = JSON.parse(raw); } catch (e) { return; }
+  if (!data.input) return;
+
+  document.getElementById('goodInput').value = data.input;
+  onAnalyze();
+  if (parsed == null) return; // stored input no longer parses — leave it in the box
+
+  if (data.selections) {
+    for (const [key, sel] of Object.entries(data.selections)) {
+      const st = charState.get(key);
+      if (!st || !sel) continue;
+      if (typeof sel.included === 'boolean') st.included = sel.included;
+      for (const scope of ['normal', 'skill', 'burst']) {
+        const s = sel[scope];
+        if (!s) continue;
+        if (typeof s.enabled === 'boolean') st[scope].enabled = s.enabled;
+        if (typeof s.target === 'number') st[scope].target = s.target;
+      }
+    }
+  }
+  if (typeof data.dropsPerRun === 'number') {
+    dropsPerRun = data.dropsPerRun;
+    const dr = document.getElementById('dropsPerRun');
+    if (dr) dr.value = data.dropsPerRun;
+  }
+  if (typeof data.allowConversion === 'boolean') {
+    allowConversion = data.allowConversion;
+    const ac = document.getElementById('allowConversion');
+    if (ac) ac.checked = data.allowConversion;
+  }
+  refreshAll();
+}
+
 function refreshAll() {
   renderStep2();
   renderStep3();
+  saveSession();
 }
 
 /* ============================================================
  * Event handlers
  * ============================================================ */
 function onAnalyze() {
+  inputIsRandom = false;
   const text = document.getElementById('goodInput').value.trim();
   if (!text) { setStatus('Paste a GOOD export first.', 'error'); return; }
   try {
@@ -613,6 +682,7 @@ function randomGood() {
 
 function onRandom() {
   if (!GAME) return;
+  inputIsRandom = true;
   const sample = randomGood();
   document.getElementById('goodInput').value = JSON.stringify(sample, null, 2);
   parsed = parseGOOD(JSON.stringify(sample));
@@ -638,12 +708,12 @@ async function init() {
   document.getElementById('dropsPerRun').addEventListener('input', (e) => {
     const v = parseFloat(e.target.value);
     dropsPerRun = isNaN(v) || v < 0.5 ? 0.5 : v;
-    if (parsed) renderStep3();
+    if (parsed) { renderStep3(); saveSession(); }
   });
 
   document.getElementById('allowConversion').addEventListener('change', (e) => {
     allowConversion = e.target.checked;
-    if (parsed) renderStep3();
+    if (parsed) { renderStep3(); saveSession(); }
   });
   // Browsers may restore a checked checkbox across a reload while the JS state
   // resets — sync from the DOM so the Dream Solvent card stays in step.
@@ -670,6 +740,9 @@ async function init() {
       st.burst.target = t;
     });
   });
+
+  // Restore a previous session (input + selections + toggles) if present.
+  restoreSession();
 }
 
 init().catch(err => {
