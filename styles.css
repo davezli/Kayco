@@ -10,6 +10,7 @@
   --success: #4caf50;
   --warning: #ff9800;
   --error: #f44336;
+  --violet: #b993e4;
 
   /* Region accent colors */
   --region-mondstadt: #7fdeac; /* Mint Green */
@@ -35,13 +36,125 @@ body {
 
 .app-header {
   text-align: center;
-  padding: 2rem 1rem 1rem;
+  padding: 0;
   background: linear-gradient(180deg, #15171f 0%, var(--bg) 100%);
-  border-bottom: 1px solid var(--border);
 }
 
-.app-header h1 { font-size: 2rem; font-weight: 700; }
+.app-header h1 { font-size: 2rem; font-weight: 700; margin-top: 2rem; }
 .subtitle { color: var(--text-dim); margin-top: 0.25rem; }
+
+/* Top toolbar: Genshin brand + route nav (full-width bar) */
+.toolbar {
+  width: 100%;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
+.toolbar-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+.crumb {
+  text-decoration: none;
+  color: var(--text-dim);
+  font-weight: 600;
+  transition: color 0.12s;
+}
+.crumb-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.crumb-category { color: var(--text-dim); }
+.crumb-active { color: var(--violet); font-weight: 700; }
+a.crumb:hover { color: var(--violet); }
+.crumb-sep {
+  color: var(--border);
+  user-select: none;
+}
+
+/* Hover dropdown for a game category (e.g. Genshin) */
+.dropdown {
+  position: relative;
+  display: inline-flex;
+}
+.dropdown-trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.25rem 0.4rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.dropdown-trigger:hover,
+.dropdown-trigger:focus-visible {
+  color: var(--violet);
+  background: var(--bg-card-hover);
+  outline: none;
+}
+.dropdown-trigger.is-active {
+  color: var(--violet);
+  font-weight: 700;
+}
+.caret { font-size: 0.7rem; opacity: 0.7; }
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  min-width: 210px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  display: none;
+  flex-direction: column;
+  gap: 0.15rem;
+  z-index: 50;
+}
+/* Invisible bridge across the gap so the menu stays open while the
+   pointer travels from the trigger down into the menu. */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.dropdown.open .dropdown-menu {
+  display: flex;
+}
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.12s, color 0.12s;
+}
+.dropdown-item:hover { background: var(--bg-card-hover); color: var(--violet); }
+.dropdown-item.is-active { color: var(--violet); background: rgba(185,147,228,0.12); }
 
 .container {
   max-width: 1000px;
@@ -404,7 +517,7 @@ body {
   flex-wrap: wrap;
 }
 .metric { font-size: 0.9rem; }
-.metric strong { color: var(--accent); font-size: 1.1rem; }
+.metric strong { color: var(--accent); font-weight: 700; }
 
 .mat-chips { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .mat-chip {

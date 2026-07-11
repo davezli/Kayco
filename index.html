@@ -3,16 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trounce Domain Recommender</title>
+  <title>Trounce Domain Recommender — kayco</title>
   <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
   <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="app-header">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <nav class="breadcrumb" aria-label="Primary">
+          <a href="#/" class="crumb crumb-brand">kayco</a>
+          <span class="crumb-sep" aria-hidden="true">›</span>
+          <div class="dropdown">
+            <button type="button" class="crumb crumb-category dropdown-trigger is-active" data-game="genshin" aria-haspopup="true" aria-expanded="false" aria-current="true">
+              Genshin <span class="caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#/genshin/trounce-recommender" class="dropdown-item is-active" role="menuitem" aria-current="page" data-tool="trounce-recommender">Trounce Recommender</a>
+              <!-- Future Genshin tools go here -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
     <h1>⚔️ Trounce Domain Recommender</h1>
     <p class="subtitle">Farm the right weekly bosses — no more wasted resins.</p>
   </header>
@@ -81,7 +101,7 @@
           <input type="number" id="dropsPerRun" class="input-sm" value="2.7" min="0.5" step="0.1">
         </label>
         <label class="toggle-label">
-          <input type="checkbox" id="allowConversion" class="toggle-input">
+          <input type="checkbox" id="allowConversion" class="toggle-input" checked>
           <span class="toggle-track" aria-hidden="true"></span>
           Allow conversion <span class="toggle-hint">(1:1, same boss only)</span>
         </label>

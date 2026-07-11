@@ -62,7 +62,7 @@ function parseGOOD(text) {
 let GAME = null;                          // baked data/game.json
 const charState = new Map();              // key -> { included, target, normal, skill, burst, current:{auto,skill,burst} }
 let dropsPerRun = 2.7;
-let allowConversion = false;              // Step-3 toggle; OFF keeps spec behavior
+let allowConversion = true;               // Step-3 toggle; ON by default (Dream Solvent)
 let parsed = null;                        // last parse result
 let newestBossSet = new Set();            // top-3 bosses by release version (NEW badge)
 let inputIsRandom = false;                // true when current data came from Random 30 (not persisted)
@@ -454,7 +454,7 @@ function renderBossCard(boss, rank) {
   metrics.innerHTML = `
     <div class="metric">Runs: <strong>${boss.runs}</strong></div>
     <div class="metric">Still needed: <strong>${boss.deficit}</strong></div>
-    <div class="metric">Required: ${boss.required} · Owned: ${boss.owned}</div>` +
+    <div class="metric">Required: <strong>${boss.required}</strong> · Owned: <strong>${boss.owned}</strong></div>` +
     (allowConversion && boss.conversions > 0
       ? `<div class="metric">Dream Solvent: <strong>${boss.conversions}</strong></div>`
       : '');
@@ -626,15 +626,23 @@ function onAnalyze() {
 
 function afterParse() {
   const knownKeys = new Set(GAME.characters.map(c => c.key));
-  const ownedKnown = parsed.characters.filter(c => knownKeys.has(c.key)).length;
-  const matKeys = Object.keys(parsed.materialCounts);
-  let msg = `✅ Read ${parsed.characters.length} characters and inventory for ${matKeys.length} boss materials.`;
-  let type = 'success';
+  const owned = parsed.characters;
+  const ownedKnown = owned.filter(c => knownKeys.has(c.key)).length;
+  const ownedUnknown = owned.length - ownedKnown;
+  const matCount = Object.keys(parsed.materialCounts).length;
+
+  let type, msg;
   if (!parsed.hasMaterials) {
-    msg = `⚠️ Read ${parsed.characters.length} characters, but NO materials field — inventory treated as 0.`;
     type = 'warning';
+    msg = `Read ${owned.length} characters, but no materials field was found — inventory treated as 0.`;
+  } else {
+    type = 'success';
+    msg = `Read ${owned.length} characters and inventory for ${matCount} materials.`;
   }
-  setStatus(`✅ ${msg} (${ownedKnown} owned ∩ known)`, type);
+  if (ownedUnknown > 0) {
+    msg += ` ${ownedUnknown} character${ownedUnknown === 1 ? '' : 's'} not in the database were skipped.`;
+  }
+  setStatus((type === 'warning' ? '⚠️ ' : '✅ ') + msg, type);
 
   buildCharacterState();
   document.getElementById('step2').classList.remove('hidden');
@@ -696,6 +704,80 @@ function applyToAll(fn) {
 }
 
 /* ============================================================
+ * Dropdown category menus (hover + click-toggle, close on
+ * outside-click / Escape so the active tool stays selectable)
+ * ============================================================ */
+function initDropdowns() {
+  const closeAll = () => {
+    document.querySelectorAll('.dropdown.open').forEach(dd => {
+      dd.classList.remove('open');
+      const t = dd.querySelector('.dropdown-trigger');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  document.querySelectorAll('.dropdown').forEach(dd => {
+    const trigger = dd.querySelector('.dropdown-trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const willOpen = !dd.classList.contains('open');
+      closeAll();
+      dd.classList.toggle('open', willOpen);
+      trigger.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    });
+  });
+
+  document.addEventListener('click', closeAll);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
+}
+
+/* ============================================================
+ * Tiny hash router (bookmarkable; no server/fallback needed)
+ * Routes map to a game category + tool. The router canonicalizes
+ * the URL and syncs the nav active-state. Page swapping is a
+ * future concern — for now there is one tool, so the router just
+ * keeps the URL + nav honest so links/bookmarks are stable.
+ * ============================================================ */
+const ROUTES = {
+  '/genshin/trounce-recommender': { game: 'genshin', tool: 'trounce-recommender' }
+};
+const DEFAULT_ROUTE = '/genshin/trounce-recommender';
+
+function currentPath() {
+  const h = location.hash.replace(/^#/, '');
+  return h && h.startsWith('/') ? h : DEFAULT_ROUTE;
+}
+
+function syncNavActive(route) {
+  document.querySelectorAll('.dropdown-trigger[data-game]').forEach(el => {
+    const on = el.dataset.game === route.game;
+    el.classList.toggle('is-active', on);
+    if (on) el.setAttribute('aria-current', 'true');
+    else el.removeAttribute('aria-current');
+  });
+  document.querySelectorAll('.dropdown-item[data-tool]').forEach(el => {
+    const on = el.dataset.tool === route.tool;
+    el.classList.toggle('is-active', on);
+    if (on) el.setAttribute('aria-current', 'page');
+    else el.removeAttribute('aria-current');
+  });
+}
+
+function applyRoute() {
+  let path = currentPath();
+  if (!ROUTES[path]) path = DEFAULT_ROUTE;
+  if (location.hash !== '#' + path) history.replaceState(null, '', '#' + path);
+  syncNavActive(ROUTES[path]);
+  // Future: if (mountedTool !== ROUTES[path].tool) mountPage(ROUTES[path].tool);
+}
+
+function initRouter() {
+  window.addEventListener('hashchange', applyRoute);
+  applyRoute();
+}
+
+/* ============================================================
  * Init
  * ============================================================ */
 async function init() {
@@ -740,6 +822,12 @@ async function init() {
       st.burst.target = t;
     });
   });
+
+  // Dropdown category menus (e.g. Genshin) — open on hover AND click-toggle
+  initDropdowns();
+
+  // Hash router — canonicalize URL + sync nav active-state (bookmarkable)
+  initRouter();
 
   // Restore a previous session (input + selections + toggles) if present.
   restoreSession();

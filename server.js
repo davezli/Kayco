@@ -37,11 +37,24 @@ const server = http.createServer((req, res) => {
       return;
     }
     const ext = path.extname(filePath).toLowerCase();
-    res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
+    res.writeHead(200, {
+      'Content-Type': MIME[ext] || 'application/octet-stream',
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0'
+    });
     res.end(data);
   });
 });
 
 server.listen(PORT, () => {
   console.log(`Trounce Recommender running at http://localhost:${PORT}`);
+  console.log('Watching for file changes... (Ctrl+C to stop)');
+});
+
+// Watch for file changes and print notification
+const watch = require('fs').watch(ROOT, { persistent: false }, (event, filename) => {
+  if (filename && event === 'change') {
+    console.log(`[watch] ${filename} updated - cache-bypass headers active`);
+  }
 });
